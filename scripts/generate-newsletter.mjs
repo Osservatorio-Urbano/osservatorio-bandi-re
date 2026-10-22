@@ -15,7 +15,7 @@ const feedXmlPath = path.join(newsletterDir, 'feed.xml');
 const latestHtmlPath = path.join(newsletterDir, 'latest.html');
 
 // Parametri GitHub / URL base
-const GH_OWNER = process.env.GH_OWNER || 'ComuneReggioEmilia';
+const GH_OWNER = process.env.GH_OWNER || 'Osservatorio-Urbano';
 const GH_REPO = process.env.GH_REPOSITORY || 'osservatorio-bandi-re';
 const BASE_URL = process.env.PAGES_BASE_URL || `https://${GH_OWNER}.github.io/${GH_REPO}`;
 

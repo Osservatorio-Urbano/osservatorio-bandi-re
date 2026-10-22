@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RE Funding Intelligence - Edizioni Settimanali</title>
-    <link>https://ComuneReggioEmilia.github.io/osservatorio-bandi-re/</link>
+    <link>https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/</link>
     <description>Newsletter settimanale automatica di opportunità di finanziamento verificate per il Comune di Reggio Emilia</description>
     <language>it-IT</language>
-    <lastBuildDate>Thu, 22 Oct 2026 07:13:25 GMT</lastBuildDate>
-    <atom:link href="https://ComuneReggioEmilia.github.io/osservatorio-bandi-re/newsletter/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Oct 2026 07:23:26 GMT</lastBuildDate>
+    <atom:link href="https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RE-FUNDING-2026-W44</title>
-      <link>https://ComuneReggioEmilia.github.io/osservatorio-bandi-re/newsletter/2026-W44.html</link>
+      <link>https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W44.html</link>
       <guid isPermaLink="false">RE-FUNDING-2026-W44</guid>
-      <pubDate>Thu, 22 Oct 2026 07:13:25 GMT</pubDate>
+      <pubDate>Thu, 22 Oct 2026 07:23:26 GMT</pubDate>
       <category>READY_LATEST</category>
       <description><![CDATA[<!DOCTYPE html>
 <html lang="it">
@@ -532,7 +532,7 @@
       <!-- CTA / Archive Link -->
       <tr>
         <td style="background-color: #f1f5f9; padding: 16px 28px; text-align: center; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
-          <a href="https://ComuneReggioEmilia.github.io/osservatorio-bandi-re/#/bandi" target="_blank" rel="noopener" style="display: inline-block; background-color: #0f766e; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 6px;">
+          <a href="https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/#/bandi" target="_blank" rel="noopener" style="display: inline-block; background-color: #0f766e; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 6px;">
             Accedi a tutti i 122 bandi sull'Osservatorio →
           </a>
         </td>

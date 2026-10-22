@@ -26,7 +26,7 @@ flowchart TD
 
 | Parametro | Descrizione | Dove si imposta | Valore Esempio |
 |---|---|---|---|
-| `FEED_URL` | URL pubblico del feed RSS 2.0 | Nel connettore RSS | `https://ComuneReggioEmilia.github.io/osservatorio-bandi-re/newsletter/feed.xml` |
+| `FEED_URL` | URL pubblico del feed RSS 2.0 | Nel connettore RSS | `https://osservatorio-urbano.github.io/osservatorio-bandi-re/newsletter/feed.xml` |
 | `PA_TIMEZONE` | Fuso orario schedulazione | Nel trigger Recurrence | `(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna` |
 | `PA_TO` | Destinatari interni autorizzati | Azione *Send an email (V2)* | `dirigenti-comune@comune.re.it; taskforce-bandi@comune.re.it` |
 | `PA_ADMIN` | Casella tecnica per allarmi | Azione invio alert su errore | `supporto-sistemi-informativi@comune.re.it` |
@@ -52,7 +52,7 @@ flowchart TD
 1. Clicca su **Nuovo passaggio** e cerca `RSS`.
 2. Seleziona l'azione standard **List all RSS feed items** (Nessun costo premium, nessun HTTP connector).
 3. Inserisci il campo:
-   - **RSS feed URL**: `https://<OWNER>.github.io/<REPOSITORY>/newsletter/feed.xml`
+   - **RSS feed URL**: `https://osservatorio-urbano.github.io/osservatorio-bandi-re/newsletter/feed.xml`
 
 #### Passo 3: Filtro dell'Edizione della Settimana Corrente
 1. Aggiungi l'azione **Operazione dati** > **Filter array** (Filtra matrice).
