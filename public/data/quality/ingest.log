@@ -1,17 +1,17 @@
-[2026-10-22T08:22:11.298Z] Dataset consolidato caricato: 146 record attuali.
-[2026-10-22T08:22:11.299Z] Inizio interrogazione connettori ufficiali...
-[2026-10-22T08:22:11.299Z] Interrogazione: PR FESR ed Energia Emilia-Romagna...
-[2026-10-22T08:22:11.739Z] -> PR FESR ed Energia Emilia-Romagna: 14 bandi ricevuti in 440ms, 0 errori.
-[2026-10-22T08:22:11.739Z] Interrogazione: PA Digitale 2026 (PNRR)...
-[2026-10-22T08:22:12.635Z] -> PA Digitale 2026 (PNRR): 5 bandi ricevuti in 896ms, 0 errori.
-[2026-10-22T08:22:12.636Z] Interrogazione: European Commission SEDIA API...
-[2026-10-22T08:22:13.069Z] -> European Commission SEDIA API: 10 bandi ricevuti in 433ms, 0 errori.
-[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2021-09-01
-[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
-[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2014-06-27
-[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
-[2026-10-22T08:22:13.070Z] Interrogazione: Fondazioni Manodori e Cariparma...
-[2026-10-22T08:22:16.492Z] -> Fondazioni Manodori e Cariparma: 3 bandi ricevuti in 3422ms, 0 errori.
-[2026-10-22T08:22:16.493Z] Riepilogo scansione: 0 nuove opportunità, 4 aggiornate/prorogate, 0 archiviate.
-[2026-10-22T08:22:16.531Z] Dataset canonico salvato con 146 record in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\bandi.json
-[2026-10-22T08:22:16.538Z] Report stato fonti salvato in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\quality\sources-status.json
+[2026-10-22T08:28:28.106Z] Dataset consolidato caricato: 146 record attuali.
+[2026-10-22T08:28:28.107Z] Inizio interrogazione connettori ufficiali...
+[2026-10-22T08:28:28.107Z] Interrogazione: PR FESR ed Energia Emilia-Romagna...
+[2026-10-22T08:28:30.282Z] -> PR FESR ed Energia Emilia-Romagna: 14 bandi ricevuti in 2175ms, 0 errori.
+[2026-10-22T08:28:30.282Z] Interrogazione: PA Digitale 2026 (PNRR)...
+[2026-10-22T08:28:31.056Z] -> PA Digitale 2026 (PNRR): 5 bandi ricevuti in 774ms, 0 errori.
+[2026-10-22T08:28:31.057Z] Interrogazione: European Commission SEDIA API...
+[2026-10-22T08:28:31.738Z] -> European Commission SEDIA API: 10 bandi ricevuti in 681ms, 0 errori.
+[2026-10-22T08:28:31.738Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2021-09-01
+[2026-10-22T08:28:31.738Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-10-22T08:28:31.738Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2014-06-27
+[2026-10-22T08:28:31.738Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-10-22T08:28:31.738Z] Interrogazione: Fondazioni Manodori e Cariparma...
+[2026-10-22T08:28:37.584Z] -> Fondazioni Manodori e Cariparma: 2 bandi ricevuti in 5846ms, 1 errori.
+[2026-10-22T08:28:37.584Z] Riepilogo scansione: 0 nuove opportunità, 4 aggiornate/prorogate, 0 archiviate.
+[2026-10-22T08:28:37.588Z] Dataset canonico salvato con 146 record in: /home/runner/work/osservatorio-bandi-re/osservatorio-bandi-re/public/data/bandi.json
+[2026-10-22T08:28:37.589Z] Report stato fonti salvato in: /home/runner/work/osservatorio-bandi-re/osservatorio-bandi-re/public/data/quality/sources-status.json
