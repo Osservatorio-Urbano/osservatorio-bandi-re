@@ -102,3 +102,18 @@ export function resolveDeliverySchedule(weekOverride = null, customNow = null) {
     categories: ['READY_LATEST', `DELIVERY_${deliveryMonday}`],
   };
 }
+
+/**
+ * Formatta una data YYYY-MM-DD in data estesa italiana (es. '2026-10-26' -> '26 ottobre 2026').
+ * @param {string} dateStr
+ * @returns {string}
+ */
+export function formatItalianLongDate(dateStr) {
+  if (!dateStr || !/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return dateStr || '';
+  const months = [
+    'gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno',
+    'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre',
+  ];
+  const [y, m, d] = dateStr.split('-').map(Number);
+  return `${d} ${months[m - 1]} ${y}`;
+}

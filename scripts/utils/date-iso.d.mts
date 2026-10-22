@@ -17,3 +17,4 @@ export function getMondayOfIsoWeek(year: number, weekNumber: number): string;
 export function getRomeCurrentDate(d?: Date): Date;
 export function getDeliveryMondayForDate(romeDate: Date): string;
 export function resolveDeliverySchedule(weekOverride?: string | null, customNow?: Date | null): DeliverySchedule;
+export function formatItalianLongDate(dateStr: string): string;

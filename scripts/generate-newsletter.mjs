@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resolveDeliverySchedule } from './utils/date-iso.mjs';
+import { resolveDeliverySchedule, formatItalianLongDate } from './utils/date-iso.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -68,13 +68,6 @@ console.log(`Data di consegna lunedì prevista (Power Automate): ${deliverySched
 console.log(`Categorie RSS configurate: ${deliverySchedule.categories.join(', ')}`);
 
 // 3. Calcolo metriche dinamiche del dataset (Criteri coerenti e senza duplicazioni)
-// - totalCount: totale assoluto di bandi censiti e storicizzati nel dataset canonico
-// - openCount: bandi aperti con scadenza definita
-// - rollingCount: bandi a sportello continuo verificati
-// - activeCount: somma rigorosa dei bandi attivi (open + rolling_verified)
-// - closedCount: bandi storici scaduti o chiusi
-// - unknownCount: bandi in verifica o sospesi
-// - newThisWeekCount: nuove opportunità censite o aggiornate negli ultimi 7 giorni
 const totalCount = allBandi.length;
 const openCount = allBandi.filter(b => b.state === 'open').length;
 const rollingCount = allBandi.filter(b => b.state === 'rolling_verified').length;
@@ -96,11 +89,6 @@ console.log(`- In verifica/sospesi: ${unknownCount}`);
 console.log(`- Nuovi/aggiornati ultimi 7gg: ${newThisWeekCount}`);
 
 // 4. Seleziona le migliori opportunità (intervallo 8-12 come da capitolato)
-// Criteri:
-// - Solo bandi aperti (open o rolling_verified)
-// - Solo con ammissibilità confirmed o potential
-// - Fonte verificata ufficialmente
-// - Ordina per score decrescente, poi scadenza imminente
 const eligible = allBandi.filter(b => {
   const stateOk = b.state === 'open' || b.state === 'rolling_verified';
   const eligOk = b.eligibility === 'confirmed' || b.eligibility === 'potential';
@@ -130,8 +118,10 @@ const metrics = {
   selectedCount,
 };
 
-// 5. Costruzione HTML Email-Safe (Tabelle compatibili Outlook, CSS Inline, Nessun Script)
-function buildEmailHtml(edition, items, met) {
+// 5. Costruzione HTML Email-Safe ispirata al modello ufficiale ComuneInforma (Outlook/Mobile safe)
+function buildEmailHtml(edition, items, met, deliveryDateStr) {
+  const dateFormatted = formatItalianLongDate(deliveryDateStr);
+
   const itemsHtml = items.map((item) => {
     const isSportello = item.deadlineType === 'sportello';
     const deadlineTxt = isSportello ? 'A sportello aperto (fino ad esaurimento risorse)' : formatDateIt(item.deadline);
@@ -141,32 +131,34 @@ function buildEmailHtml(edition, items, met) {
 
     return `
       <tr>
-        <td style="padding: 16px 20px; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 16px;">
+        <td style="padding: 20px 0; border-bottom: 1px solid #e2e8f0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td>
-                <span style="display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 8px; border-radius: 4px; background-color: ${badgeBg}; color: ${badgeColor}; margin-bottom: 8px;">
-                  ${item.sourceType.toUpperCase()} · ${item.original.categoria}
-                </span>
-                <span style="display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background-color: #f1f5f9; color: #475569; margin-left: 6px;">
-                  Linea DUP: ${linesTxt}
-                </span>
-                <h3 style="margin: 8px 0 6px 0; font-size: 16px; line-height: 1.4; color: #0f172a;">
-                  <a href="${item.sourceCanonicalUrl}" target="_blank" rel="noopener" style="color: #0f766e; text-decoration: none; font-weight: 700;">
+                <div style="margin-bottom: 8px;">
+                  <span style="display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 8px; border-radius: 4px; background-color: ${badgeBg}; color: ${badgeColor}; margin-right: 6px;">
+                    ${item.sourceType.toUpperCase()} · ${item.original.categoria}
+                  </span>
+                  <span style="display: inline-block; font-size: 11px; font-weight: 600; padding: 3px 8px; border-radius: 4px; background-color: #f1f5f9; color: #475569;">
+                    Linea DUP: ${linesTxt}
+                  </span>
+                </div>
+
+                <h3 style="margin: 8px 0 6px 0; font-size: 16px; line-height: 1.35; color: #000000; font-weight: 700;">
+                  <a href="${item.sourceCanonicalUrl}" target="_blank" rel="noopener" style="color: #0f172a; text-decoration: none;">
                     ${item.original.titolo}
                   </a>
                 </h3>
+
                 <p style="margin: 0 0 10px 0; font-size: 13px; color: #64748b; font-weight: 500;">
                   Ente erogatore: <strong>${item.original.ente}</strong> ${item.original.programma ? '· ' + item.original.programma : ''}
                 </p>
-                <p style="margin: 0 0 12px 0; font-size: 13px; line-height: 1.5; color: #334155;">
+
+                <p style="margin: 0 0 14px 0; font-size: 13.5px; line-height: 1.55; color: #334155;">
                   ${item.publicSummary}
                 </p>
-              </td>
-            </tr>
-            <tr>
-              <td style="border-top: 1px solid #f1f5f9; padding-top: 10px;">
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #475569;">
+
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #475569; background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px 14px; margin-bottom: 14px;">
                   <tr>
                     <td style="padding: 2px 0;"><strong>Scadenza:</strong> ${deadlineTxt}</td>
                     <td style="padding: 2px 0; text-align: right;"><strong>Ammissibilità:</strong> ${item.eligibility === 'confirmed' ? 'Diretta PA / ATS' : 'In partenariato'}</td>
@@ -178,12 +170,18 @@ function buildEmailHtml(edition, items, met) {
                     </td>
                   </tr>
                 </table>
+
+                <!-- Pulsante "Leggi di più" conforme allo stile ComuneInforma -->
+                <div>
+                  <a href="${item.sourceCanonicalUrl}" target="_blank" rel="noopener" style="display: inline-block; background-color: #e2e8f0; color: #0f172a; text-decoration: none; font-size: 12px; font-weight: 600; padding: 7px 16px; border-radius: 6px; border: 1px solid #cbd5e1;">
+                    Leggi di più →
+                  </a>
+                </div>
               </td>
             </tr>
           </table>
         </td>
       </tr>
-      <tr><td height="12" style="font-size: 0; line-height: 0;">&nbsp;</td></tr>
     `;
   }).join('');
 
@@ -194,43 +192,59 @@ function buildEmailHtml(edition, items, met) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>[RE Funding] Opportunità della settimana - ${edition}</title>
 </head>
-<body style="margin: 0; padding: 0; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b;">
-  <center style="width: 100%; background-color: #f8fafc; padding: 24px 0;">
+<body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b;">
+  <center style="width: 100%; background-color: #ffffff; padding: 16px 0 32px 0;">
     <!-- Container 620px -->
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 620px; margin: 0 auto;">
-      <!-- Header -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 620px; margin: 0 auto; text-align: left;">
+      <!-- Riga data testata top-right (stile ComuneInforma) -->
       <tr>
-        <td style="background-color: #0f766e; padding: 24px 28px; border-radius: 8px 8px 0 0; text-align: left;">
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-            <tr>
-              <td>
-                <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #ccfbf1;">
-                  COMUNE DI REGGIO EMILIA · MANDATO 2024-2029
-                </span>
-                <h1 style="margin: 4px 0 0 0; font-size: 22px; font-weight: 700; color: #ffffff; letter-spacing: -0.5px;">
-                  RE Funding Intelligence
-                </h1>
-                <p style="margin: 4px 0 0 0; font-size: 13px; color: #e6fffa;">
-                  Edizione settimanale di opportunità verificate · <strong>${edition}</strong>
-                </p>
-              </td>
-            </tr>
-          </table>
+        <td style="text-align: right; font-style: italic; font-size: 13px; color: #475569; padding: 0 4px 8px 4px;">
+          Newsletter del ${dateFormatted}
         </td>
       </tr>
 
-      <!-- Introduction box -->
+      <!-- Banner Istituzionale Comune di Reggio Emilia / ComuneInforma -->
       <tr>
-        <td style="background-color: #ffffff; padding: 20px 28px; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
-          <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #334155;">
-            Gentili dirigenti e funzionari, ecco la sintesi settimanale delle opportunità di finanziamento europee, nazionali e regionali compatibili con le <strong>6 linee strategiche del DUP</strong> e con i progetti strategici del Comune di Reggio Emilia.
+        <td style="padding: 0 0 16px 0;">
+          <a href="${BASE_URL}/" target="_blank" rel="noopener" style="display: block; text-decoration: none;">
+            <img
+              src="${BASE_URL}/newsletter-header-banner.png"
+              alt="Comune di Reggio Emilia - ComuneInforma - Funding Intelligence"
+              width="620"
+              style="width: 100%; max-width: 620px; height: auto; display: block; border-radius: 4px; border: 0;"
+            />
+          </a>
+        </td>
+      </tr>
+
+      <!-- Saluto introduttivo -->
+      <tr>
+        <td style="padding: 8px 4px 12px 4px;">
+          <p style="margin: 0 0 4px 0; font-size: 16px; font-weight: 600; color: #0f172a;">
+            Gentili dirigenti, amministratori e funzionari,
           </p>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 12px 14px; font-size: 12px; color: #166534;">
+          <p style="margin: 0; font-size: 14px; color: #475569; line-height: 1.5;">
+            ecco le opportunità di finanziamento e i bandi attivi per il Comune di Reggio Emilia e il territorio, allineati alle linee strategiche del DUP.
+          </p>
+        </td>
+      </tr>
+
+      <!-- Divisore orizzontale discreto (stile ComuneInforma) -->
+      <tr>
+        <td style="padding: 8px 0 16px 0;">
+          <div style="width: 180px; height: 3px; background-color: #e2e8f0; margin: 0 auto; border-radius: 2px;"></div>
+        </td>
+      </tr>
+
+      <!-- Box Riepilogo Monitoraggio Dataset -->
+      <tr>
+        <td style="padding: 0 4px 20px 4px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-left: 4px solid #0f766e; border-radius: 6px; padding: 12px 16px; font-size: 12.5px; color: #166534; line-height: 1.6;">
             <tr>
               <td>
                 <strong>Quadro settimanale del monitoraggio (dataset aggiornato):</strong><br />
                 • <strong>${met.activeCount}</strong> opportunità attive (<strong>${met.openCount}</strong> a bando ordinario, <strong>${met.rollingCount}</strong> a sportello verificato)<br />
-                • <strong>${met.selectedCount}</strong> opportunità prioritarie selezionate in questa newsletter<br />
+                • <strong>${met.selectedCount}</strong> opportunità prioritarie selezionate per questa edizione<br />
                 • <strong>${met.newThisWeekCount}</strong> nuove opportunità o aggiornamenti monitorati nell'ultima settimana<br />
                 • <strong>${met.totalCount}</strong> bandi complessivamente censiti nell'Osservatorio (${met.closedCount} archiviati per scadenza)
               </td>
@@ -239,41 +253,45 @@ function buildEmailHtml(edition, items, met) {
         </td>
       </tr>
 
-      <!-- Section Title -->
+      <!-- Titolo Sezione Opportunità -->
       <tr>
-        <td style="background-color: #ffffff; padding: 12px 28px 8px 28px; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
+        <td style="padding: 8px 4px 4px 4px;">
           <h2 style="margin: 0; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #0f766e;">
-            Opportunità prioritarie della settimana (${met.selectedCount} selezionate su ${met.activeCount} attive)
+            Opportunità prioritarie della settimana
           </h2>
         </td>
       </tr>
 
-      <!-- Items List -->
+      <!-- Elenco Bandi / Articoli -->
       <tr>
-        <td style="background-color: #ffffff; padding: 8px 28px 20px 28px; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
+        <td style="padding: 0 4px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-            ${itemsHtml.length > 0 ? itemsHtml : `<tr><td style="padding: 20px; text-align: center; color: #64748b;">Nessuna nuova opportunità idonea verificata per questa settimana. Tutti i controlli sono stati superati regolarmente.</td></tr>`}
+            ${itemsHtml.length > 0 ? itemsHtml : `<tr><td style="padding: 24px; text-align: center; color: #64748b;">Nessuna nuova opportunità idonea verificata per questa settimana. Tutti i controlli sono stati superati regolarmente.</td></tr>`}
           </table>
         </td>
       </tr>
 
-      <!-- CTA / Archive Link con contatore DINAMICO dei bandi censiti -->
+      <!-- CTA Finale con contatore DINAMICO dei bandi censiti -->
       <tr>
-        <td style="background-color: #f1f5f9; padding: 18px 28px; text-align: center; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
-          <a href="${BASE_URL}/#/bandi" target="_blank" rel="noopener" style="display: inline-block; background-color: #0f766e; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 12px 24px; border-radius: 6px;">
+        <td style="padding: 28px 4px 20px 4px; text-align: center;">
+          <a href="${BASE_URL}/#/bandi" target="_blank" rel="noopener" style="display: inline-block; background-color: #0f766e; color: #ffffff; text-decoration: none; font-size: 13.5px; font-weight: 600; padding: 12px 26px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
             Accedi a tutti i ${met.totalCount} bandi sull'Osservatorio →
           </a>
         </td>
       </tr>
 
-      <!-- Disclaimer & Footer -->
+      <!-- Footer Istituzionale -->
       <tr>
-        <td style="background-color: #f8fafc; padding: 20px 24px; border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 8px 8px; font-size: 11px; line-height: 1.5; color: #64748b;">
+        <td style="padding: 20px 4px 12px 4px; border-top: 1px solid #e2e8f0; font-size: 11.5px; line-height: 1.55; color: #64748b;">
           <p style="margin: 0 0 8px 0;">
-            <strong>Nota metodologica e di trasparenza:</strong> Questo bollettino è generato automaticamente dall'Osservatorio Bandi Reggio Emilia basato su repository pubblico GitHub ed emesso tramite Microsoft Power Automate & Outlook. Nessun dato riservato né elenco destinatari è conservato nel repository.
+            <strong>Comune di Reggio Emilia · RE Funding Intelligence · Mandato 2024-2029</strong><br />
+            Presidio continuativo delle opportunità di finanziamento europee, nazionali e regionali per il territorio.
+          </p>
+          <p style="margin: 0 0 8px 0;">
+            <strong>Nota metodologica e di trasparenza:</strong> Questo bollettino è emesso automaticamente via Microsoft Power Automate & Outlook su base del dataset pubblico GitHub. Nessun dato riservato né elenco destinatari è conservato nel repository pubblico.
           </p>
           <p style="margin: 0;">
-            Le valutazioni di ammissibilità e punteggio hanno carattere indicativo e non costituiscono parere giuridico definitivo. Si raccomanda di consultare sempre il testo integrale del bando e la documentazione ufficiale dell'ente erogatore.
+            Le valutazioni hanno carattere indicativo di priorità strategica DUP. Si raccomanda di consultare sempre i bandi ufficiali degli enti erogatori.
           </p>
         </td>
       </tr>
@@ -283,7 +301,7 @@ function buildEmailHtml(edition, items, met) {
 </html>`;
 }
 
-const emailSafeHtml = buildEmailHtml(editionId, selected, metrics);
+const emailSafeHtml = buildEmailHtml(editionId, selected, metrics, deliverySchedule.deliveryMonday);
 
 // Salva newsletter HTML per l'archivio: public/newsletter/YYYY-Www.html
 fs.mkdirSync(newsletterDir, { recursive: true });
