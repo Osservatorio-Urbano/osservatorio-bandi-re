@@ -208,7 +208,7 @@ function buildEmailHtml(edition, items, met, deliveryDateStr) {
         <td style="padding: 0 0 16px 0;">
           <a href="${BASE_URL}/" target="_blank" rel="noopener" style="display: block; text-decoration: none;">
             <img
-              src="${BASE_URL}/newsletter-header-banner.png"
+              src="${BASE_URL}/banner-osservatorio-bandi.png?v=20261022"
               alt="Comune di Reggio Emilia - Osservatorio Bandi Edizione settimanale"
               width="620"
               style="width: 100%; max-width: 620px; height: auto; display: block; border-radius: 4px; border: 0;"
