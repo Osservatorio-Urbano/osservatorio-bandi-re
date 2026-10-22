@@ -133,7 +133,7 @@ describe('Verifica Feed RSS 2.0 e Newsletter Email-Safe', () => {
 
     // Deve utilizzare tabelle responsive per compatibilità con Word/Outlook
     expect(html).toContain('<table role="presentation"');
-    expect(html).toContain('RE Funding Intelligence');
+    expect(html).toContain('Osservatorio Bandi Edizione settimanale');
     expect(html).toContain('Nota metodologica e di trasparenza');
 
     // La dimensione dell'HTML non deve superare la soglia di sicurezza (max 80KB)

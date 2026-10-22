@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RE Funding Intelligence - Edizioni Settimanali</title>
+    <title>Osservatorio Bandi Edizione settimanale</title>
     <link>https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/</link>
-    <description>Newsletter settimanale automatica di opportunità di finanziamento verificate per il Comune di Reggio Emilia (43 attive su 146 censite)</description>
+    <description>Osservatorio Bandi Edizione settimanale - Opportunità di finanziamento verificate per il Comune di Reggio Emilia (43 attive su 146 censite)</description>
     <language>it-IT</language>
-    <lastBuildDate>Thu, 22 Oct 2026 12:57:42 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 13:10:11 GMT</lastBuildDate>
     <atom:link href="https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RE-FUNDING-2026-W44</title>
       <link>https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W44.html</link>
       <guid isPermaLink="false">RE-FUNDING-2026-W44</guid>
-      <pubDate>Thu, 22 Oct 2026 12:57:42 GMT</pubDate>
+      <pubDate>Thu, 22 Oct 2026 13:10:11 GMT</pubDate>
       <category>READY_LATEST</category>
       <category>DELIVERY_2026-10-26</category>
       <description><![CDATA[<!DOCTYPE html>
@@ -19,7 +19,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[RE Funding] Opportunità della settimana - RE-FUNDING-2026-W44</title>
+  <title>Osservatorio Bandi Edizione settimanale - RE-FUNDING-2026-W44</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b;">
   <center style="width: 100%; background-color: #ffffff; padding: 16px 0 32px 0;">
@@ -38,7 +38,7 @@
           <a href="https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/" target="_blank" rel="noopener" style="display: block; text-decoration: none;">
             <img
               src="https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter-header-banner.png"
-              alt="Comune di Reggio Emilia - ComuneInforma - Funding Intelligence"
+              alt="Comune di Reggio Emilia - ComuneInforma - Osservatorio Bandi Edizione settimanale"
               width="620"
               style="width: 100%; max-width: 620px; height: auto; display: block; border-radius: 4px; border: 0;"
             />
@@ -643,7 +643,7 @@
       <tr>
         <td style="padding: 20px 4px 12px 4px; border-top: 1px solid #e2e8f0; font-size: 11.5px; line-height: 1.55; color: #64748b;">
           <p style="margin: 0 0 8px 0;">
-            <strong>Comune di Reggio Emilia · RE Funding Intelligence · Mandato 2024-2029</strong><br />
+            <strong>Comune di Reggio Emilia · Osservatorio Bandi Edizione settimanale · Mandato 2024-2029</strong><br />
             Presidio continuativo delle opportunità di finanziamento europee, nazionali e regionali per il territorio.
           </p>
           <p style="margin: 0 0 8px 0;">

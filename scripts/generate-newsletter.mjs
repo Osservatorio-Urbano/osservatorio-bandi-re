@@ -190,7 +190,7 @@ function buildEmailHtml(edition, items, met, deliveryDateStr) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[RE Funding] Opportunità della settimana - ${edition}</title>
+  <title>Osservatorio Bandi Edizione settimanale - ${edition}</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b;">
   <center style="width: 100%; background-color: #ffffff; padding: 16px 0 32px 0;">
@@ -209,7 +209,7 @@ function buildEmailHtml(edition, items, met, deliveryDateStr) {
           <a href="${BASE_URL}/" target="_blank" rel="noopener" style="display: block; text-decoration: none;">
             <img
               src="${BASE_URL}/newsletter-header-banner.png"
-              alt="Comune di Reggio Emilia - ComuneInforma - Funding Intelligence"
+              alt="Comune di Reggio Emilia - ComuneInforma - Osservatorio Bandi Edizione settimanale"
               width="620"
               style="width: 100%; max-width: 620px; height: auto; display: block; border-radius: 4px; border: 0;"
             />
@@ -284,7 +284,7 @@ function buildEmailHtml(edition, items, met, deliveryDateStr) {
       <tr>
         <td style="padding: 20px 4px 12px 4px; border-top: 1px solid #e2e8f0; font-size: 11.5px; line-height: 1.55; color: #64748b;">
           <p style="margin: 0 0 8px 0;">
-            <strong>Comune di Reggio Emilia · RE Funding Intelligence · Mandato 2024-2029</strong><br />
+            <strong>Comune di Reggio Emilia · Osservatorio Bandi Edizione settimanale · Mandato 2024-2029</strong><br />
             Presidio continuativo delle opportunità di finanziamento europee, nazionali e regionali per il territorio.
           </p>
           <p style="margin: 0 0 8px 0;">
@@ -314,7 +314,7 @@ const latestRedirectHtml = `<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="utf-8">
-  <title>Ultima edizione - RE Funding Intelligence</title>
+  <title>Ultima edizione - Osservatorio Bandi Edizione settimanale</title>
   <meta http-equiv="refresh" content="0; url=${deliverySchedule.id}.html">
 </head>
 <body>
@@ -341,7 +341,7 @@ const weeklyLatestData = {
   closed_count: closedCount,
   new_this_week_count: newThisWeekCount,
   selected_count: selectedCount,
-  summary: `Edizione settimanale ${editionId} con ${selectedCount} opportunità prioritarie selezionate su ${activeCount} attive (${totalCount} censite).`,
+  summary: `Osservatorio Bandi Edizione settimanale ${editionId} con ${selectedCount} opportunità prioritarie selezionate su ${activeCount} attive (${totalCount} censite).`,
   html_link: `${BASE_URL}/newsletter/${deliverySchedule.id}.html`,
   selected_opportunities: selected.map(s => ({
     id: s.id,
@@ -412,9 +412,9 @@ const categoriesXml = deliverySchedule.categories
 const rssXml = `<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>RE Funding Intelligence - Edizioni Settimanali</title>
+    <title>Osservatorio Bandi Edizione settimanale</title>
     <link>${BASE_URL}/</link>
-    <description>Newsletter settimanale automatica di opportunità di finanziamento verificate per il Comune di Reggio Emilia (${activeCount} attive su ${totalCount} censite)</description>
+    <description>Osservatorio Bandi Edizione settimanale - Opportunità di finanziamento verificate per il Comune di Reggio Emilia (${activeCount} attive su ${totalCount} censite)</description>
     <language>it-IT</language>
     <lastBuildDate>${nowRfc822}</lastBuildDate>
     <atom:link href="${BASE_URL}/newsletter/feed.xml" rel="self" type="application/rss+xml" />
