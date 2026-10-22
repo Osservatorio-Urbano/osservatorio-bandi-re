@@ -3,7 +3,9 @@
     {
       "edition_id": "RE-FUNDING-2026-W44",
       "iso_week": "2026-W44",
-      "generated_at": "2026-10-22T08:36:56.559Z",
+      "delivery_monday": "2026-10-26",
+      "delivery_category": "DELIVERY_2026-10-26",
+      "generated_at": "2026-10-22T11:58:50.984Z",
       "item_count": 10,
       "total_pool": 146,
       "status": "READY",

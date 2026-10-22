@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { resolveDeliverySchedule } from './utils/date-iso.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -18,19 +19,6 @@ const latestHtmlPath = path.join(newsletterDir, 'latest.html');
 const GH_OWNER = process.env.GH_OWNER || 'Osservatorio-Urbano';
 const GH_REPO = process.env.GH_REPOSITORY || 'osservatorio-bandi-re';
 const BASE_URL = process.env.PAGES_BASE_URL || `https://${GH_OWNER}.github.io/${GH_REPO}`;
-
-function getIsoWeek(date) {
-  const target = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-  const dayNr = target.getUTCDay() || 7;
-  target.setUTCDate(target.getUTCDate() + 4 - dayNr);
-  const yearStart = new Date(Date.UTC(target.getUTCFullYear(), 0, 1));
-  const weekNo = Math.ceil((((target - yearStart) / 86400000) + 1) / 7);
-  return {
-    year: target.getUTCFullYear(),
-    weekNumber: weekNo,
-    id: `${target.getUTCFullYear()}-W${String(weekNo).padStart(2, '0')}`,
-  };
-}
 
 function formatDateIt(dateStr) {
   if (!dateStr || !/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return dateStr || 'n.d.';
@@ -66,28 +54,21 @@ if (!qualityGatePassed) {
 const dataset = JSON.parse(fs.readFileSync(datasetPath, 'utf8'));
 const allBandi = dataset.bandi || [];
 
-// Calcola settimana di riferimento
+// Calcola settimana di riferimento e data di consegna (Lunedì ore 08:00 Europe/Rome)
 // Supporta flag da riga di comando per testing es. --week 2026-W44
-let weekInfo;
+let weekOverride = null;
 const argWeekIdx = process.argv.indexOf('--week');
 if (argWeekIdx !== -1 && process.argv[argWeekIdx + 1]) {
-  const w = process.argv[argWeekIdx + 1];
-  const [y, wn] = w.split('-W');
-  weekInfo = { year: Number(y), weekNumber: Number(wn), id: w };
-} else {
-  // Calcola per il lunedì prossimo (o corrente se lunedì)
-  const now = new Date();
-  const day = now.getDay();
-  const diffToMonday = day === 1 ? 0 : ((1 - day + 7) % 7);
-  const monday = new Date(now);
-  monday.setDate(now.getDate() + diffToMonday);
-  weekInfo = getIsoWeek(monday);
+  weekOverride = process.argv[argWeekIdx + 1];
 }
 
-const editionId = `RE-FUNDING-${weekInfo.id}`;
+const deliverySchedule = resolveDeliverySchedule(weekOverride);
+const editionId = `RE-FUNDING-${deliverySchedule.id}`;
 console.log(`Generazione per edizione: ${editionId}`);
+console.log(`Data di consegna lunedì prevista (Power Automate): ${deliverySchedule.deliveryMonday}`);
+console.log(`Categorie RSS configurate: ${deliverySchedule.categories.join(', ')}`);
 
-// 3. Seleziona le migliori 8-12 opportunità
+// 3. Seleziona le migliori opportunità (8-12 come da capitolato)
 // Criteri:
 // - Solo bandi aperti (open o rolling_verified)
 // - Solo con ammissibilità confirmed o potential
@@ -112,7 +93,7 @@ console.log(`Opportunità idonee trovate: ${eligible.length}, selezionate per ne
 
 // 4. Costruzione HTML Email-Safe (Tabelle compatibili Outlook, CSS Inline, Nessun Script)
 function buildEmailHtml(edition, items) {
-  const itemsHtml = items.map((item, idx) => {
+  const itemsHtml = items.map((item) => {
     const isSportello = item.deadlineType === 'sportello';
     const deadlineTxt = isSportello ? 'A sportello aperto (fino ad esaurimento risorse)' : formatDateIt(item.deadline);
     const badgeBg = isSportello ? '#e0f2fe' : '#fef3c7';
@@ -237,7 +218,7 @@ function buildEmailHtml(edition, items) {
       <tr>
         <td style="background-color: #f1f5f9; padding: 16px 28px; text-align: center; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
           <a href="${BASE_URL}/#/bandi" target="_blank" rel="noopener" style="display: inline-block; background-color: #0f766e; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 6px;">
-            Accedi a tutti i 122 bandi sull'Osservatorio →
+            Accedi a tutti i bandi sull'Osservatorio →
           </a>
         </td>
       </tr>
@@ -263,7 +244,7 @@ const emailSafeHtml = buildEmailHtml(editionId, selected);
 
 // Salva newsletter HTML per l'archivio: public/newsletter/YYYY-Www.html
 fs.mkdirSync(newsletterDir, { recursive: true });
-const archiveHtmlPath = path.join(newsletterDir, `${weekInfo.id}.html`);
+const archiveHtmlPath = path.join(newsletterDir, `${deliverySchedule.id}.html`);
 fs.writeFileSync(archiveHtmlPath, emailSafeHtml, 'utf8');
 console.log(`Newsletter salvata in archivio: ${archiveHtmlPath}`);
 
@@ -273,10 +254,10 @@ const latestRedirectHtml = `<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <title>Ultima edizione - RE Funding Intelligence</title>
-  <meta http-equiv="refresh" content="0; url=${weekInfo.id}.html">
+  <meta http-equiv="refresh" content="0; url=${deliverySchedule.id}.html">
 </head>
 <body>
-  <p>Reindirizzamento all'ultima edizione: <a href="${weekInfo.id}.html">${editionId}</a>...</p>
+  <p>Reindirizzamento all'ultima edizione: <a href="${deliverySchedule.id}.html">${editionId}</a>...</p>
 </body>
 </html>`;
 fs.writeFileSync(latestHtmlPath, latestRedirectHtml, 'utf8');
@@ -286,14 +267,16 @@ fs.mkdirSync(path.dirname(weeklyLatestPath), { recursive: true });
 const weeklyLatestData = {
   edition_id: editionId,
   generated_at: new Date().toISOString(),
-  week_start: `2026-W${String(weekInfo.weekNumber).padStart(2, '0')}`,
-  week_end: `2026-W${String(weekInfo.weekNumber).padStart(2, '0')}`,
+  delivery_monday: deliverySchedule.deliveryMonday,
+  delivery_category: `DELIVERY_${deliverySchedule.deliveryMonday}`,
+  week_start: `2026-W${String(deliverySchedule.weekNumber).padStart(2, '0')}`,
+  week_end: `2026-W${String(deliverySchedule.weekNumber).padStart(2, '0')}`,
   status: 'READY',
   quality_passed: true,
   item_count: allBandi.length,
   selected_count: selected.length,
   summary: `Edizione settimanale ${editionId} con ${selected.length} opportunità prioritarie verificate.`,
-  html_link: `${BASE_URL}/newsletter/${weekInfo.id}.html`,
+  html_link: `${BASE_URL}/newsletter/${deliverySchedule.id}.html`,
   selected_opportunities: selected.map(s => ({
     id: s.id,
     titolo: s.original.titolo,
@@ -329,12 +312,14 @@ if (fs.existsSync(manifestPath)) {
 const existingIdx = manifest.editions.findIndex(e => e.edition_id === editionId);
 const editionEntry = {
   edition_id: editionId,
-  iso_week: weekInfo.id,
+  iso_week: deliverySchedule.id,
+  delivery_monday: deliverySchedule.deliveryMonday,
+  delivery_category: `DELIVERY_${deliverySchedule.deliveryMonday}`,
   generated_at: new Date().toISOString(),
   item_count: selected.length,
   total_pool: allBandi.length,
   status: 'READY',
-  url: `${BASE_URL}/newsletter/${weekInfo.id}.html`,
+  url: `${BASE_URL}/newsletter/${deliverySchedule.id}.html`,
 };
 
 if (existingIdx >= 0) {
@@ -346,9 +331,13 @@ if (existingIdx >= 0) {
 manifest.editions = manifest.editions.slice(0, 26);
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
 
-// 7. Genera Feed RSS 2.0 (1 ITEM PER EDIZIONE READY, GUID DETERMINISTICO, CDATA EMAIL-SAFE)
-// pubDate in formato RFC 822 es. "Mon, 26 Oct 2026 06:15:00 GMT"
+// 7. Genera Feed RSS 2.0 (1 ITEM PER EDIZIONE READY, GUID DETERMINISTICO, CDATA EMAIL-SAFE, CATEGORIE DI RECAPITO)
+// pubDate in formato RFC 822
 const nowRfc822 = new Date().toUTCString();
+
+const categoriesXml = deliverySchedule.categories
+  .map(cat => `      <category>${cat}</category>`)
+  .join('\n');
 
 const rssXml = `<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -361,10 +350,10 @@ const rssXml = `<?xml version="1.0" encoding="utf-8"?>
     <atom:link href="${BASE_URL}/newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>${editionId}</title>
-      <link>${BASE_URL}/newsletter/${weekInfo.id}.html</link>
+      <link>${BASE_URL}/newsletter/${deliverySchedule.id}.html</link>
       <guid isPermaLink="false">${editionId}</guid>
       <pubDate>${nowRfc822}</pubDate>
-      <category>READY_LATEST</category>
+${categoriesXml}
       <description><![CDATA[${emailSafeHtml}]]></description>
     </item>
   </channel>

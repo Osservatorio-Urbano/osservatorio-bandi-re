@@ -28,11 +28,14 @@ concurrency:
 jobs:
   newsletter:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout codice
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -91,10 +94,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
           git add public/newsletter/ public/data/weekly/
           if git diff --staged --quiet; then
             echo "Nessun cambiamento nei file di newsletter."
           else
             git commit -m "chore(newsletter): emissione settimanale $(date +'%Y-W%V') [skip ci]"
-            git push
+            git push origin main
           fi
