@@ -203,13 +203,13 @@ function buildEmailHtml(edition, items, met, deliveryDateStr) {
         </td>
       </tr>
 
-      <!-- Banner Istituzionale Comune di Reggio Emilia / ComuneInforma -->
+      <!-- Banner Istituzionale Comune di Reggio Emilia - Osservatorio Bandi Edizione settimanale -->
       <tr>
         <td style="padding: 0 0 16px 0;">
           <a href="${BASE_URL}/" target="_blank" rel="noopener" style="display: block; text-decoration: none;">
             <img
               src="${BASE_URL}/newsletter-header-banner.png"
-              alt="Comune di Reggio Emilia - ComuneInforma - Osservatorio Bandi Edizione settimanale"
+              alt="Comune di Reggio Emilia - Osservatorio Bandi Edizione settimanale"
               width="620"
               style="width: 100%; max-width: 620px; height: auto; display: block; border-radius: 4px; border: 0;"
             />
