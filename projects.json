@@ -1,0 +1,99 @@
+{
+  "$schema": "./schema/projects.schema.json",
+  "updatedAt": "2026-10-22",
+  "ente": "Comune di Reggio Emilia",
+  "disclaimer": "Tutti i progetti sono in modalità 'example' (esemplificativa) finché i dati e i budget non sono validati ufficialmente dagli uffici competenti.",
+  "projects": [
+    {
+      "id": "re-proj-osservatorio-urbano",
+      "name": "Osservatorio Urbano",
+      "mode": "example",
+      "sector": "Pianificazione strategica e monitoraggio",
+      "leadDepartment": "Servizio Pianificazione e Monitoraggio Strategico",
+      "strategicLines": ["L1", "L4", "L6"],
+      "thematicTags": ["dati", "indicatori", "statistica", "trasparenza", "partecipazione"],
+      "summary": "Piattaforma di monitoraggio territoriale, indicatori di sostenibilità e cruscotto direzionale per le politiche pubbliche comunali.",
+      "fundingNeeds": "Fondi FESR/FSE+ o PNRR per potenziamento sensoristica, data lake civico e dashboard di co-governance.",
+      "estimatedBudget": "€ 150.000 - 300.000",
+      "keywords": ["osservatorio", "dati", "monitoraggio", "statistica", "cruscotto", "indicatori"]
+    },
+    {
+      "id": "re-proj-reacts",
+      "name": "RE_ACTS",
+      "mode": "example",
+      "sector": "Transizione ecologica e resilienza urbana",
+      "leadDepartment": "Settore Ambiente e Sostenibilità",
+      "strategicLines": ["L3", "L5"],
+      "thematicTags": ["clima", "resilienza", "forestazione", "adattamento", "energia"],
+      "summary": "Azioni per il clima, la neutralità carbonica al 2030, micro-forestazione urbana e comunità energetiche rinnovabili.",
+      "fundingNeeds": "Call europee LIFE, Horizon Europe (Mission Climate-Neutral Cities) o bandi regionali per la qualità dell'aria.",
+      "estimatedBudget": "€ 500.000 - 1.200.000",
+      "keywords": ["clima", "resilienza", "neutralità", "emissioni", "forestazione", "ambiente", "transizione"]
+    },
+    {
+      "id": "re-proj-digital-twin",
+      "name": "Digital Twin",
+      "mode": "example",
+      "sector": "Innovazione digitale e smart mobility",
+      "leadDepartment": "Servizio Transizione Digitale e Sistemi Informativi",
+      "strategicLines": ["L2", "L3", "L4"],
+      "thematicTags": ["gemello digitale", "3d", "bim", "gis", "mobilita", "simulazione"],
+      "summary": "Gemello digitale urbano per la simulazione dei flussi di traffico, consumo energetico degli edifici pubblici e pianificazione urbanistica.",
+      "fundingNeeds": "Bandi MIMIT, FESR Digitale, fondi PNRR M1C1 o Horizon Europe.",
+      "estimatedBudget": "€ 400.000 - 900.000",
+      "keywords": ["digital twin", "gemello digitale", "3d", "simulazione", "gis", "mobilita", "traffico"]
+    },
+    {
+      "id": "re-proj-smart-city",
+      "name": "Smart City",
+      "mode": "example",
+      "sector": "Città intelligente e servizi di prossimità",
+      "leadDepartment": "Settore Partecipazione e Servizi al Cittadino",
+      "strategicLines": ["L1", "L4", "L5"],
+      "thematicTags": ["iot", "sensori", "illuminazione", "servizi digitali", "accessibilita"],
+      "summary": "Infrastrutturazione IoT per l'illuminazione adattiva, monitoraggio parcheggi disabili, banchine smart e accesso ai servizi nei quartieri.",
+      "fundingNeeds": "Bandi regionali Smart City, FESR Asse 1.",
+      "estimatedBudget": "€ 250.000 - 600.000",
+      "keywords": ["smart city", "iot", "sensori", "servizi digitali", "quartieri", "cittadino"]
+    },
+    {
+      "id": "re-proj-data-governance",
+      "name": "Data Governance",
+      "mode": "example",
+      "sector": "Interoperabilità e valorizzazione patrimonio informativo",
+      "leadDepartment": "Direzione Generale / Servizi Informatici",
+      "strategicLines": ["L4"],
+      "thematicTags": ["interoperabilita", "open data", "pdnd", "sicurezza", "agid"],
+      "summary": "Armonizzazione architetturale, adesione completa alla PDND (Piattaforma Digitale Nazionale Dati) e apertura banche dati civiche.",
+      "fundingNeeds": "Misure PNRR 1.3.1 (PDND), Avvisi Dipartimento Trasformazione Digitale.",
+      "estimatedBudget": "€ 100.000 - 250.000",
+      "keywords": ["governance", "pdnd", "open data", "dati", "interoperabilita", "agid", "sicurezza"]
+    },
+    {
+      "id": "re-proj-innovazione-amm",
+      "name": "Innovazione Amministrativa",
+      "mode": "example",
+      "sector": "Riorganizzazione processi e competenze PA",
+      "leadDepartment": "Settore Risorse Umane e Organizzazione",
+      "strategicLines": ["L4"],
+      "thematicTags": ["formazione", "processi", "semplificazione", "competenze", "lep"],
+      "summary": "Riprogettazione dei processi comunali, introduzione di flussi digitali integrati, assunzioni mirate e upskilling del personale.",
+      "fundingNeeds": "FSE+, Fondo Povertà (per profili sociali/LEPS), Dipartimento Funzione Pubblica.",
+      "estimatedBudget": "€ 120.000 - 350.000",
+      "keywords": ["innovazione", "processi", "amministrazione", "semplificazione", "formazione", "personale", "sociali"]
+    },
+    {
+      "id": "re-proj-rigenerazione-urbana",
+      "name": "Rigenerazione Urbana",
+      "mode": "example",
+      "sector": "Riqualificazione spazi, patrimonio e quartieri",
+      "leadDepartment": "Settore Rigenerazione Urbana e Valorizzazione Patrimonio",
+      "strategicLines": ["L1", "L3", "L5", "L6"],
+      "thematicTags": ["patrimonio", "aree dismesse", "spazi pubblici", "edilizia sociale", "cultura"],
+      "summary": "Riqualificazione del patrimonio pubblico dismesso, potenziamento degli spazi culturali, laboratori aperti e parchi urbani inclusivi.",
+      "fundingNeeds": "Bandi MIMIT/MIC, FESR Rigenerazione Urbana, Fondazioni Bancarie (es. Manodori), EUI.",
+      "estimatedBudget": "€ 800.000 - 2.500.000",
+      "keywords": ["rigenerazione", "patrimonio", "immobili", "quartieri", "urbana", "spazi", "verde", "riqualificazione"]
+    }
+  ]
+}

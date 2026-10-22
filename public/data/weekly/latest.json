@@ -1,0 +1,193 @@
+{
+  "edition_id": "RE-FUNDING-2026-W44",
+  "generated_at": "2026-10-22T07:13:25.864Z",
+  "week_start": "2026-W44",
+  "week_end": "2026-W44",
+  "status": "READY",
+  "quality_passed": true,
+  "item_count": 122,
+  "selected_count": 10,
+  "summary": "Edizione settimanale RE-FUNDING-2026-W44 con 10 opportunità prioritarie verificate.",
+  "html_link": "https://ComuneReggioEmilia.github.io/osservatorio-bandi-re/newsletter/2026-W44.html",
+  "selected_opportunities": [
+    {
+      "id": "re-bando-d3b1d4c900",
+      "titolo": "FEAMPA - Riqualificazione marina e dei corsi d'acqua",
+      "ente": "Regione Emilia-Romagna - Agricoltura, caccia e pesca",
+      "scadenza": "2026-11-09",
+      "scadenza_label": "09/11/2026",
+      "beneficiari": "Amministrazioni comunali",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://agricoltura.regione.emilia-romagna.it/feampa-2021-2027/bandi/2026/feampa-riqualificazione-marina-e-corsi-acqua",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Regione Emilia-Romagna - Agricoltura, caccia e pesca",
+      "score": 100,
+      "linee": [
+        "L3"
+      ]
+    },
+    {
+      "id": "re-bando-25dc9bde2f",
+      "titolo": "I3-2026-INV1 e I3-2026-INV2a - Interregional Innovation Investments (Strand 1 e Strand 2a)",
+      "ente": "Commissione europea / EISMEA",
+      "scadenza": "2026-11-12",
+      "scadenza_label": "12/11/2026",
+      "beneficiari": "Consorzi interregionali di soggetti pubblici e privati (autorita locali e regionali, cluster, imprese, universita); condizioni dettagliate nel call document (n.d. sulla scheda topic).",
+      "intensita_aiuto": "I3-2026-INV1: 28.200.000 EUR; I3-2026-INV2a: 30.200.000 EUR",
+      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/I3-2026-INV1",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Commissione europea / EISMEA",
+      "score": 100,
+      "linee": [
+        "L2",
+        "L3",
+        "L6"
+      ]
+    },
+    {
+      "id": "re-bando-f57fd310d1",
+      "titolo": "HORIZON-NEB-2026-01 (destinazione BUSINESS) - Marginalita abitativa, investimenti e riuso di spazi vacanti o sottoutilizzati",
+      "ente": "Commissione europea",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
+      "intensita_aiuto": "BUSINESS-01 10.500.000 EUR (3 progetti); BUSINESS-02 7.000.000 EUR (2 progetti); BUSINESS-03 9.000.000 EUR (2 progetti)",
+      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-BUSINESS-01",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Commissione europea",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5",
+        "L2"
+      ]
+    },
+    {
+      "id": "re-bando-22f6ed865c",
+      "titolo": "HORIZON-NEB-2026-01 (destinazione PARTICIPATION) - Quartieri belli, inclusivi e sostenibili: senza dimora, design degli spazi e benessere degli abitanti",
+      "ente": "Commissione europea",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
+      "intensita_aiuto": "PARTICIPATION-01 12.600.000 EUR (2 progetti); PARTICIPATION-02 10.000.000 EUR (2 progetti); PARTICIPATION-03 15.000.000 EUR (3 progetti)",
+      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-PARTICIPATION-01",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Commissione europea",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5",
+        "L3"
+      ]
+    },
+    {
+      "id": "re-bando-3fd27fee60",
+      "titolo": "HORIZON-NEB-2026-01 (destinazione REGEN) - Rigenerazione dell'ambiente costruito: comfort termico, manutenzione degli edifici e uso dello spazio verticale",
+      "ente": "Commissione europea",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
+      "intensita_aiuto": "REGEN-01 12.000.000 EUR (3 progetti); REGEN-02 10.000.000 EUR (2 progetti); REGEN-03 15.000.000 EUR (3 progetti)",
+      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-REGEN-01",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Commissione europea",
+      "score": 100,
+      "linee": [
+        "L3",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-0daf149e54",
+      "titolo": "Avviso pubblico per la selezione di eventi sportivi di rilevanza nazionale e internazionale 2026",
+      "ente": "Dipartimento per lo Sport - PCM",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "ASD/SSD, comitati organizzatori, federazioni sportive, EPS, enti e società pubbliche o private con titolo di esclusività nell'organizzazione dell'evento (quindi anche Comuni titolari dell'evento)",
+      "intensita_aiuto": "7.500.000 euro",
+      "fonte_url": "https://www.sport.governo.it/it/bandi-e-avvisi/realizzazione-di-eventi-sportivi-di-rilevanza-nazionale-ed-internazionale/avviso-2026/pubblicato-il-nuovo-avviso-per-la-selezione-di-eventi-sportivi-di-rilevanza-nazionale-e-internazionale-2026/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Dipartimento per lo Sport - PCM",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L2"
+      ]
+    },
+    {
+      "id": "re-bando-9dd80a97c2",
+      "titolo": "Accordi di investimento e servizi per l'attrattività",
+      "ente": "Regione Emilia-Romagna - Imprese e attività produttive",
+      "scadenza": "2026-12-15",
+      "scadenza_label": "15/12/2026",
+      "beneficiari": "Enti pubblici, Università",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://imprese.regione.emilia-romagna.it/leggi-atti-bandi/tutti-i-bandi/internazionalizzazione/accordi-di-investimento-e-servizi",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Regione Emilia-Romagna - Imprese e attività produttive",
+      "score": 100,
+      "linee": [
+        "L2",
+        "L6"
+      ]
+    },
+    {
+      "id": "re-bando-e1cd9c0d1b",
+      "titolo": "Bando Welfare 2026_11/16 — progetti per preadolescenti e adolescenti (11-14 anni)",
+      "ente": "Fondazione Pietro Manodori (Reggio Emilia)",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Alleanze tra enti del terzo settore, istituzioni, realtà ecclesiastiche e famiglie operanti sul territorio reggiano. Il Comune di Reggio Emilia è ammissibile come partner istituzionale delle alleanze territoriali (già partner in progetti Manodori, es. «Sottosopra»).",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://www.fondazionemanodori.it/contributi/bando-welfare-2026/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Pietro Manodori (Reggio Emilia)",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-b48c017517",
+      "titolo": "Cammini e vie di pellegrinaggio",
+      "ente": "Regione Emilia-Romagna - Turismo",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti del Terzo settore ed enti pubblici",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://imprese.regione.emilia-romagna.it/leggi-atti-bandi/tutti-i-bandi/turismo/cammini-e-vie-di-pellegrinaggio",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Regione Emilia-Romagna - Turismo",
+      "score": 100,
+      "linee": [
+        "L2",
+        "L6"
+      ]
+    },
+    {
+      "id": "re-bando-aec350f8e0",
+      "titolo": "Contributi di Reale Foundation",
+      "ente": "Reale Foundation (Gruppo Reale Mutua)",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti non profit (secondo la scheda consultata); ruolo degli enti pubblici non specificato (n.d.).",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://www.cesvot.it/consulenza/bandi/contributi-di-reale-foundation",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Reale Foundation (Gruppo Reale Mutua)",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L3"
+      ]
+    }
+  ],
+  "quality_report": {
+    "total_records": 122,
+    "valid_records": 122,
+    "open_or_rolling": 28,
+    "urgent_30d": 21,
+    "unverified_excluded": 94
+  }
+}

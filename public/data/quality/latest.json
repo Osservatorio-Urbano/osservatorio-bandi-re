@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-10-22T07:13:24.974Z",
+  "dataset_version": "2.0.0-canonical",
+  "total_records": 122,
+  "schema_valid": true,
+  "duplicates_found": 0,
+  "invalid_urls": 0,
+  "freshness_hours": 0,
+  "status": "PASSED",
+  "checks": [
+    {
+      "name": "Zod Canonical Schema Validation",
+      "passed": true,
+      "details": "Tutti i campi obbligatori e i vincoli di tipo sono conformi allo schema 2.0."
+    },
+    {
+      "name": "Volume & Completeness Check",
+      "passed": true,
+      "details": "Trovati 122 record (soglia minima >= 100 rispettata)."
+    },
+    {
+      "name": "ID Uniqueness & Deduplication",
+      "passed": true,
+      "details": "Nessun identificativo duplicato rilevato nel dataset."
+    },
+    {
+      "name": "Canonical URL Integrity",
+      "passed": true,
+      "details": "Tutti i 122 URL sono formalmente validi con protocollo HTTP/HTTPS."
+    },
+    {
+      "name": "Dataset Freshness Policy",
+      "passed": true,
+      "details": "Data metadati: 2026-10-22. Coerente con la finestra temporale di osservatorio."
+    },
+    {
+      "name": "State & Score Consistency",
+      "passed": true,
+      "details": "Nessun bando chiuso presenta score sproporzionatamente elevato."
+    }
+  ]
+}

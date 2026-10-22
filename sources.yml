@@ -1,0 +1,82 @@
+# Fonti autorizzate per l'Osservatorio Bandi Reggio Emilia
+# Nessuna fabbricazione di endpoint; rispetta termini d'uso, robots.txt e rate limiting
+
+sources:
+  - id: mlps
+    name: "Ministero del Lavoro e delle Politiche Sociali"
+    domain: "lavoro.gov.it"
+    type: "nazionale_pnrr"
+    reliability_tier: 1
+    landing_url: "https://www.lavoro.gov.it/notizie"
+    method: "html_scrape"
+    cadence: "weekly"
+    selector_hint: "article.news-item"
+
+  - id: regione_er_imprese
+    name: "Regione Emilia-Romagna - Bandi e Finanziamenti"
+    domain: "regione.emilia-romagna.it"
+    type: "regione_er"
+    reliability_tier: 1
+    landing_url: "https://www.regione.emilia-romagna.it/opportunita/bandi"
+    method: "html_scrape"
+    cadence: "daily"
+
+  - id: fesr_er
+    name: "PR FESR Emilia-Romagna 2021-2027"
+    domain: "fesr.regione.emilia-romagna.it"
+    type: "regione_er"
+    reliability_tier: 1
+    landing_url: "https://fesr.regione.emilia-romagna.it/opportunita"
+    method: "html_scrape"
+    cadence: "daily"
+
+  - id: fse_er
+    name: "PR FSE+ Emilia-Romagna 2021-2027"
+    domain: "fse.regione.emilia-romagna.it"
+    type: "regione_er"
+    reliability_tier: 1
+    landing_url: "https://fse.regione.emilia-romagna.it/bandi"
+    method: "html_scrape"
+    cadence: "daily"
+
+  - id: fondazione_manodori
+    name: "Fondazione Cassa di Risparmio di Reggio Emilia Pietro Manodori"
+    domain: "fondazionemanodori.it"
+    type: "fondazioni"
+    reliability_tier: 2
+    landing_url: "https://fondazionemanodori.it/bandi"
+    method: "html_scrape"
+    cadence: "weekly"
+
+  - id: fondazione_cariparma
+    name: "Fondazione Cariparma"
+    domain: "fondazionecariparma.it"
+    type: "fondazioni"
+    reliability_tier: 2
+    landing_url: "https://www.fondazionecariparma.it/bandi"
+    method: "weekly"
+
+  - id: ec_funding_tenders
+    name: "European Commission Funding & Tenders Portal"
+    domain: "ec.europa.eu"
+    type: "ue"
+    reliability_tier: 1
+    landing_url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search"
+    method: "html_scrape"
+    cadence: "daily"
+
+  - id: interreg_central
+    name: "Interreg Central Europe"
+    domain: "interreg-central.eu"
+    type: "ue"
+    reliability_tier: 1
+    landing_url: "https://www.interreg-central.eu/calls"
+    method: "weekly"
+
+  - id: urban_innovative_actions
+    name: "European Urban Initiative (EUI)"
+    domain: "urban-initiative.eu"
+    type: "ue"
+    reliability_tier: 1
+    landing_url: "https://www.urban-initiative.eu/calls"
+    method: "weekly"

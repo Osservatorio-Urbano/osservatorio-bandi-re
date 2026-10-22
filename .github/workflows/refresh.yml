@@ -1,0 +1,53 @@
+name: Aggiornamento Quotidiano Fonti
+
+on:
+  schedule:
+    # Esegue ogni giorno alle 03:00 UTC (circa 04:00/05:00 Europe/Rome)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dataset-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codice
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Installa dipendenze
+        run: npm ci
+
+      - name: Esegui Ingestion modulare
+        run: node scripts/ingest.mjs
+
+      - name: Verifica Quality Gate (Fail Closed)
+        run: node scripts/quality-gate.mjs
+
+      - name: Esegui Test Automatici
+        run: npm test
+
+      - name: Commit e Push aggiornamenti dataset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/
+          if git diff --staged --quiet; then
+            echo "Nessun aggiornamento nel dataset."
+          else
+            git commit -m "chore(data): aggiornamento quotidiano dataset bandi [skip ci]"
+            git push
+          fi

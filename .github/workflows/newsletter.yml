@@ -1,0 +1,100 @@
+name: Generazione Newsletter Settimanale & Feed RSS
+
+on:
+  schedule:
+    # Pianificato per lunedì ore 06:15 Europe/Rome:
+    # - Durante ora solare (CET, UTC+1): 05:15 UTC -> cron '15 5 * * 1'
+    # - Durante ora legale (CEST, UTC+2): 04:15 UTC -> cron '15 4 * * 1'
+    # Il guard Node.js successivo verifica l'ora locale esatta di Roma ed evita doppie esecuzioni.
+    - cron: '15 4,5 * * 1'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Forza esecuzione ignorando il controllo orario'
+        type: boolean
+        default: true
+      week_override:
+        description: 'Settimana specifica (es. 2026-W44, facoltativo)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-newsletter
+  cancel-in-progress: false
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codice
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Installa dipendenze
+        run: npm ci
+
+      - name: Timezone Guard Europe/Rome
+        id: tz_guard
+        run: |
+          node -e "
+            const isManual = '${{ github.event_name }}' === 'workflow_dispatch';
+            if (isManual) {
+              console.log('Esecuzione manuale via workflow_dispatch: controllo orario saltato.');
+              process.exit(0);
+            }
+            const formatter = new Intl.DateTimeFormat('en-US', {
+              timeZone: 'Europe/Rome',
+              hour: 'numeric',
+              minute: 'numeric',
+              hour12: false
+            });
+            const parts = formatter.formatToParts(new Date());
+            const hour = parseInt(parts.find(p => p.type === 'hour').value, 10);
+            const minute = parseInt(parts.find(p => p.type === 'minute').value, 10);
+            console.log('Ora corrente a Roma:', hour + ':' + String(minute).padStart(2, '0'));
+            // Accetta esecuzioni tra le 06:00 e le 06:45 Europe/Rome
+            if (hour === 6 && minute >= 0 && minute <= 45) {
+              console.log('Finestra oraria valida (06:00-06:45 Roma). Procedo.');
+              process.exit(0);
+            } else {
+              console.log('Al di fuori della finestra 06:15 Roma (probabile secondo trigger per ora legale/solare). Skip silenzioso.');
+              process.exit(78);
+            }
+          "
+        continue-on-error: false
+
+      - name: Verifica Quality Gate (Fail Closed)
+        run: node scripts/quality-gate.mjs
+
+      - name: Genera Newsletter e Feed RSS
+        run: |
+          if [ -n "${{ github.event.inputs.week_override }}" ]; then
+            node scripts/generate-newsletter.mjs --week "${{ github.event.inputs.week_override }}"
+          else
+            node scripts/generate-newsletter.mjs
+          fi
+
+      - name: Test validazione Feed RSS generato
+        run: npx vitest run tests/newsletter-rss.test.ts
+
+      - name: Commit e Push Newsletter ed Edizioni
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/newsletter/ public/data/weekly/
+          if git diff --staged --quiet; then
+            echo "Nessun cambiamento nei file di newsletter."
+          else
+            git commit -m "chore(newsletter): emissione settimanale $(date +'%Y-W%V') [skip ci]"
+            git push
+          fi

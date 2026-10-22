@@ -1,0 +1,40 @@
+# Dipendenze
+node_modules/
+.pnp
+.pnp.js
+
+# Build di produzione
+dist/
+dist-ssr/
+*.local
+
+# Editor e OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Log e report temporanei
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.vitest/
+
+# Ambiente e segreti (nessun segreto deve essere committato)
+.env
+.env*.local
+*.pem
+*.key
+
+# Archivi e sorgenti legacy
+legacy_src/
+spec_docs/
+*.zip
+Osservatorio Bandi Reggio Emilia/
