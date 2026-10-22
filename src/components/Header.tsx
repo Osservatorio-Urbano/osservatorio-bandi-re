@@ -24,20 +24,28 @@ export const Header: React.FC<HeaderProps> = ({
   return (
     <header className="topbar">
       <div className="brand">
-        <svg className="logo" viewBox="0 0 32 32" aria-label="Osservatorio Bandi Logo" fill="none">
-          <rect x="2.5" y="2.5" width="27" height="27" rx="4" stroke="currentColor" strokeWidth="2" />
-          <path d="M9 22V15M16 22V10M23 22V18" stroke="currentColor" strokeWidth="2.6" strokeLinecap="square" />
-        </svg>
+        <a href="#/dashboard" className="brand-logo-link" title="Torna alla Dashboard">
+          <img
+            src="./reggio-emilia.png"
+            alt="Logo Comune di Reggio Emilia"
+            className="brand-logo-img"
+          />
+        </a>
+
+        <div className="brand-divider" aria-hidden="true" />
+
         <div className="brand-text">
-          <span className="brand-title">Osservatorio Bandi — Reggio Emilia</span>
+          <span className="brand-title">Osservatorio Bandi</span>
           <span className="brand-sub">Comune di Reggio Emilia · Mandato 2024-2029 · Funding Intelligence</span>
         </div>
       </div>
 
       <div className="topbar-meta">
-        <span className="meta-item" title="Data di aggiornamento consolidato">
-          Aggiornato: <strong>{meta ? meta.aggiornato : '2026-10-22'}</strong>
-        </span>
+        <div className="live-status-pill" title="Stato del dataset consolidato">
+          <span className="pulse-dot" aria-hidden="true" />
+          <span>Aggiornato: <strong>{meta ? meta.aggiornato : '2026-10-22'}</strong></span>
+        </div>
+
         <button
           className="btn"
           type="button"
@@ -47,6 +55,7 @@ export const Header: React.FC<HeaderProps> = ({
           <Download size={14} />
           Esporta CSV
         </button>
+
         <button
           className="btn btn-ghost"
           type="button"
@@ -56,6 +65,7 @@ export const Header: React.FC<HeaderProps> = ({
           <FileText size={14} />
           JSON
         </button>
+
         <button
           className="btn btn-icon"
           type="button"
@@ -65,12 +75,13 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <Printer size={16} />
         </button>
+
         <button
           className="btn btn-icon"
           type="button"
           onClick={onToggleTheme}
           aria-label={`Passa a tema ${theme === 'dark' ? 'chiaro' : 'scuro'}`}
-          title={`Tema: ${theme}`}
+          title={`Tema attivo: ${theme}`}
         >
           {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
         </button>

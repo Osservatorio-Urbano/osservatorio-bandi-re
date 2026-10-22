@@ -311,6 +311,26 @@ export const App: React.FC = () => {
         {/* Tab 1: DASHBOARD */}
         {activeTab === 'dashboard' && (
           <>
+            <section className="hero-banner" aria-label="Introduzione istituzionale">
+              <div className="hero-content">
+                <div className="hero-badge">
+                  <span className="pulse-dot" aria-hidden="true" />
+                  <span>Mandato 2024-2029 · Monitoraggio Strategico DUP</span>
+                </div>
+                <h1 className="hero-title">Funding Intelligence &amp; Osservatorio Bandi</h1>
+                <p className="hero-desc">
+                  Presidio continuativo delle opportunità di finanziamento europee, nazionali e regionali per il Comune di Reggio Emilia, l&apos;Unione dei Comuni e gli enti del territorio.
+                </p>
+              </div>
+              <div className="hero-logo-box">
+                <img
+                  src="./reggio-emilia.png"
+                  alt="Stemma e Logo Ufficiale Comune di Reggio Emilia"
+                  className="hero-logo"
+                />
+              </div>
+            </section>
+
             <KpiCards bandi={bandi} />
             <LineGrid
               bandi={bandi}
