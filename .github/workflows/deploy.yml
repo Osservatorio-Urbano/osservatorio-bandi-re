@@ -46,7 +46,7 @@ jobs:
 
       - name: Build Applicazione Vite
         env:
-          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path || './' }}
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path || '/osservatorio-bandi-re/' }}
         run: npm run build
 
       - name: Carica Artifact Pages

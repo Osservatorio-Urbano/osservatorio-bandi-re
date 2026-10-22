@@ -33,8 +33,7 @@ lerna-debug.log*
 *.pem
 *.key
 
-# Archivi e sorgenti legacy
-legacy_src/
+# Archivi e sorgenti
 spec_docs/
 *.zip
 Osservatorio Bandi Reggio Emilia/
