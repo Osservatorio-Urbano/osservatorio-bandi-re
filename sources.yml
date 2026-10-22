@@ -1,82 +1,111 @@
-# Fonti autorizzate per l'Osservatorio Bandi Reggio Emilia
-# Nessuna fabbricazione di endpoint; rispetta termini d'uso, robots.txt e rate limiting
+# ==============================================================================
+# REGISTRO FONTI UFFICIALI & STATO CONNETTORI — RE FUNDING INTELLIGENCE
+# Distinzione rigorosa tra fonti operative (interrogate) e previste (future)
+# ==============================================================================
 
 sources:
-  - id: mlps
-    name: "Ministero del Lavoro e delle Politiche Sociali"
-    domain: "lavoro.gov.it"
-    type: "nazionale_pnrr"
-    reliability_tier: 1
-    landing_url: "https://www.lavoro.gov.it/notizie"
-    method: "html_scrape"
-    cadence: "weekly"
-    selector_hint: "article.news-item"
-
-  - id: regione_er_imprese
-    name: "Regione Emilia-Romagna - Bandi e Finanziamenti"
-    domain: "regione.emilia-romagna.it"
-    type: "regione_er"
-    reliability_tier: 1
-    landing_url: "https://www.regione.emilia-romagna.it/opportunita/bandi"
-    method: "html_scrape"
-    cadence: "daily"
-
+  # ----------------------------------------------------------------------------
+  # FONTI OPERATIVE (Connettori attivi eseguiti ad ogni ciclo di ingestion)
+  # ----------------------------------------------------------------------------
   - id: fesr_er
     name: "PR FESR Emilia-Romagna 2021-2027"
     domain: "fesr.regione.emilia-romagna.it"
     type: "regione_er"
+    status: "operativa"
     reliability_tier: 1
-    landing_url: "https://fesr.regione.emilia-romagna.it/opportunita"
-    method: "html_scrape"
+    method: "rss_2_0"
+    endpoint_url: "https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS"
+    fallback_url: "https://fesr.regione.emilia-romagna.it/opportunita/RSS"
     cadence: "daily"
+    connector_module: "scripts/connectors/fesr-er.mjs"
 
-  - id: fse_er
-    name: "PR FSE+ Emilia-Romagna 2021-2027"
-    domain: "fse.regione.emilia-romagna.it"
+  - id: energia_ambiente_er
+    name: "Regione Emilia-Romagna - Energia, Clima & Ambiente"
+    domain: "energia.regione.emilia-romagna.it"
     type: "regione_er"
+    status: "operativa"
     reliability_tier: 1
-    landing_url: "https://fse.regione.emilia-romagna.it/bandi"
-    method: "html_scrape"
+    method: "rss_2_0"
+    endpoint_url: "https://energia.regione.emilia-romagna.it/bandi/RSS"
+    fallback_url: "https://ambiente.regione.emilia-romagna.it/it/bandi/RSS"
     cadence: "daily"
+    connector_module: "scripts/connectors/fesr-er.mjs"
+
+  - id: pa_digitale_2026
+    name: "PA Digitale 2026 (Dipartimento per la trasformazione digitale - PNRR)"
+    domain: "padigitale2026.gov.it"
+    type: "nazionale_pnrr"
+    status: "operativa"
+    reliability_tier: 1
+    method: "open_data_portal"
+    endpoint_url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_avvisi"
+    landing_url: "https://padigitale2026.gov.it/avvisi/"
+    cadence: "daily"
+    connector_module: "scripts/connectors/padigitale.mjs"
+
+  - id: ec_funding_tenders
+    name: "European Commission Funding & Tenders Portal (API SEDIA)"
+    domain: "ec.europa.eu"
+    type: "ue"
+    status: "operativa"
+    reliability_tier: 1
+    method: "api_rest"
+    endpoint_url: "https://api.tech.ec.europa.eu/search-api/prod/rest/search?apiKey=SEDIA&text=urban+cities+climate+digital+social"
+    landing_url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search"
+    cadence: "daily"
+    connector_module: "scripts/connectors/eu-sedia.mjs"
 
   - id: fondazione_manodori
     name: "Fondazione Cassa di Risparmio di Reggio Emilia Pietro Manodori"
     domain: "fondazionemanodori.it"
     type: "fondazioni"
+    status: "operativa"
     reliability_tier: 2
-    landing_url: "https://fondazionemanodori.it/bandi"
     method: "html_scrape"
+    landing_url: "https://www.fondazionemanodori.it/bandi"
     cadence: "weekly"
+    connector_module: "scripts/connectors/fondazioni.mjs"
 
   - id: fondazione_cariparma
     name: "Fondazione Cariparma"
     domain: "fondazionecariparma.it"
     type: "fondazioni"
+    status: "operativa"
     reliability_tier: 2
-    landing_url: "https://www.fondazionecariparma.it/bandi"
-    method: "weekly"
-
-  - id: ec_funding_tenders
-    name: "European Commission Funding & Tenders Portal"
-    domain: "ec.europa.eu"
-    type: "ue"
-    reliability_tier: 1
-    landing_url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-search"
     method: "html_scrape"
-    cadence: "daily"
+    landing_url: "https://www.fondazionecariparma.it/bandi"
+    cadence: "weekly"
+    connector_module: "scripts/connectors/fondazioni.mjs"
+
+  # ----------------------------------------------------------------------------
+  # FONTI PREVISTE / IN CORSO DI INTEGRAZIONE (Monitorate a vista senza API pubbliche stabili)
+  # ----------------------------------------------------------------------------
+  - id: mlps_lavoro
+    name: "Ministero del Lavoro e delle Politiche Sociali"
+    domain: "lavoro.gov.it"
+    type: "nazionale_pnrr"
+    status: "prevista"
+    reliability_tier: 1
+    method: "html_scrape"
+    landing_url: "https://www.lavoro.gov.it/notizie"
+    cadence: "weekly"
 
   - id: interreg_central
     name: "Interreg Central Europe"
     domain: "interreg-central.eu"
     type: "ue"
+    status: "prevista"
     reliability_tier: 1
+    method: "html_scrape"
     landing_url: "https://www.interreg-central.eu/calls"
-    method: "weekly"
+    cadence: "weekly"
 
   - id: urban_innovative_actions
     name: "European Urban Initiative (EUI)"
     domain: "urban-initiative.eu"
     type: "ue"
+    status: "prevista"
     reliability_tier: 1
+    method: "html_scrape"
     landing_url: "https://www.urban-initiative.eu/calls"
-    method: "weekly"
+    cadence: "weekly"

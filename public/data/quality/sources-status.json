@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-10-22T07:56:00.780Z",
+  "total_sources_monitored": 7,
+  "active_operative_sources": 4,
+  "planned_sources": 3,
+  "last_scan_date": "2026-10-22",
+  "new_opportunities_found": 24,
+  "updated_opportunities": 3,
+  "expired_opportunities": 1,
+  "sources": [
+    {
+      "id": "fesr_er",
+      "name": "PR FESR ed Energia Emilia-Romagna",
+      "method": "rss_2_0",
+      "status": "operativa",
+      "last_scanned_at": "2026-10-22T07:55:56.128Z",
+      "items_acquired": 14,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 338,
+      "endpoint_reachable": true
+    },
+    {
+      "id": "pa_digitale_2026",
+      "name": "PA Digitale 2026 (PNRR)",
+      "method": "open_data_portal",
+      "status": "operativa",
+      "last_scanned_at": "2026-10-22T07:55:56.489Z",
+      "items_acquired": 5,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 355,
+      "endpoint_reachable": true
+    },
+    {
+      "id": "ec_funding_tenders",
+      "name": "European Commission SEDIA API",
+      "method": "api_rest",
+      "status": "operativa",
+      "last_scanned_at": "2026-10-22T07:55:56.869Z",
+      "items_acquired": 10,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 379,
+      "endpoint_reachable": true
+    },
+    {
+      "id": "fondazioni_territoriali",
+      "name": "Fondazioni Manodori e Cariparma",
+      "method": "html_scrape",
+      "status": "operativa",
+      "last_scanned_at": "2026-10-22T07:56:00.746Z",
+      "items_acquired": 3,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 3877,
+      "endpoint_reachable": true
+    },
+    {
+      "id": "mlps_lavoro",
+      "name": "Ministero del Lavoro e delle Politiche Sociali",
+      "method": "html_scrape",
+      "status": "prevista",
+      "last_scanned_at": null,
+      "items_acquired": 0,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 0,
+      "endpoint_reachable": null,
+      "note": "Fonte monitorata in modalità pianificata; integrazione connettore automatico programmata."
+    },
+    {
+      "id": "interreg_central",
+      "name": "Interreg Central Europe",
+      "method": "html_scrape",
+      "status": "prevista",
+      "last_scanned_at": null,
+      "items_acquired": 0,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 0,
+      "endpoint_reachable": null,
+      "note": "Fonte monitorata in modalità pianificata; integrazione connettore automatico programmata."
+    },
+    {
+      "id": "urban_innovative_actions",
+      "name": "European Urban Initiative (EUI)",
+      "method": "html_scrape",
+      "status": "prevista",
+      "last_scanned_at": null,
+      "items_acquired": 0,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 0,
+      "endpoint_reachable": null,
+      "note": "Fonte monitorata in modalità pianificata; integrazione connettore automatico programmata."
+    }
+  ]
+}

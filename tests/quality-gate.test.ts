@@ -18,6 +18,6 @@ describe('Verifica Quality Gate', () => {
     expect(raw.schema_valid).toBe(true);
     expect(raw.duplicates_found).toBe(0);
     expect(raw.invalid_urls).toBe(0);
-    expect(raw.total_records).toBe(122);
+    expect(raw.total_records).toBeGreaterThanOrEqual(122);
   });
 });

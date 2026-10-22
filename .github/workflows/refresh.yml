@@ -2,8 +2,11 @@ name: Aggiornamento Quotidiano Fonti
 
 on:
   schedule:
-    # Esegue ogni giorno alle 03:00 UTC (circa 04:00/05:00 Europe/Rome)
-    - cron: '0 3 * * *'
+    # Pianificato ogni giorno alle ore 06:30 Europe/Rome:
+    # - Durante ora solare (CET, UTC+1): 05:30 UTC -> '30 5 * * *'
+    # - Durante ora legale (CEST, UTC+2): 04:30 UTC -> '30 4 * * *'
+    # Il guard Node.js successivo verifica l'ora locale esatta di Roma ed evita doppie esecuzioni.
+    - cron: '30 4,5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -31,23 +34,56 @@ jobs:
       - name: Installa dipendenze
         run: npm ci
 
-      - name: Esegui Ingestion modulare
+      - name: Timezone Guard Europe/Rome (06:30)
+        id: tz_guard
+        run: |
+          node -e "
+            const isManual = '${{ github.event_name }}' === 'workflow_dispatch';
+            if (isManual) {
+              console.log('Esecuzione manuale via workflow_dispatch: controllo orario saltato.');
+              process.exit(0);
+            }
+            const formatter = new Intl.DateTimeFormat('en-US', {
+              timeZone: 'Europe/Rome',
+              hour: 'numeric',
+              minute: 'numeric',
+              hour12: false
+            });
+            const parts = formatter.formatToParts(new Date());
+            const hour = parseInt(parts.find(p => p.type === 'hour').value, 10);
+            const minute = parseInt(parts.find(p => p.type === 'minute').value, 10);
+            console.log('Ora corrente a Roma:', hour + ':' + String(minute).padStart(2, '0'));
+            // Finestra consentita: 06:15 - 06:45 Europe/Rome
+            if (hour === 6 && minute >= 15 && minute <= 45) {
+              console.log('Finestra oraria valida (06:30 circa Roma). Procedo.');
+              process.exit(0);
+            } else {
+              console.log('Al di fuori della finestra 06:30 Roma. Skip silenzioso per gestione CET/CEST.');
+              process.exit(78);
+            }
+          "
+        continue-on-error: false
+
+      - name: Esegui Ingestion modulare multi-fonte
         run: node scripts/ingest.mjs
+
+      - name: Rigenera Newsletter e Feed RSS sincronizzati
+        run: node scripts/generate-newsletter.mjs
 
       - name: Verifica Quality Gate (Fail Closed)
         run: node scripts/quality-gate.mjs
 
-      - name: Esegui Test Automatici
+      - name: Esegui Test Automatici di Integrità
         run: npm test
 
-      - name: Commit e Push aggiornamenti dataset
+      - name: Commit e Push aggiornamenti dataset e feed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/
+          git add public/data/ public/newsletter/
           if git diff --staged --quiet; then
             echo "Nessun aggiornamento nel dataset."
           else
-            git commit -m "chore(data): aggiornamento quotidiano dataset bandi [skip ci]"
+            git commit -m "chore(data): aggiornamento quotidiano dataset bandi e feed RSS [skip ci]"
             git push
           fi

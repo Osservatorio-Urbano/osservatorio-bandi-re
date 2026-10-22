@@ -1,11 +1,11 @@
 {
   "edition_id": "RE-FUNDING-2026-W44",
-  "generated_at": "2026-10-22T07:23:26.580Z",
+  "generated_at": "2026-10-22T07:56:39.975Z",
   "week_start": "2026-W44",
   "week_end": "2026-W44",
   "status": "READY",
   "quality_passed": true,
-  "item_count": 122,
+  "item_count": 146,
   "selected_count": 10,
   "summary": "Edizione settimanale RE-FUNDING-2026-W44 con 10 opportunità prioritarie verificate.",
   "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W44.html",
@@ -132,6 +132,25 @@
       ]
     },
     {
+      "id": "re-bando-b1a0b6ef6b",
+      "titolo": "Bando Welfare 2026_11/16",
+      "ente": "Fondazione Cassa di Risparmio Pietro Manodori",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://www.fondazionemanodori.it/contributi/bandi/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio Pietro Manodori",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    {
       "id": "re-bando-e1cd9c0d1b",
       "titolo": "Bando Welfare 2026_11/16 — progetti per preadolescenti e adolescenti (11-14 anni)",
       "ente": "Fondazione Pietro Manodori (Reggio Emilia)",
@@ -164,30 +183,13 @@
         "L2",
         "L6"
       ]
-    },
-    {
-      "id": "re-bando-aec350f8e0",
-      "titolo": "Contributi di Reale Foundation",
-      "ente": "Reale Foundation (Gruppo Reale Mutua)",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti non profit (secondo la scheda consultata); ruolo degli enti pubblici non specificato (n.d.).",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://www.cesvot.it/consulenza/bandi/contributi-di-reale-foundation",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Reale Foundation (Gruppo Reale Mutua)",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L3"
-      ]
     }
   ],
   "quality_report": {
-    "total_records": 122,
-    "valid_records": 122,
-    "open_or_rolling": 28,
-    "urgent_30d": 21,
-    "unverified_excluded": 94
+    "total_records": 146,
+    "valid_records": 146,
+    "open_or_rolling": 43,
+    "urgent_30d": 20,
+    "unverified_excluded": 103
   }
 }

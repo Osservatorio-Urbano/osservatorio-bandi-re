@@ -11,6 +11,7 @@ import { TimelineView } from './components/TimelineView.tsx';
 import { ProjectMatchingView } from './components/ProjectMatchingView.tsx';
 import { NewsletterArchiveView } from './components/NewsletterArchiveView.tsx';
 import { MethodologyView } from './components/MethodologyView.tsx';
+import { SourcesStatusView } from './components/SourcesStatusView.tsx';
 import { DisclaimerBanner } from './components/DisclaimerBanner.tsx';
 import type { CanonicalBando, CanonicalDatasetMeta, StrategicLine } from './types/schema.ts';
 
@@ -38,7 +39,7 @@ export const App: React.FC = () => {
   // Navigazione & Hash Routing
   const getTabFromHash = (): NavTabId => {
     const hash = window.location.hash.replace('#/', '').replace('#', '');
-    if (['dashboard', 'bandi', 'scadenziario', 'progetti', 'newsletter', 'metodologia'].includes(hash)) {
+    if (['dashboard', 'bandi', 'scadenziario', 'progetti', 'newsletter', 'metodologia', 'stato-fonti'].includes(hash)) {
       return hash as NavTabId;
     }
     return 'dashboard';
@@ -405,7 +406,12 @@ export const App: React.FC = () => {
           <NewsletterArchiveView />
         )}
 
-        {/* Tab 6: FONTI & METODOLOGIA */}
+        {/* Tab 6: STATO FONTI & PIPELINE */}
+        {activeTab === 'stato-fonti' && (
+          <SourcesStatusView />
+        )}
+
+        {/* Tab 7: FONTI & METODOLOGIA */}
         {activeTab === 'metodologia' && (
           <MethodologyView />
         )}

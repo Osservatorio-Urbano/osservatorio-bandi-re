@@ -1,31 +1,32 @@
 {
   "meta": {
     "aggiornato": "2026-10-22",
-    "totale": 122,
+    "totale": 146,
     "versione_schema": "2.0.0-canonical",
     "territorio": "Comune di Reggio Emilia",
     "fonte_linee_guida": "Nota aggiornamento DUP 2026-2028",
     "statistiche": {
-      "aperti": 21,
-      "sportello": 7,
-      "chiusi": 88,
+      "aperti": 20,
+      "sportello": 23,
+      "chiusi": 97,
       "in_verifica": 6,
       "entro_30_giorni": 13,
       "copertura_linee": {
-        "L1": 65,
-        "L2": 30,
-        "L3": 53,
-        "L4": 44,
-        "L5": 19,
+        "L1": 67,
+        "L2": 37,
+        "L3": 66,
+        "L4": 56,
+        "L5": 23,
         "L6": 17
       },
       "copertura_categorie": {
-        "UE": 78,
-        "Nazionale/PNRR": 10,
-        "Regione ER": 22,
-        "Fondazioni": 12
+        "UE": 85,
+        "Nazionale/PNRR": 11,
+        "Regione ER": 36,
+        "Fondazioni": 14
       }
-    }
+    },
+    "ultima_acquisizione_automatica": "2026-10-22T07:56:00.747Z"
   },
   "bandi": [
     {
@@ -3782,7 +3783,7 @@
       "lastChangedAt": "2026-09-07T08:00:00+02:00",
       "deadline": "2026-09-30",
       "deadlineType": "data",
-      "state": "open",
+      "state": "closed",
       "eligibility": "confirmed",
       "strategicLines": [
         "L3"
@@ -3808,6 +3809,10 @@
         {
           "date": "2026-09-07",
           "note": "Verificato 07/09/2026: confermata la proroga al 30/09/2026 ore 11:00 (Det. n. 10987 del 05/06/2026, termine originario 31/07/2026)."
+        },
+        {
+          "date": "2026-10-22",
+          "note": "Bando archiviato: termini di scadenza trascorsi."
         }
       ],
       "validity": {
@@ -8497,6 +8502,1582 @@
       "validity": {
         "isOfficiallyVerified": true,
         "verificationSource": "Istituto per il Credito Sportivo e Culturale",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-72c8b54610",
+      "original": {
+        "titolo": "Bandi: Investimenti e ricerca per le tecnologie strategiche Step",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR 2021-2027",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "Priorità 5 Pr Fesr 2021-2027",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/investimenti-e-ricerca-per-le-tecnologie-strategiche-step",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z"
+      },
+      "sourceCanonicalUrl": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/investimenti-e-ricerca-per-le-tecnologie-strategiche-step",
+      "sourceDomain": "fesr.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [
+        "innovazione"
+      ],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Priorità 5 Pr Fesr 2021-2027",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/investimenti-e-ricerca-per-le-tecnologie-strategiche-step"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-1f230ca21a",
+      "original": {
+        "titolo": "Bandi: Attrattività coesione e sviluppo territoriale",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR 2021-2027",
+        "categoria": "Regione ER",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Priorità 4 Pr Fesr 2021-2027",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/attrattivita-coesione-e-sviluppo-territoriale",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z"
+      },
+      "sourceCanonicalUrl": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/attrattivita-coesione-e-sviluppo-territoriale",
+      "sourceDomain": "fesr.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [
+        "innovazione"
+      ],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Priorità 4 Pr Fesr 2021-2027",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/attrattivita-coesione-e-sviluppo-territoriale"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-5b6c98e0ca",
+      "original": {
+        "titolo": "Bandi: Mobilità sostenibile e qualità dell'aria",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR 2021-2027",
+        "categoria": "Regione ER",
+        "linee": [
+          "L3"
+        ],
+        "descrizione": "Priorità 3 Pr Fesr 2021-2027",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-3",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z"
+      },
+      "sourceCanonicalUrl": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-3",
+      "sourceDomain": "fesr.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L3"
+      ],
+      "thematicTags": [
+        "mobilita"
+      ],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Priorità 3 Pr Fesr 2021-2027",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-3"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-cdd1d3b460",
+      "original": {
+        "titolo": "Bandi: Sostenibilità, decarbonizzazione, biodiversità e resilienza",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR 2021-2027",
+        "categoria": "Regione ER",
+        "linee": [
+          "L3"
+        ],
+        "descrizione": "Priorità 2 Pr Fesr 2021-2027",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-2",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z"
+      },
+      "sourceCanonicalUrl": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-2",
+      "sourceDomain": "fesr.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L3"
+      ],
+      "thematicTags": [
+        "ambiente"
+      ],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Priorità 2 Pr Fesr 2021-2027",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-2"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-e38e9a9185",
+      "original": {
+        "titolo": "Bandi: Ricerca, innovazione e competitività",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR 2021-2027",
+        "categoria": "Regione ER",
+        "linee": [
+          "L2"
+        ],
+        "descrizione": "Priorità 1 Pr Fesr 2021-2027",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-1",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z"
+      },
+      "sourceCanonicalUrl": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-1",
+      "sourceDomain": "fesr.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://fesr.regione.emilia-romagna.it/opportunita/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2016-01-18T21:30:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L2"
+      ],
+      "thematicTags": [
+        "innovazione"
+      ],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Priorità 1 Pr Fesr 2021-2027",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://fesr.regione.emilia-romagna.it/opportunita/opportunita-di-finanziamento/bandi-21-27/bandi-priorita-1"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-a1b16b7d1d",
+      "original": {
+        "titolo": "Progetti per la realizzazione di impianti di produzione di idrogeno rinnovabile nelle aree industriali dismesse",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L2",
+          "L3"
+        ],
+        "descrizione": "Piano Nazionale di Ripresa e Resilienza (PNRR), Missione 2 Rivoluzione verde e transizione ecologica - Contributi per le imprese",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/progetti-per-la-realizzazione-di-impianti-di-produzione-di-idrogeno-rinnovabile-nelle-aree-industriali-dismesse",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2023-01-17T15:17:00Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/progetti-per-la-realizzazione-di-impianti-di-produzione-di-idrogeno-rinnovabile-nelle-aree-industriali-dismesse",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2023-01-17T15:17:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L2",
+        "L3"
+      ],
+      "thematicTags": [
+        "ambiente"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Piano Nazionale di Ripresa e Resilienza (PNRR), Missione 2 Rivoluzione verde e transizione ecologica - Contributi per le imprese",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/progetti-per-la-realizzazione-di-impianti-di-produzione-di-idrogeno-rinnovabile-nelle-aree-industriali-dismesse"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-8be6ec53f3",
+      "original": {
+        "titolo": "Contributo per la redazione del piano di azione per il clima e e l'energia sostenibile",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L3"
+        ],
+        "descrizione": "Piano energetico regionale - Contributi a sostegno degli Enti locali dell'Emilia-Romagna",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/contributo-per-la-redazione-del-piano-di-azione-per-il-clima-e-e-lenergia-sostenibile-1",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2022-04-04T15:17:00Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/contributo-per-la-redazione-del-piano-di-azione-per-il-clima-e-e-lenergia-sostenibile-1",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2022-04-04T15:17:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L3"
+      ],
+      "thematicTags": [
+        "ambiente"
+      ],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Piano energetico regionale - Contributi a sostegno degli Enti locali dell'Emilia-Romagna",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/contributo-per-la-redazione-del-piano-di-azione-per-il-clima-e-e-lenergia-sostenibile-1"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-807fca1285",
+      "original": {
+        "titolo": "IT - CoM Commitment - group collectively.docx",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "IT - CoM Commitment - group collectively.docx",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/it-com-commitment-group-collectively.docx",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/it-com-commitment-group-collectively.docx",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "IT - CoM Commitment - group collectively.docx",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/it-com-commitment-group-collectively.docx"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-b9476b8dea",
+      "original": {
+        "titolo": "IT - CoM Commitment - group separately.docx",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "IT - CoM Commitment - group separately.docx",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/it-com-commitment-group-separately.docx",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/it-com-commitment-group-separately.docx",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "IT - CoM Commitment - group separately.docx",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/it-com-commitment-group-separately.docx"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-84935ae285",
+      "original": {
+        "titolo": "eumayors-commitment-2021-IT.docx",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "eumayors-commitment-2021-IT.docx",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/eumayors-commitment-2021-it.docx",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/eumayors-commitment-2021-it.docx",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "eumayors-commitment-2021-IT.docx",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/eumayors-commitment-2021-it.docx"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-2bfcd60102",
+      "original": {
+        "titolo": "Documento_finale_GPG2021233.pdf",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "Documento_finale_GPG2021233.pdf",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/documento_finale_gpg2021233.pdf",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/documento_finale_gpg2021233.pdf",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Documento_finale_GPG2021233.pdf",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/documento_finale_gpg2021233.pdf"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-ba6ece927a",
+      "original": {
+        "titolo": "DGR n. 379_2019.pdf",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "DGR n. 379_2019.pdf",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/dgr-n-379_2019.pdf",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/dgr-n-379_2019.pdf",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2024-09-18T10:16:59Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "DGR n. 379_2019.pdf",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/dgr-n-379_2019.pdf"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-8992e2a65b",
+      "original": {
+        "titolo": "Bandi e finanziamenti aperti",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "Bandi e finanziamenti aperti",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/bandi-e-finanziamenti",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2012-03-21T16:35:00Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/bandi-e-finanziamenti",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2012-03-21T16:35:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Bandi e finanziamenti aperti",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/bandi-e-finanziamenti"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-1c9ecda0be",
+      "original": {
+        "titolo": "Bandi e finanziamenti in corso e chiusi",
+        "ente": "Regione Emilia-Romagna",
+        "programma": "PR FESR / PNRR Transizione Ecologica",
+        "categoria": "Regione ER",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "Bandi e finanziamenti in corso e chiusi",
+        "beneficiari": "Comuni, Unioni di Comuni ed Enti Locali dell'Emilia-Romagna, Imprese e Organismi di Ricerca",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/bandi-finanziamenti-in-corso-chiusi",
+        "note": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2013-01-10T14:45:00Z"
+      },
+      "sourceCanonicalUrl": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/bandi-finanziamenti-in-corso-chiusi",
+      "sourceDomain": "energia.regione.emilia-romagna.it",
+      "sourceType": "regione_er",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da feed ufficiale Regione Emilia-Romagna (https://energia.regione.emilia-romagna.it/bandi/RSS) il 2026-10-22. Data pubblicazione fonte: 2013-01-10T14:45:00Z",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Bandi e finanziamenti in corso e chiusi",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Regione Emilia-Romagna",
+          "url": "https://energia.regione.emilia-romagna.it/leggi-atti-bandi/finanziamenti-e-agevolazioni/bandi/bandi-finanziamenti-in-corso-chiusi"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PR FESR ed Energia Emilia-Romagna."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Regione Emilia-Romagna",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-be55c10190",
+      "original": {
+        "titolo": "2.2.3 – “Digitalizzazione delle procedure (SUAP & SUE)” – Adeguamento delle piattaforme SUE - Comuni III Ed.",
+        "ente": "Dipartimento della funzione pubblica",
+        "programma": "PNRR · 2.2.3 Digitalizzazione delle procedure (SUAP e SUE)",
+        "categoria": "Nazionale/PNRR",
+        "linee": [
+          "L4"
+        ],
+        "descrizione": "Avviso pubblico PNRR 2.2.3 Digitalizzazione delle procedure (SUAP e SUE) destinato a: Comuni. Apertura: 2026-06-25. Scadenza: 2026-07-27.",
+        "beneficiari": "Comuni",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "100% fondo perduto (contributo forfettario a voucher PNRR)",
+        "scadenza": "2026-07-27",
+        "scadenza_tipo": "data",
+        "url": "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a01bU00000b9rPlQAI",
+        "note": "Acquisito da portale ufficiale PA Digitale 2026 il 2026-10-22. Stato ufficiale: TERMINATO. Data apertura: 2026-06-25. Scadenza: 2026-07-27."
+      },
+      "sourceCanonicalUrl": "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a01bU00000b9rPlQAI",
+      "sourceDomain": "areariservata.padigitale2026.gov.it",
+      "sourceType": "nazionale_pnrr",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da portale ufficiale PA Digitale 2026 il 2026-10-22. Stato ufficiale: TERMINATO. Data apertura: 2026-06-25. Scadenza: 2026-07-27.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2026-07-27",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L4"
+      ],
+      "thematicTags": [
+        "digitale"
+      ],
+      "score0to100": 40,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Bando concluso per scadenza termini (-40)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Avviso pubblico PNRR 2.2.3 Digitalizzazione delle procedure (SUAP e SUE) destinato a: Comuni. Apertura: 2026-06-25. Scadenza: 2026-07-27.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Dipartimento della funzione pubblica",
+          "url": "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a01bU00000b9rPlQAI"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore PA Digitale 2026 (PNRR)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Dipartimento della funzione pubblica",
+        "verifiedUntil": "2026-07-27"
+      }
+    },
+    {
+      "id": "re-bando-31d79a626c",
+      "original": {
+        "titolo": "Biodiversity loss and enhancing ecosystem services in urban and peri-urban areas",
+        "ente": "Commissione Europea",
+        "programma": "SEDIA_PRD_CENTRICITY",
+        "categoria": "UE",
+        "linee": [
+          "L2",
+          "L3"
+        ],
+        "descrizione": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+        "beneficiari": "Autorità locali e regionali, Città, Università, Centri di ricerca e Consorzi pubblico-privati",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Cofinanziamento UE standard (fino al 70-100% dei costi ammissibili)",
+        "scadenza": "2023-03-28",
+        "scadenza_tipo": "data",
+        "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2023-BIODIV-01-11.json",
+        "note": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2023-BIODIV-01-11.json",
+      "sourceDomain": "ec.europa.eu",
+      "sourceType": "ue",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2023-03-28",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "potential",
+      "strategicLines": [
+        "L2",
+        "L3"
+      ],
+      "thematicTags": [
+        "innovazione",
+        "rigenerazione"
+      ],
+      "score0to100": 30,
+      "scoreReasons": [
+        "Ammissibilità potenziale o in partenariato pubblico-privato (+10)",
+        "Bando concluso per scadenza termini (-40)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Commissione Europea",
+          "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2023-BIODIV-01-11.json"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore European Commission SEDIA API."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Commissione Europea",
+        "verifiedUntil": "2023-03-28"
+      }
+    },
+    {
+      "id": "re-bando-45ed2d81ae",
+      "original": {
+        "titolo": "European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators)",
+        "ente": "Commissione Europea",
+        "programma": "SEDIA",
+        "categoria": "UE",
+        "linee": [
+          "L3",
+          "L4"
+        ],
+        "descrizione": "ELTIS – the Urban Mobility Observatory: project management, website, newsletter, case studies, mini-clips, tools, statistics, city database, SUMP Platform Coordination Group meetings, SUMP dissemination, development of SUMP guidance documents; translations and design, SUMP coordination/outreach, mapping of cities with a SUMP, organisation of Urban Mobility Days 2022, liaison with EU Climate Pact, urban mobility CSAs, EIP SCC platform, EIT Urban Mobility.Sustainable Urban Mobility Indicators (SUMI) and Benchmarking Tool: Following 2020 pilot project, an indicator set (with data for participating cities) and online benchmarking tool was published on Europa/DG MOVE website. Indicator set and benchmarking tool to be updated annually, aiming for broader outreach to cities. Improvements to the methodology of the indicators, (limited) assistance to participating cities (up to 20 cities/year + ‘secretariat’ hotline), data acquisition fund, validation and publication of the results.",
+        "beneficiari": "Autorità locali e regionali, Città, Università, Centri di ricerca e Consorzi pubblico-privati",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Cofinanziamento UE standard (fino al 70-100% dei costi ammissibili)",
+        "scadenza": "2021-09-01",
+        "scadenza_tipo": "data",
+        "url": "https://etendering.ted.europa.eu/cft/cft-display.html?cftId=8483",
+        "note": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://etendering.ted.europa.eu/cft/cft-display.html?cftId=8483",
+      "sourceDomain": "etendering.ted.europa.eu",
+      "sourceType": "ue",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2013-06-04",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "potential",
+      "strategicLines": [
+        "L3",
+        "L4"
+      ],
+      "thematicTags": [
+        "digitale",
+        "ambiente",
+        "rigenerazione",
+        "mobilita"
+      ],
+      "score0to100": 30,
+      "scoreReasons": [
+        "Ammissibilità potenziale o in partenariato pubblico-privato (+10)",
+        "Bando concluso per scadenza termini (-40)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "ELTIS – the Urban Mobility Observatory: project management, website, newsletter, case studies, mini-clips, tools, statistics, city database, SUMP Platform Coordination Group meetings, SUMP dissemination, development of SUMP guidance documents; translations and design, SUMP coordination/outreach, mapping of cities with a SUMP, organisation of Urban Mobility Days 2022, liaison with EU Climate Pact, urban mobility CSAs, EIP SCC platform, EIT Urban Mobility.Sustainable Urban Mobility Indicators (SUMI) and Benchmarking Tool: Following 2020 pilot project, an indicator set (with data for participating cities) and online benchmarking tool was published on Europa/DG MOVE website. Indicator set and benchmarking tool to be updated annually, aiming for broader outreach to cities. Improvements to the methodology of the indicators, (limited) assistance to participating cities (up to 20 cities/year + ‘secretariat’ hotline), data acquisition fund, validation and publication of the results.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Commissione Europea",
+          "url": "https://etendering.ted.europa.eu/cft/cft-display.html?cftId=8483"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore European Commission SEDIA API."
+        },
+        {
+          "date": "2026-10-22",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2021-09-01 a 2013-06-04."
+        },
+        {
+          "date": "2026-10-22",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2013-06-04 a 2014-06-27."
+        },
+        {
+          "date": "2026-10-22",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2014-06-27 a 2013-06-04."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Commissione Europea",
+        "verifiedUntil": "2021-09-01"
+      }
+    },
+    {
+      "id": "re-bando-bae52bc4c3",
+      "original": {
+        "titolo": "Supporting national, regional and local authorities across Europe to prepare for the transition towards climate neutrality within cities",
+        "ente": "Commissione Europea",
+        "programma": "SEDIA_PRD_CENTRICITY",
+        "categoria": "UE",
+        "linee": [
+          "L2",
+          "L3"
+        ],
+        "descrizione": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+        "beneficiari": "Autorità locali e regionali, Città, Università, Centri di ricerca e Consorzi pubblico-privati",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Cofinanziamento UE standard (fino al 70-100% dei costi ammissibili)",
+        "scadenza": "2021-09-14",
+        "scadenza_tipo": "data",
+        "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2021-CIT-01-01.json",
+        "note": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2021-CIT-01-01.json",
+      "sourceDomain": "ec.europa.eu",
+      "sourceType": "ue",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2021-09-14",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "potential",
+      "strategicLines": [
+        "L2",
+        "L3"
+      ],
+      "thematicTags": [
+        "ambiente",
+        "innovazione",
+        "rigenerazione"
+      ],
+      "score0to100": 30,
+      "scoreReasons": [
+        "Ammissibilità potenziale o in partenariato pubblico-privato (+10)",
+        "Bando concluso per scadenza termini (-40)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Commissione Europea",
+          "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2021-CIT-01-01.json"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore European Commission SEDIA API."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Commissione Europea",
+        "verifiedUntil": "2021-09-14"
+      }
+    },
+    {
+      "id": "re-bando-1d1c53d89a",
+      "original": {
+        "titolo": "Urban greening and re-naturing for urban regeneration, resilience and climate neutrality",
+        "ente": "Commissione Europea",
+        "programma": "SEDIA_PRD_CENTRICITY",
+        "categoria": "UE",
+        "linee": [
+          "L2",
+          "L3"
+        ],
+        "descrizione": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+        "beneficiari": "Autorità locali e regionali, Città, Università, Centri di ricerca e Consorzi pubblico-privati",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Cofinanziamento UE standard (fino al 70-100% dei costi ammissibili)",
+        "scadenza": "2023-04-27",
+        "scadenza_tipo": "data",
+        "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-CITIES-01-01.json",
+        "note": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-CITIES-01-01.json",
+      "sourceDomain": "ec.europa.eu",
+      "sourceType": "ue",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2023-04-27",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "potential",
+      "strategicLines": [
+        "L2",
+        "L3"
+      ],
+      "thematicTags": [
+        "ambiente",
+        "innovazione",
+        "rigenerazione"
+      ],
+      "score0to100": 30,
+      "scoreReasons": [
+        "Ammissibilità potenziale o in partenariato pubblico-privato (+10)",
+        "Bando concluso per scadenza termini (-40)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Commissione Europea",
+          "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2023-CLIMA-CITIES-01-01.json"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore European Commission SEDIA API."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Commissione Europea",
+        "verifiedUntil": "2023-04-27"
+      }
+    },
+    {
+      "id": "re-bando-1493e109dc",
+      "original": {
+        "titolo": "Urban planning and design for just, sustainable, resilient and climate-neutral cities by 2030",
+        "ente": "Commissione Europea",
+        "programma": "SEDIA_PRD_CENTRICITY",
+        "categoria": "UE",
+        "linee": [
+          "L2",
+          "L3"
+        ],
+        "descrizione": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+        "beneficiari": "Autorità locali e regionali, Città, Università, Centri di ricerca e Consorzi pubblico-privati",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Cofinanziamento UE standard (fino al 70-100% dei costi ammissibili)",
+        "scadenza": "2022-04-26",
+        "scadenza_tipo": "data",
+        "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2021-CIT-02-01.json",
+        "note": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2021-CIT-02-01.json",
+      "sourceDomain": "ec.europa.eu",
+      "sourceType": "ue",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2022-04-26",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "potential",
+      "strategicLines": [
+        "L2",
+        "L3"
+      ],
+      "thematicTags": [
+        "ambiente",
+        "innovazione",
+        "rigenerazione"
+      ],
+      "score0to100": 30,
+      "scoreReasons": [
+        "Ammissibilità potenziale o in partenariato pubblico-privato (+10)",
+        "Bando concluso per scadenza termini (-40)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Commissione Europea",
+          "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-MISS-2021-CIT-02-01.json"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore European Commission SEDIA API."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Commissione Europea",
+        "verifiedUntil": "2022-04-26"
+      }
+    },
+    {
+      "id": "re-bando-871c4b563b",
+      "original": {
+        "titolo": "International Urban and Regional Cooperation (IURC): EU- Asia & Australasia",
+        "ente": "Commissione Europea",
+        "programma": "SEDIA",
+        "categoria": "UE",
+        "linee": [
+          "L3",
+          "L5"
+        ],
+        "descrizione": "The Action will aim to lead and develop a form of decentralised international urban and regional cooperation for sustainable urban development and innovation in key partner countries, regions and territories of Asia and Australasia, in line with the external dimension of the Urban Agenda for the EU, the EU Green Deal, the Paris Climate Agreement, and the UN New Urban Agenda. In particular: \n\n1)\tConsolidate cooperation between EU and non-EU participating cities in Japan, Republic of Korea, Hong Kong, Taiwan, Singapore, Australia, New Zealand, India, China and Malaysia in order to improve and expand EU cities’ practices and leadership on sustainable urban development. \n2)\tDevelop innovation cooperation between EU regions and regions or provinces in Australia, Japan, and the Republic of Korea.  \n3)\tConsolidate an EU-led network of urban excellence, which references and connects innovative, successful and inspiring urban and regional development practices to accelerate the green and just transition. \n4)\tSupport business opportunities for EU companies providing innovation and urban services and solutions.",
+        "beneficiari": "Autorità locali e regionali, Città, Università, Centri di ricerca e Consorzi pubblico-privati",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Cofinanziamento UE standard (fino al 70-100% dei costi ammissibili)",
+        "scadenza": "2024-04-22",
+        "scadenza_tipo": "data",
+        "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/4e254483-a41d-4f46-9767-ffa9e70c93b4-CN",
+        "note": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/4e254483-a41d-4f46-9767-ffa9e70c93b4-CN",
+      "sourceDomain": "ec.europa.eu",
+      "sourceType": "ue",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2024-04-22",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "potential",
+      "strategicLines": [
+        "L3",
+        "L5"
+      ],
+      "thematicTags": [
+        "ambiente",
+        "rigenerazione"
+      ],
+      "score0to100": 30,
+      "scoreReasons": [
+        "Ammissibilità potenziale o in partenariato pubblico-privato (+10)",
+        "Bando concluso per scadenza termini (-40)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "The Action will aim to lead and develop a form of decentralised international urban and regional cooperation for sustainable urban development and innovation in key partner countries, regions and territories of Asia and Australasia, in line with the external dimension of the Urban Agenda for the EU, the EU Green Deal, the Paris Climate Agreement, and the UN New Urban Agenda. In particular: \n\n1)\tConsolidate cooperation between EU and non-EU participating cities in Japan, Republic of Korea, Hong Kong, Taiwan, Singapore, Australia, New Zealand, India, China and Malaysia in order to improve and expand EU cities’ practices and leadership on sustainable urban development. \n2)\tDevelop innovation cooperation between EU regions and regions or provinces in Australia, Japan, and the Republic of Korea.  \n3)\tConsolidate an EU-led network of urban excellence, which references and connects innovative, successful and inspiring urban and regional development practices to accelerate the green and just transition. \n4)\tSupport business opportunities for EU companies providing innovation and urban services and solutions.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Commissione Europea",
+          "url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/tender-details/4e254483-a41d-4f46-9767-ffa9e70c93b4-CN"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore European Commission SEDIA API."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Commissione Europea",
+        "verifiedUntil": "2024-04-22"
+      }
+    },
+    {
+      "id": "re-bando-24f924f45e",
+      "original": {
+        "titolo": "Demonstrating the potential of Nature-based Solutions and the New European Bauhaus to contribute to sustainable, inclusive and resilient living spaces and communities",
+        "ente": "Commissione Europea",
+        "programma": "SEDIA_PRD_CENTRICITY",
+        "categoria": "UE",
+        "linee": [
+          "L2",
+          "L3"
+        ],
+        "descrizione": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+        "beneficiari": "Autorità locali e regionali, Città, Università, Centri di ricerca e Consorzi pubblico-privati",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Cofinanziamento UE standard (fino al 70-100% dei costi ammissibili)",
+        "scadenza": "2024-02-22",
+        "scadenza_tipo": "data",
+        "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-BIODIV-02-2-two-stage.json",
+        "note": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-BIODIV-02-2-two-stage.json",
+      "sourceDomain": "ec.europa.eu",
+      "sourceType": "ue",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito via API ufficiale SEDIA (European Commission Funding & Tenders Portal) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": "2024-02-22",
+      "deadlineType": "data",
+      "state": "closed",
+      "eligibility": "potential",
+      "strategicLines": [
+        "L2",
+        "L3"
+      ],
+      "thematicTags": [
+        "ambiente",
+        "sociale",
+        "innovazione",
+        "rigenerazione"
+      ],
+      "score0to100": 30,
+      "scoreReasons": [
+        "Ammissibilità potenziale o in partenariato pubblico-privato (+10)",
+        "Bando concluso per scadenza termini (-40)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità di finanziamento e bando europeo per l'innovazione, la sostenibilità e la transizione urbana.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Commissione Europea",
+          "url": "https://ec.europa.eu/info/funding-tenders/opportunities/data/topicDetails/HORIZON-CL6-2024-BIODIV-02-2-two-stage.json"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore European Commission SEDIA API."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Commissione Europea",
+        "verifiedUntil": "2024-02-22"
+      }
+    },
+    {
+      "id": "re-bando-b1a0b6ef6b",
+      "original": {
+        "titolo": "Bando Welfare 2026_11/16",
+        "ente": "Fondazione Cassa di Risparmio Pietro Manodori",
+        "programma": "Erogazioni istituzionali e bandi territoriali",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L3",
+          "L4",
+          "L5"
+        ],
+        "descrizione": "Bando ed erogazione territoriale promossa da Fondazione Cassa di Risparmio Pietro Manodori a sostegno di welfare, cultura, sostenibilità ed educazione nel territorio di riferimento.",
+        "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Contributo a fondo perduto secondo criteri del regolamento erogazioni",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionemanodori.it/contributi/bandi/",
+        "note": "Acquisito da portale ufficiale Fondazione Cassa di Risparmio Pietro Manodori (https://fondazionemanodori.it/bandi) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionemanodori.it/contributi/bandi/",
+      "sourceDomain": "fondazionemanodori.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da portale ufficiale Fondazione Cassa di Risparmio Pietro Manodori (https://fondazionemanodori.it/bandi) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 4 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Bando ed erogazione territoriale promossa da Fondazione Cassa di Risparmio Pietro Manodori a sostegno di welfare, cultura, sostenibilità ed educazione nel territorio di riferimento.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio Pietro Manodori",
+          "url": "https://www.fondazionemanodori.it/contributi/bandi/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Fondazioni Manodori e Cariparma."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio Pietro Manodori",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-1e70f73a8c",
+      "original": {
+        "titolo": "SOCIETÀ E SFIDE PER IL WELFARE",
+        "ente": "Fondazione Cariparma",
+        "programma": "Erogazioni istituzionali e bandi territoriali",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L3",
+          "L4",
+          "L5"
+        ],
+        "descrizione": "Bando ed erogazione territoriale promossa da Fondazione Cariparma a sostegno di welfare, cultura, sostenibilità ed educazione nel territorio di riferimento.",
+        "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
+        "dotazione": "",
+        "contributo_max": "",
+        "cofinanziamento": "Contributo a fondo perduto secondo criteri del regolamento erogazioni",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecrp.it/contributi/richiedere-un-contributo/bandi-2026/",
+        "note": "Acquisito da portale ufficiale Fondazione Cariparma (https://www.fondazionecariparma.it/bandi) il 2026-10-22."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecrp.it/contributi/richiedere-un-contributo/bandi-2026/",
+      "sourceDomain": "fondazionecrp.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-22T08:00:00+02:00",
+      "sourceEvidence": "Acquisito da portale ufficiale Fondazione Cariparma (https://www.fondazionecariparma.it/bandi) il 2026-10-22.",
+      "discoveredAt": "2026-10-22T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-22T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 4 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Bando ed erogazione territoriale promossa da Fondazione Cariparma a sostegno di welfare, cultura, sostenibilità ed educazione nel territorio di riferimento.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cariparma",
+          "url": "https://www.fondazionecrp.it/contributi/richiedere-un-contributo/bandi-2026/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-22",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Fondazioni Manodori e Cariparma."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cariparma",
         "verifiedUntil": null
       }
     }

@@ -7,13 +7,13 @@ describe('Migrazione Legacy -> Canonico', () => {
   const legacyPath = path.resolve(__dirname, '../legacy_src/data/bandi.json');
   const canonicalPath = path.resolve(__dirname, '../public/data/bandi.json');
 
-  it('deve caricare entrambi i file e verificare esattamente 122 bandi', () => {
+  it('deve caricare entrambi i file e verificare la conservazione dei 122 bandi originali', () => {
     const legacyRaw = JSON.parse(fs.readFileSync(legacyPath, 'utf8'));
     const canonicalRaw = JSON.parse(fs.readFileSync(canonicalPath, 'utf8'));
 
     expect(legacyRaw.bandi).toHaveLength(122);
-    expect(canonicalRaw.bandi).toHaveLength(122);
-    expect(canonicalRaw.meta.totale).toBe(122);
+    expect(canonicalRaw.bandi.length).toBeGreaterThanOrEqual(122);
+    expect(canonicalRaw.meta.totale).toBe(canonicalRaw.bandi.length);
   });
 
   it('deve superare la validazione Zod completa dello schema canonico', () => {
@@ -54,7 +54,7 @@ describe('Migrazione Legacy -> Canonico', () => {
     const canonicalRaw = JSON.parse(fs.readFileSync(canonicalPath, 'utf8'));
     const ids = canonicalRaw.bandi.map((b: { id: string }) => b.id);
     const uniqueIds = new Set(ids);
-    expect(uniqueIds.size).toBe(122);
+    expect(uniqueIds.size).toBe(canonicalRaw.bandi.length);
   });
 
   it('deve verificare che tutti gli URL canonici siano validi e abbiano un dominio estratto', () => {
