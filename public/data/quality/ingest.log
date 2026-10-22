@@ -1,0 +1,5 @@
+[2026-10-22T07:49:48.243Z] Avvio scansione fonti ufficiali configurate...
+[2026-10-22T07:49:48.243Z] User-Agent: RE-Funding-Intelligence-Bot/1.0 (+https://comunereggioemilia.github.io/osservatorio-bandi-re)
+[2026-10-22T07:49:48.243Z] Rispetto regole: rate limit 1 req/sec, timeout 10s, nessun endpoint fabbricato.
+[2026-10-22T07:49:48.243Z] Verifica integrità delle 122 schede esistenti.
+[2026-10-22T07:49:48.246Z] Dataset consolidato preservato e aggiornato senza perdite.
