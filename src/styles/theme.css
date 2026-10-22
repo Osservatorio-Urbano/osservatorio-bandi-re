@@ -137,21 +137,7 @@ a:hover { text-decoration: underline; }
   font-weight: 700; margin: 4px 0 0 0; line-height: 1.25; letter-spacing: -0.02em;
 }
 .hero-desc {
-  font-size: var(--text-sm); color: var(--text-muted); margin: 0; line-height: 1.6; max-width: 680px;
-}
-.hero-logo-box {
-  flex: none; display: flex; align-items: center; justify-content: center;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
-  padding: var(--space-3) var(--space-5); box-shadow: var(--shadow);
-}
-.hero-logo { height: 52px; width: auto; object-fit: contain; }
-[data-theme='dark'] .hero-logo-box {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-@media (max-width: 768px) {
-  .hero-banner { flex-direction: column; align-items: flex-start; }
-  .hero-logo-box { width: 100%; justify-content: center; }
+  font-size: var(--text-sm); color: var(--text-muted); margin: 0; line-height: 1.6; max-width: 860px;
 }
 
 .btn {

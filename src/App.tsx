@@ -322,13 +322,6 @@ export const App: React.FC = () => {
                   Presidio continuativo delle opportunità di finanziamento europee, nazionali e regionali per il Comune di Reggio Emilia, l&apos;Unione dei Comuni e gli enti del territorio.
                 </p>
               </div>
-              <div className="hero-logo-box">
-                <img
-                  src="./reggio-emilia.png"
-                  alt="Stemma e Logo Ufficiale Comune di Reggio Emilia"
-                  className="hero-logo"
-                />
-              </div>
             </section>
 
             <KpiCards bandi={bandi} />
