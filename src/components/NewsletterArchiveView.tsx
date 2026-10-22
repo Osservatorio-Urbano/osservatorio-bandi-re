@@ -11,7 +11,11 @@ interface ManifestEdition {
   url: string;
 }
 
-export const NewsletterArchiveView: React.FC = () => {
+interface NewsletterArchiveViewProps {
+  totalCount?: number;
+}
+
+export const NewsletterArchiveView: React.FC<NewsletterArchiveViewProps> = ({ totalCount }) => {
   const [editions, setEditions] = useState<ManifestEdition[]>([]);
   const [selectedEdition, setSelectedEdition] = useState<ManifestEdition | null>(null);
   const [htmlContent, setHtmlContent] = useState<string>('');
@@ -40,7 +44,7 @@ export const NewsletterArchiveView: React.FC = () => {
           iso_week: '2026-W44',
           generated_at: new Date().toISOString(),
           item_count: 10,
-          total_pool: 122,
+          total_pool: totalCount || 0,
           status: 'READY',
           url: './newsletter/2026-W44.html',
         };

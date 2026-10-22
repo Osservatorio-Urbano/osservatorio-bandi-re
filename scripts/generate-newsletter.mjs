@@ -15,7 +15,7 @@ const manifestPath = path.join(newsletterDir, 'manifest.json');
 const feedXmlPath = path.join(newsletterDir, 'feed.xml');
 const latestHtmlPath = path.join(newsletterDir, 'latest.html');
 
-// Parametri GitHub / URL base
+// Parametri GitHub / URL base del portale pubblico
 const GH_OWNER = process.env.GH_OWNER || 'Osservatorio-Urbano';
 const GH_REPO = process.env.GH_REPOSITORY || 'osservatorio-bandi-re';
 const BASE_URL = process.env.PAGES_BASE_URL || `https://${GH_OWNER}.github.io/${GH_REPO}`;
@@ -50,12 +50,11 @@ if (!qualityGatePassed) {
   process.exit(1);
 }
 
-// 2. Carica dataset
+// 2. Carica dataset canonico (Dinamico)
 const dataset = JSON.parse(fs.readFileSync(datasetPath, 'utf8'));
 const allBandi = dataset.bandi || [];
 
 // Calcola settimana di riferimento e data di consegna (Lunedì ore 08:00 Europe/Rome)
-// Supporta flag da riga di comando per testing es. --week 2026-W44
 let weekOverride = null;
 const argWeekIdx = process.argv.indexOf('--week');
 if (argWeekIdx !== -1 && process.argv[argWeekIdx + 1]) {
@@ -68,7 +67,35 @@ console.log(`Generazione per edizione: ${editionId}`);
 console.log(`Data di consegna lunedì prevista (Power Automate): ${deliverySchedule.deliveryMonday}`);
 console.log(`Categorie RSS configurate: ${deliverySchedule.categories.join(', ')}`);
 
-// 3. Seleziona le migliori opportunità (8-12 come da capitolato)
+// 3. Calcolo metriche dinamiche del dataset (Criteri coerenti e senza duplicazioni)
+// - totalCount: totale assoluto di bandi censiti e storicizzati nel dataset canonico
+// - openCount: bandi aperti con scadenza definita
+// - rollingCount: bandi a sportello continuo verificati
+// - activeCount: somma rigorosa dei bandi attivi (open + rolling_verified)
+// - closedCount: bandi storici scaduti o chiusi
+// - unknownCount: bandi in verifica o sospesi
+// - newThisWeekCount: nuove opportunità censite o aggiornate negli ultimi 7 giorni
+const totalCount = allBandi.length;
+const openCount = allBandi.filter(b => b.state === 'open').length;
+const rollingCount = allBandi.filter(b => b.state === 'rolling_verified').length;
+const activeCount = openCount + rollingCount;
+const closedCount = allBandi.filter(b => b.state === 'closed').length;
+const unknownCount = allBandi.filter(b => b.state === 'unknown' || b.state === 'suspended').length;
+
+const sevenDaysAgo = new Date(Date.now() - 7 * 86400000);
+const newThisWeekCount = allBandi.filter(b => {
+  const d = new Date(b.discoveredAt || b.lastChangedAt || 0);
+  return d >= sevenDaysAgo;
+}).length;
+
+console.log(`Statistiche dataset consolidato:`);
+console.log(`- Totale censiti: ${totalCount}`);
+console.log(`- Opportunità attive: ${activeCount} (Aperti ordinari: ${openCount}, A sportello verificato: ${rollingCount})`);
+console.log(`- Archiviati/Scaduti: ${closedCount}`);
+console.log(`- In verifica/sospesi: ${unknownCount}`);
+console.log(`- Nuovi/aggiornati ultimi 7gg: ${newThisWeekCount}`);
+
+// 4. Seleziona le migliori opportunità (intervallo 8-12 come da capitolato)
 // Criteri:
 // - Solo bandi aperti (open o rolling_verified)
 // - Solo con ammissibilità confirmed o potential
@@ -87,12 +114,24 @@ eligible.sort((a, b) => {
   return (a.original.titolo || '').localeCompare(b.original.titolo || '');
 });
 
-// Max 10 bandi selezionati (intervallo 8-12 come da specifica)
+// Max 10 bandi selezionati per la newsletter
 const selected = eligible.slice(0, 10);
-console.log(`Opportunità idonee trovate: ${eligible.length}, selezionate per newsletter: ${selected.length}`);
+const selectedCount = selected.length;
+console.log(`Opportunità idonee trovate: ${eligible.length}, selezionate per newsletter: ${selectedCount}`);
 
-// 4. Costruzione HTML Email-Safe (Tabelle compatibili Outlook, CSS Inline, Nessun Script)
-function buildEmailHtml(edition, items) {
+const metrics = {
+  totalCount,
+  activeCount,
+  openCount,
+  rollingCount,
+  closedCount,
+  unknownCount,
+  newThisWeekCount,
+  selectedCount,
+};
+
+// 5. Costruzione HTML Email-Safe (Tabelle compatibili Outlook, CSS Inline, Nessun Script)
+function buildEmailHtml(edition, items, met) {
   const itemsHtml = items.map((item) => {
     const isSportello = item.deadlineType === 'sportello';
     const deadlineTxt = isSportello ? 'A sportello aperto (fino ad esaurimento risorse)' : formatDateIt(item.deadline);
@@ -153,7 +192,7 @@ function buildEmailHtml(edition, items) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[RE Funding] Opportunita della settimana - ${edition}</title>
+  <title>[RE Funding] Opportunità della settimana - ${edition}</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b;">
   <center style="width: 100%; background-color: #f8fafc; padding: 24px 0;">
@@ -184,12 +223,16 @@ function buildEmailHtml(edition, items) {
       <tr>
         <td style="background-color: #ffffff; padding: 20px 28px; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
           <p style="margin: 0 0 10px 0; font-size: 14px; line-height: 1.5; color: #334155;">
-            Gentili dirigenti e funzionari, ecco la sintesi settimanale delle opportunità di finanziamento europee, nazionali e regionali compatibili con le <strong>6 linee strategiche del DUP</strong> e con i progetti strategici comunali.
+            Gentili dirigenti e funzionari, ecco la sintesi settimanale delle opportunità di finanziamento europee, nazionali e regionali compatibili con le <strong>6 linee strategiche del DUP</strong> e con i progetti strategici del Comune di Reggio Emilia.
           </p>
-          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; font-size: 12px; color: #166534;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 12px 14px; font-size: 12px; color: #166534;">
             <tr>
               <td>
-                <strong>Esito verifiche:</strong> ${items.length} bandi prioritari attivi selezionati tra ${allBandi.length} censiti. Tutti i dati sono stati verificati con controlli automatici di coerenza e integrità.
+                <strong>Quadro settimanale del monitoraggio (dataset aggiornato):</strong><br />
+                • <strong>${met.activeCount}</strong> opportunità attive (<strong>${met.openCount}</strong> a bando ordinario, <strong>${met.rollingCount}</strong> a sportello verificato)<br />
+                • <strong>${met.selectedCount}</strong> opportunità prioritarie selezionate in questa newsletter<br />
+                • <strong>${met.newThisWeekCount}</strong> nuove opportunità o aggiornamenti monitorati nell'ultima settimana<br />
+                • <strong>${met.totalCount}</strong> bandi complessivamente censiti nell'Osservatorio (${met.closedCount} archiviati per scadenza)
               </td>
             </tr>
           </table>
@@ -200,7 +243,7 @@ function buildEmailHtml(edition, items) {
       <tr>
         <td style="background-color: #ffffff; padding: 12px 28px 8px 28px; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
           <h2 style="margin: 0; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #0f766e;">
-            Opportunità prioritarie della settimana
+            Opportunità prioritarie della settimana (${met.selectedCount} selezionate su ${met.activeCount} attive)
           </h2>
         </td>
       </tr>
@@ -214,11 +257,11 @@ function buildEmailHtml(edition, items) {
         </td>
       </tr>
 
-      <!-- CTA / Archive Link -->
+      <!-- CTA / Archive Link con contatore DINAMICO dei bandi censiti -->
       <tr>
-        <td style="background-color: #f1f5f9; padding: 16px 28px; text-align: center; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
-          <a href="${BASE_URL}/#/bandi" target="_blank" rel="noopener" style="display: inline-block; background-color: #0f766e; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 10px 20px; border-radius: 6px;">
-            Accedi a tutti i bandi sull'Osservatorio →
+        <td style="background-color: #f1f5f9; padding: 18px 28px; text-align: center; border-left: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0;">
+          <a href="${BASE_URL}/#/bandi" target="_blank" rel="noopener" style="display: inline-block; background-color: #0f766e; color: #ffffff; text-decoration: none; font-size: 13px; font-weight: 600; padding: 12px 24px; border-radius: 6px;">
+            Accedi a tutti i ${met.totalCount} bandi sull'Osservatorio →
           </a>
         </td>
       </tr>
@@ -240,7 +283,7 @@ function buildEmailHtml(edition, items) {
 </html>`;
 }
 
-const emailSafeHtml = buildEmailHtml(editionId, selected);
+const emailSafeHtml = buildEmailHtml(editionId, selected, metrics);
 
 // Salva newsletter HTML per l'archivio: public/newsletter/YYYY-Www.html
 fs.mkdirSync(newsletterDir, { recursive: true });
@@ -262,7 +305,7 @@ const latestRedirectHtml = `<!DOCTYPE html>
 </html>`;
 fs.writeFileSync(latestHtmlPath, latestRedirectHtml, 'utf8');
 
-// 5. Genera JSON settimanale: public/data/weekly/latest.json
+// 6. Genera JSON settimanale: public/data/weekly/latest.json
 fs.mkdirSync(path.dirname(weeklyLatestPath), { recursive: true });
 const weeklyLatestData = {
   edition_id: editionId,
@@ -273,9 +316,14 @@ const weeklyLatestData = {
   week_end: `2026-W${String(deliverySchedule.weekNumber).padStart(2, '0')}`,
   status: 'READY',
   quality_passed: true,
-  item_count: allBandi.length,
-  selected_count: selected.length,
-  summary: `Edizione settimanale ${editionId} con ${selected.length} opportunità prioritarie verificate.`,
+  item_count: totalCount,
+  active_count: activeCount,
+  open_count: openCount,
+  rolling_count: rollingCount,
+  closed_count: closedCount,
+  new_this_week_count: newThisWeekCount,
+  selected_count: selectedCount,
+  summary: `Edizione settimanale ${editionId} con ${selectedCount} opportunità prioritarie selezionate su ${activeCount} attive (${totalCount} censite).`,
   html_link: `${BASE_URL}/newsletter/${deliverySchedule.id}.html`,
   selected_opportunities: selected.map(s => ({
     id: s.id,
@@ -292,16 +340,20 @@ const weeklyLatestData = {
     linee: s.strategicLines,
   })),
   quality_report: {
-    total_records: allBandi.length,
+    total_records: totalCount,
     valid_records: allBandi.filter(b => b.validity?.isOfficiallyVerified).length,
-    open_or_rolling: eligible.length,
-    urgent_30d: allBandi.filter(b => b.state === 'open' && b.deadline).length,
-    unverified_excluded: allBandi.filter(b => b.state === 'unknown' || b.state === 'closed').length,
+    active_opportunities: activeCount,
+    open_bandi: openCount,
+    rolling_verified: rollingCount,
+    closed_bandi: closedCount,
+    new_this_week: newThisWeekCount,
+    selected_newsletter: selectedCount,
+    unverified_excluded: unknownCount,
   }
 };
 fs.writeFileSync(weeklyLatestPath, JSON.stringify(weeklyLatestData, null, 2), 'utf8');
 
-// 6. Aggiorna manifest.json con storico edizioni
+// 7. Aggiorna manifest.json con storico edizioni
 let manifest = { editions: [] };
 if (fs.existsSync(manifestPath)) {
   try {
@@ -316,8 +368,9 @@ const editionEntry = {
   delivery_monday: deliverySchedule.deliveryMonday,
   delivery_category: `DELIVERY_${deliverySchedule.deliveryMonday}`,
   generated_at: new Date().toISOString(),
-  item_count: selected.length,
-  total_pool: allBandi.length,
+  item_count: selectedCount,
+  active_pool: activeCount,
+  total_pool: totalCount,
   status: 'READY',
   url: `${BASE_URL}/newsletter/${deliverySchedule.id}.html`,
 };
@@ -331,8 +384,7 @@ if (existingIdx >= 0) {
 manifest.editions = manifest.editions.slice(0, 26);
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
 
-// 7. Genera Feed RSS 2.0 (1 ITEM PER EDIZIONE READY, GUID DETERMINISTICO, CDATA EMAIL-SAFE, CATEGORIE DI RECAPITO)
-// pubDate in formato RFC 822
+// 8. Genera Feed RSS 2.0 (1 ITEM PER EDIZIONE READY, GUID DETERMINISTICO, CDATA EMAIL-SAFE, CATEGORIE DI RECAPITO)
 const nowRfc822 = new Date().toUTCString();
 
 const categoriesXml = deliverySchedule.categories
@@ -344,7 +396,7 @@ const rssXml = `<?xml version="1.0" encoding="utf-8"?>
   <channel>
     <title>RE Funding Intelligence - Edizioni Settimanali</title>
     <link>${BASE_URL}/</link>
-    <description>Newsletter settimanale automatica di opportunità di finanziamento verificate per il Comune di Reggio Emilia</description>
+    <description>Newsletter settimanale automatica di opportunità di finanziamento verificate per il Comune di Reggio Emilia (${activeCount} attive su ${totalCount} censite)</description>
     <language>it-IT</language>
     <lastBuildDate>${nowRfc822}</lastBuildDate>
     <atom:link href="${BASE_URL}/newsletter/feed.xml" rel="self" type="application/rss+xml" />

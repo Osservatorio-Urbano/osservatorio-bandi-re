@@ -210,7 +210,7 @@ export const SourcesStatusView: React.FC = () => {
           Protocollo di Protezione Dati & Fail-Safe
         </h3>
         <ul style={{ fontSize: '13px', lineHeight: 1.8, color: 'var(--text)', paddingLeft: '20px', margin: 0 }}>
-          <li><strong>Preservazione del dataset storico:</strong> I 122 record censiti inizialmente e tutti i record storici non vengono mai sovrascritti o cancellati; ogni acquisizione agisce in modalità incrementale (merge sicuro).</li>
+          <li><strong>Preservazione del dataset storico:</strong> Tutti i record censiti all'avvio e l'intero storico consolidato non vengono mai sovrascritti o cancellati; ogni acquisizione agisce in modalità incrementale (merge sicuro).</li>
           <li><strong>Tracciamento reale delle verifiche:</strong> Se una fonte non risponde o va in timeout, i relativi bandi non vengono falsamente marcati come verificati e il loro stato precedente viene rigorosamente preservato.</li>
           <li><strong>Deduplicazione tramite hash SHA-256:</strong> L'ID univoco calcolato su Ente + Programma + URL canonico previene doppioni e riconcilia modifiche e proroghe.</li>
           <li><strong>Schedulazione controllata:</strong> GitHub Actions esegue la scansione ogni giorno alle <strong>06:30 Europe/Rome</strong>, garantendo l'emissione della newsletter e del feed RSS pronti prima delle 08:00 del lunedì.</li>

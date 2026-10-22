@@ -416,7 +416,7 @@ export const App: React.FC = () => {
 
         {/* Tab 5: EDIZIONI NEWSLETTER */}
         {activeTab === 'newsletter' && (
-          <NewsletterArchiveView />
+          <NewsletterArchiveView totalCount={bandi.length} />
         )}
 
         {/* Tab 6: STATO FONTI & PIPELINE */}

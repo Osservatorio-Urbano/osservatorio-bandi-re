@@ -92,10 +92,11 @@ for (const b of rawData.bandi || []) {
   }
 }
 if (invalidUrls === 0) {
+  const countUrls = (rawData.bandi || []).length;
   checks.push({
     name: 'Canonical URL Integrity',
     passed: true,
-    details: 'Tutti i 122 URL sono formalmente validi con protocollo HTTP/HTTPS.',
+    details: `Tutti i ${countUrls} URL sono formalmente validi con protocollo HTTP/HTTPS.`,
   });
 } else {
   passedAll = false;

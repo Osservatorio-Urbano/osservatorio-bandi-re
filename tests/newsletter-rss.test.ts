@@ -12,6 +12,7 @@ describe('Verifica Feed RSS 2.0 e Newsletter Email-Safe', () => {
   const rssPath = path.resolve(__dirname, '../public/newsletter/feed.xml');
   const latestJsonPath = path.resolve(__dirname, '../public/data/weekly/latest.json');
   const manifestPath = path.resolve(__dirname, '../public/newsletter/manifest.json');
+  const datasetPath = path.resolve(__dirname, '../public/data/bandi.json');
 
   it('deve verificare che il feed.xml esista ed sia un RSS 2.0 valido', () => {
     expect(fs.existsSync(rssPath)).toBe(true);
@@ -159,5 +160,45 @@ describe('Verifica Feed RSS 2.0 e Newsletter Email-Safe', () => {
     expect(Array.isArray(data.editions)).toBe(true);
     expect(data.editions.length).toBeGreaterThanOrEqual(1);
     expect(data.editions[0].delivery_monday).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+  });
+
+  it('deve verificare che la newsletter utilizzi contatori DINAMICI coerenti con il dataset e non contatori hardcoded', () => {
+    expect(fs.existsSync(datasetPath)).toBe(true);
+    const dataset = JSON.parse(fs.readFileSync(datasetPath, 'utf8'));
+    const totalBandi = dataset.bandi.length;
+
+    const openCount = dataset.bandi.filter((b: any) => b.state === 'open').length;
+    const rollingCount = dataset.bandi.filter((b: any) => b.state === 'rolling_verified').length;
+    const activeCount = openCount + rollingCount;
+
+    const content = fs.readFileSync(rssPath, 'utf8');
+    const match = content.match(/<!\[CDATA\[([\s\S]*?)\]\]>/);
+    expect(match).not.toBeNull();
+    const html = match![1];
+
+    // Il pulsante NON deve contenere il vecchio contatore statico "122" se il dataset ne contiene un numero diverso
+    if (totalBandi !== 122) {
+      expect(html).not.toContain("Accedi a tutti i 122 bandi");
+    }
+
+    // Il pulsante finale della newsletter DEVE contenere esattamente il totale effettivo dei bandi censiti
+    expect(html).toContain(`Accedi a tutti i ${totalBandi} bandi sull'Osservatorio →`);
+
+    // Il riepilogo DEVE riportare i valori effettivi calcolati senza duplicazioni o numeri inventati
+    expect(html).toContain(`<strong>${activeCount}</strong> opportunità attive`);
+    expect(html).toContain(`<strong>${openCount}</strong> a bando ordinario`);
+    expect(html).toContain(`<strong>${rollingCount}</strong> a sportello verificato`);
+    expect(html).toContain(`<strong>${totalBandi}</strong> bandi complessivamente censiti`);
+
+    // Verifica link del pulsante verso il portale pubblico aggiornato
+    expect(html).toContain('https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/#/bandi');
+
+    // Anche il file archiviato YYYY-Www.html deve contenere lo stesso pulsante dinamico
+    const latestData = JSON.parse(fs.readFileSync(latestJsonPath, 'utf8'));
+    const archiveFile = path.resolve(__dirname, `../public/newsletter/${latestData.edition_id.replace('RE-FUNDING-', '')}.html`);
+    if (fs.existsSync(archiveFile)) {
+      const archiveHtml = fs.readFileSync(archiveFile, 'utf8');
+      expect(archiveHtml).toContain(`Accedi a tutti i ${totalBandi} bandi sull'Osservatorio →`);
+    }
   });
 });
