@@ -37,3 +37,6 @@ lerna-debug.log*
 spec_docs/
 *.zip
 Osservatorio Bandi Reggio Emilia/
+
+# Report diagnostici
+diagnostics/

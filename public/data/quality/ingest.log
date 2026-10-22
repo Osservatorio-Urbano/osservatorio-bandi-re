@@ -1,5 +1,17 @@
-[2026-10-22T07:49:48.243Z] Avvio scansione fonti ufficiali configurate...
-[2026-10-22T07:49:48.243Z] User-Agent: RE-Funding-Intelligence-Bot/1.0 (+https://comunereggioemilia.github.io/osservatorio-bandi-re)
-[2026-10-22T07:49:48.243Z] Rispetto regole: rate limit 1 req/sec, timeout 10s, nessun endpoint fabbricato.
-[2026-10-22T07:49:48.243Z] Verifica integrità delle 122 schede esistenti.
-[2026-10-22T07:49:48.246Z] Dataset consolidato preservato e aggiornato senza perdite.
+[2026-10-22T08:22:11.298Z] Dataset consolidato caricato: 146 record attuali.
+[2026-10-22T08:22:11.299Z] Inizio interrogazione connettori ufficiali...
+[2026-10-22T08:22:11.299Z] Interrogazione: PR FESR ed Energia Emilia-Romagna...
+[2026-10-22T08:22:11.739Z] -> PR FESR ed Energia Emilia-Romagna: 14 bandi ricevuti in 440ms, 0 errori.
+[2026-10-22T08:22:11.739Z] Interrogazione: PA Digitale 2026 (PNRR)...
+[2026-10-22T08:22:12.635Z] -> PA Digitale 2026 (PNRR): 5 bandi ricevuti in 896ms, 0 errori.
+[2026-10-22T08:22:12.636Z] Interrogazione: European Commission SEDIA API...
+[2026-10-22T08:22:13.069Z] -> European Commission SEDIA API: 10 bandi ricevuti in 433ms, 0 errori.
+[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2021-09-01
+[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2014-06-27
+[2026-10-22T08:22:13.070Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-10-22T08:22:13.070Z] Interrogazione: Fondazioni Manodori e Cariparma...
+[2026-10-22T08:22:16.492Z] -> Fondazioni Manodori e Cariparma: 3 bandi ricevuti in 3422ms, 0 errori.
+[2026-10-22T08:22:16.493Z] Riepilogo scansione: 0 nuove opportunità, 4 aggiornate/prorogate, 0 archiviate.
+[2026-10-22T08:22:16.531Z] Dataset canonico salvato con 146 record in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\bandi.json
+[2026-10-22T08:22:16.538Z] Report stato fonti salvato in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\quality\sources-status.json

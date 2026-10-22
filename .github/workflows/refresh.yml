@@ -19,11 +19,14 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout codice
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          ref: main
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -76,14 +79,13 @@ jobs:
       - name: Esegui Test Automatici di Integrità
         run: npm test
 
-      - name: Commit e Push aggiornamenti dataset e feed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/ public/newsletter/
-          if git diff --staged --quiet; then
-            echo "Nessun aggiornamento nel dataset."
-          else
-            git commit -m "chore(data): aggiornamento quotidiano dataset bandi e feed RSS [skip ci]"
-            git push
-          fi
+      - name: Sincronizzazione sicura e Push aggiornamenti dataset
+        run: node scripts/sync-and-push.mjs
+
+      - name: Archivia Report Diagnostico in caso di errore
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostic-sync-report
+          path: diagnostics/
+          retention-days: 7

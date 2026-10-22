@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-22T07:49:48.348Z",
+  "timestamp": "2026-10-22T08:22:31.456Z",
   "dataset_version": "2.0.0-canonical",
-  "total_records": 122,
+  "total_records": 146,
   "schema_valid": true,
   "duplicates_found": 0,
   "invalid_urls": 0,
@@ -16,7 +16,7 @@
     {
       "name": "Volume & Completeness Check",
       "passed": true,
-      "details": "Trovati 122 record (soglia minima >= 100 rispettata)."
+      "details": "Trovati 146 record (soglia minima >= 100 rispettata)."
     },
     {
       "name": "ID Uniqueness & Deduplication",
@@ -35,8 +35,8 @@
     },
     {
       "name": "State & Score Consistency",
-      "passed": true,
-      "details": "Nessun bando chiuso presenta score sproporzionatamente elevato."
+      "passed": false,
+      "details": "Trovati 1 bandi chiusi con score anomalo (>80)."
     }
   ]
 }
