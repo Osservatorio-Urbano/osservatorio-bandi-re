@@ -26,7 +26,7 @@
         "Fondazioni": 33
       }
     },
-    "ultima_acquisizione_automatica": "2026-10-23T10:09:29.690Z"
+    "ultima_acquisizione_automatica": "2026-10-23T10:18:21.930Z"
   },
   "bandi": [
     {
@@ -9628,6 +9628,22 @@
         },
         {
           "date": "2026-10-22",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2014-06-27 a 2013-06-04."
+        },
+        {
+          "date": "2026-10-23",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2013-06-04 a 2021-09-01."
+        },
+        {
+          "date": "2026-10-23",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2021-09-01 a 2013-06-04."
+        },
+        {
+          "date": "2026-10-23",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2013-06-04 a 2014-06-27."
+        },
+        {
+          "date": "2026-10-23",
           "note": "Proroga/modifica scadenza da fonte ufficiale: da 2014-06-27 a 2013-06-04."
         },
         {

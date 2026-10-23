@@ -1,5 +1,5 @@
 /**
- * Connettore Open Fundraising (Osservatorio Bandi Fondazioni Erogative Italiane)
+ * Connettore Open Fundraising & Fondazioni Erogative Italiane
  * Portale: https://www.openfundraising.it/bandi
  * Copertura: Fondazioni di Origine Bancaria (FOB), Fondazioni d'Impresa (es. Fondazione Unipolis, A2A),
  * Fondazioni di Comunità e Imprese Filantropiche Nazionali e Territoriali.
@@ -74,7 +74,7 @@ export async function fetchOpenFundraising() {
         let officialUrl = fonteMatch ? fonteMatch[1].trim() : `https://www.openfundraising.it/bandi/${bandoId}`;
 
         // Normalizza link mailto o non validi verso scheda di riferimento
-        if (officialUrl.startsWith('mailto:')) {
+        if (officialUrl.startsWith('mailto:') || !officialUrl.startsWith('http')) {
           officialUrl = `https://www.openfundraising.it/bandi/${bandoId}`;
         }
 
@@ -112,7 +112,13 @@ export async function fetchOpenFundraising() {
     }
   }
 
-  // 2. Controllo dedicato Fondazione Unipolis
+  return { sourceId: 'openfundraising_fondazioni', items, errors };
+}
+
+export async function fetchUnipolis() {
+  const items = [];
+  const errors = [];
+
   try {
     const unipolisUrl = 'https://www.fondazioneunipolis.org/site/news/';
     const uRes = await fetch(unipolisUrl, {
@@ -123,37 +129,39 @@ export async function fetchOpenFundraising() {
       signal: AbortSignal.timeout(10000)
     });
 
-    if (uRes.ok) {
-      const uHtml = await uRes.text();
-      // Trova notizie relative a nuovi bandi o call
-      const bandoMatches = [...uHtml.matchAll(/<a[^>]+href="([^"]*(?:bando|call|pop|act)[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi)];
-      for (const bm of bandoMatches.slice(0, 3)) {
-        const link = bm[1];
-        const rawTitle = decodeHtml(bm[2].replace(/<[^>]+>/g, ''));
-        if (rawTitle.length > 10 && !rawTitle.toLowerCase().includes('leggi')) {
-          items.push({
-            titolo: `Fondazione Unipolis: ${rawTitle}`,
-            ente: 'Fondazione Unipolis',
-            programma: 'Bandi Nazionali Fondazione Unipolis (Welfare, Mobilità sostenibile, Disuguaglianze)',
-            categoria: 'Fondazioni',
-            sourceType: 'fondazioni',
-            descrizione: `Iniziativa e bando erogativo nazionale promosso da Fondazione Unipolis a contrasto delle disuguaglianze e per la sostenibilità sociale e mobilità.`,
-            beneficiari: 'Enti del Terzo Settore, Enti locali, Fondazioni e organizzazioni non profit',
-            dotazione: 'Secondo regolamento del bando',
-            contributo_max: 'Secondo regolamento del bando',
-            cofinanziamento: 'A fondo perduto secondo bando Unipolis',
-            scadenza: '',
-            scadenza_tipo: 'sportello',
-            url: link.startsWith('http') ? link : `https://www.fondazioneunipolis.org${link}`,
-            note: `Rilevato da portale ufficiale Fondazione Unipolis (${unipolisUrl}) il ${new Date().toISOString().split('T')[0]}.`
-          });
-        }
+    if (!uRes.ok) {
+      throw new Error(`HTTP ${uRes.status} ${uRes.statusText}`);
+    }
+
+    const uHtml = await uRes.text();
+    // Trova notizie o avvisi relativi a nuovi bandi o call
+    const bandoMatches = [...uHtml.matchAll(/<a[^>]+href="([^"]*(?:bando|call|pop|act)[^"]*)"[^>]*>([\s\S]*?)<\/a>/gi)];
+    for (const bm of bandoMatches.slice(0, 3)) {
+      const link = bm[1];
+      const rawTitle = decodeHtml(bm[2].replace(/<[^>]+>/g, ''));
+      if (rawTitle.length > 10 && !rawTitle.toLowerCase().includes('leggi')) {
+        const fullUrl = link.startsWith('http') ? link : `https://www.fondazioneunipolis.org${link}`;
+        items.push({
+          titolo: `Fondazione Unipolis: ${rawTitle}`,
+          ente: 'Fondazione Unipolis',
+          programma: 'Bandi Nazionali Fondazione Unipolis (Welfare, Mobilità sostenibile, Disuguaglianze)',
+          categoria: 'Fondazioni',
+          sourceType: 'fondazioni',
+          descrizione: `Iniziativa e bando erogativo nazionale promosso da Fondazione Unipolis a contrasto delle disuguaglianze e per la sostenibilità sociale e mobilità.`,
+          beneficiari: 'Enti del Terzo Settore, Enti locali, Fondazioni e organizzazioni non profit',
+          dotazione: 'Secondo regolamento del bando',
+          contributo_max: 'Secondo regolamento del bando',
+          cofinanziamento: 'A fondo perduto secondo bando Unipolis',
+          scadenza: '',
+          scadenza_tipo: 'sportello',
+          url: fullUrl,
+          note: `Rilevato da portale ufficiale Fondazione Unipolis (${unipolisUrl}) il ${new Date().toISOString().split('T')[0]}.`
+        });
       }
     }
   } catch (uErr) {
-    // Silenzioso o tracciato negli errori
-    errors.push({ source: 'https://www.fondazioneunipolis.org', error: uErr.message });
+    errors.push({ source: 'https://www.fondazioneunipolis.org/site/news/', error: uErr.message });
   }
 
-  return { sourceId: 'openfundraising_fondazioni', items, errors };
+  return { sourceId: 'fondazione_unipolis', items, errors };
 }

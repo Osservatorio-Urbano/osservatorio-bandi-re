@@ -1,38 +1,21 @@
-[2026-10-23T10:09:23.372Z] Dataset consolidato caricato: 146 record attuali.
-[2026-10-23T10:09:23.373Z] Inizio interrogazione connettori ufficiali...
-[2026-10-23T10:09:23.374Z] Interrogazione: PR FESR ed Energia Emilia-Romagna...
-[2026-10-23T10:09:24.417Z] -> PR FESR ed Energia Emilia-Romagna: 14 bandi ricevuti in 1042ms, 0 errori.
-[2026-10-23T10:09:24.417Z] Interrogazione: PA Digitale 2026 (PNRR)...
-[2026-10-23T10:09:24.765Z] -> PA Digitale 2026 (PNRR): 5 bandi ricevuti in 348ms, 0 errori.
-[2026-10-23T10:09:24.766Z] Interrogazione: European Commission SEDIA API...
-[2026-10-23T10:09:25.163Z] -> European Commission SEDIA API: 10 bandi ricevuti in 397ms, 0 errori.
-[2026-10-23T10:09:25.164Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2021-09-01
-[2026-10-23T10:09:25.164Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
-[2026-10-23T10:09:25.164Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2014-06-27
-[2026-10-23T10:09:25.164Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
-[2026-10-23T10:09:25.164Z] Interrogazione: Fondazioni Manodori e Cariparma...
-[2026-10-23T10:09:29.166Z] -> Fondazioni Manodori e Cariparma: 3 bandi ricevuti in 4002ms, 0 errori.
-[2026-10-23T10:09:29.167Z] Interrogazione: Open Fundraising & Fondazioni Erogative (incl. Unipolis)...
-[2026-10-23T10:09:29.682Z] -> Open Fundraising & Fondazioni Erogative (incl. Unipolis): 20 bandi ricevuti in 515ms, 0 errori.
-[2026-10-23T10:09:29.685Z] [NUOVA OPPORTUNITA] Wellgranda Size 2 (Fondazione Cassa di Risparmio di Cuneo) - Score: 100
-[2026-10-23T10:09:29.686Z] [NUOVA OPPORTUNITA] BANDO “+ACOMUNITA’APERAPARCASANTACROCE 2026” (Fondazione Cassa di Risparmio di Carpi) - Score: 100
-[2026-10-23T10:09:29.687Z] [NUOVA OPPORTUNITA] Richieste di Contributo "Libere" 2026 (Fondazione Cassa di Risparmio di Spoleto) - Score: 95
-[2026-10-23T10:09:29.687Z] [NUOVA OPPORTUNITA] Borse Formazione e Lavoro (Fondazione Cassa di Risparmio di Pistoia e Pescia) - Score: 100
-[2026-10-23T10:09:29.687Z] [NUOVA OPPORTUNITA] Resource Attraction Call – Design Measure (Fondazione Cassa di Risparmio di Cuneo) - Score: 100
-[2026-10-23T10:09:29.687Z] [NUOVA OPPORTUNITA] Call for Resource Attraction – Co-financing Measure (Fondazione Cassa di Risparmio di Cuneo) - Score: 100
-[2026-10-23T10:09:29.687Z] [NUOVA OPPORTUNITA] Talents in Motion (Fondazione Cassa di Risparmio di Cuneo) - Score: 95
-[2026-10-23T10:09:29.688Z] [NUOVA OPPORTUNITA] Call for startup! (Fondazione del Monte Faenza) - Score: 100
-[2026-10-23T10:09:29.688Z] [NUOVA OPPORTUNITA] Bando 1/2026 - Richieste generali di contributo (Fondazione CARIT) - Score: 95
-[2026-10-23T10:09:29.688Z] [NUOVA OPPORTUNITA] Richieste di contributo - Fondazione Carical (Fondazione Cassa di Risparmio di Calabria e di Lucania) - Score: 95
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Bando per la presentazione di progetti per la promozione dell’incontro tra i giovani e il mondo dell’associazionismo (Fondazione Cassa di Risparmio di Carrara) - Score: 100
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Spazi Liberi – Corsi e Attività al Rondò dei Talenti (Fondazione Cassa di Risparmio di Cuneo) - Score: 95
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Safe by Choice. Move. Intelligently (Fondazione Cassa di Risparmio di Cuneo) - Score: 95
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Bando Volontariato Filantropia e Beneficenza (Fondazione Cassa di Risparmio di Fano) - Score: 100
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Bando Crowdfunding: una spinta per il Sociale (Fondazione Cassa di Risparmio di Fano) - Score: 100
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Territori di Comunità – IV edizione (Fondazione Cassa dei Risparmi di Forlì) - Score: 100
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Generazione Over (Fondazione Cassa dei Risparmi di Forlì) - Score: 100
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Assegni di cura (Fondazione Cassa dei Risparmi di Forlì) - Score: 100
-[2026-10-23T10:09:29.689Z] [NUOVA OPPORTUNITA] Premio "LA PAGELLA D'ORO" 52° edizione (Fondazione Cassa di Risparmio di Cento) - Score: 95
-[2026-10-23T10:09:29.690Z] Riepilogo scansione: 19 nuove opportunità, 4 aggiornate/prorogate, 0 archiviate.
-[2026-10-23T10:09:29.774Z] Dataset canonico salvato con 165 record in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\bandi.json
-[2026-10-23T10:09:29.785Z] Report stato fonti salvato in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\quality\sources-status.json
+[2026-10-23T10:18:15.890Z] Dataset consolidato caricato: 165 record attuali.
+[2026-10-23T10:18:15.892Z] Inizio interrogazione connettori ufficiali...
+[2026-10-23T10:18:15.892Z] Interrogazione: PR FESR ed Energia Emilia-Romagna...
+[2026-10-23T10:18:16.476Z] -> PR FESR ed Energia Emilia-Romagna: 14 bandi ricevuti in 584ms, 0 errori.
+[2026-10-23T10:18:16.477Z] Interrogazione: PA Digitale 2026 (PNRR)...
+[2026-10-23T10:18:16.806Z] -> PA Digitale 2026 (PNRR): 5 bandi ricevuti in 329ms, 0 errori.
+[2026-10-23T10:18:16.806Z] Interrogazione: European Commission SEDIA API...
+[2026-10-23T10:18:17.238Z] -> European Commission SEDIA API: 10 bandi ricevuti in 432ms, 0 errori.
+[2026-10-23T10:18:17.238Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2021-09-01
+[2026-10-23T10:18:17.239Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-10-23T10:18:17.239Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2014-06-27
+[2026-10-23T10:18:17.239Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-10-23T10:18:17.239Z] Interrogazione: Fondazioni Manodori e Cariparma...
+[2026-10-23T10:18:21.407Z] -> Fondazioni Manodori e Cariparma: 3 bandi ricevuti in 4168ms, 0 errori.
+[2026-10-23T10:18:21.408Z] Interrogazione: Open Fundraising (Bandi Fondazioni Erogative Italiane)...
+[2026-10-23T10:18:21.794Z] -> Open Fundraising (Bandi Fondazioni Erogative Italiane): 20 bandi ricevuti in 386ms, 0 errori.
+[2026-10-23T10:18:21.795Z] Interrogazione: Fondazione Unipolis (Welfare, Mobilità & Disuguaglianze)...
+[2026-10-23T10:18:21.929Z] -> Fondazione Unipolis (Welfare, Mobilità & Disuguaglianze): 0 bandi ricevuti in 134ms, 0 errori.
+[2026-10-23T10:18:21.929Z] Riepilogo scansione: 0 nuove opportunità, 4 aggiornate/prorogate, 0 archiviate.
+[2026-10-23T10:18:22.029Z] Dataset canonico salvato con 165 record in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\bandi.json
+[2026-10-23T10:18:22.046Z] Report stato fonti salvato in: C:\Users\davolraf\OneDrive - UNIONE BASSA REGGIANA\Desktop\BANDI EVO PRANDI\public\data\quality\sources-status.json

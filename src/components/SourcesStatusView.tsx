@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Activity, CheckCircle, Clock, AlertTriangle, RefreshCw, Terminal, Cpu } from 'lucide-react';
+import { Activity, CheckCircle, Clock, AlertTriangle, RefreshCw, Terminal, Cpu, BookOpen } from 'lucide-react';
 
 interface SourceReport {
   id: string;
@@ -62,15 +62,28 @@ export const SourcesStatusView: React.FC = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
       <div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <h2 className="section-title" style={{ margin: 0 }}>Stato dei Connettori & Acquisizione Automatica</h2>
-          <span className="badge badge-state open" style={{ fontWeight: 700 }}>
-            PIPELINE ATTIVA
-          </span>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '16px' }}>
+          <div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <h2 className="section-title" style={{ margin: 0 }}>Stato dei Connettori & Acquisizione Automatica</h2>
+              <span className="badge badge-state open" style={{ fontWeight: 700 }}>
+                PIPELINE ATTIVA
+              </span>
+            </div>
+            <p className="section-desc" style={{ marginTop: '8px' }}>
+              Cruscotto di monitoraggio trasparente: visualizza in tempo reale le fonti istituzionali interrogate, la cadenza di scansione quotidiana (06:30 Europe/Rome), le metriche di latenza, i bandi estratti e gli esiti operativi.
+            </p>
+          </div>
+
+          <a
+            href="#/metodologia"
+            className="btn btn-secondary"
+            style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px' }}
+          >
+            <BookOpen size={15} color="var(--accent)" />
+            Consulta Fonti & Metodologia di Scoring →
+          </a>
         </div>
-        <p className="section-desc" style={{ marginTop: '8px' }}>
-          Cruscotto di monitoraggio trasparente: visualizza in tempo reale le fonti istituzionali interrogate, la cadenza di scansione (quotidiana ore 06:30 Europe/Rome), le metriche di latenza, i bandi estratti e gli eventuali errori rilevati.
-        </p>
       </div>
 
       {/* KPI Cards di Pipeline */}
@@ -81,7 +94,7 @@ export const SourcesStatusView: React.FC = () => {
             <strong className="kpi-value" style={{ color: 'var(--ok)' }}>
               {data.active_operative_sources} / {data.total_sources_monitored}
             </strong>
-            <span className="kpi-foot">{data.planned_sources} fonti pianificate</span>
+            <span className="kpi-foot">{data.planned_sources} canali pianificati</span>
           </article>
 
           <article className="kpi">
@@ -114,10 +127,15 @@ export const SourcesStatusView: React.FC = () => {
 
       {/* Tabella Dettagliata Connettori */}
       <section style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 'var(--radius)', padding: '24px' }}>
-        <h3 style={{ margin: '0 0 16px 0', fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Activity size={18} color="var(--accent)" />
-          Registro Operativo dei Connettori Istituzionali
-        </h3>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '8px', marginBottom: '16px' }}>
+          <h3 style={{ margin: 0, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <Activity size={18} color="var(--accent)" />
+            Registro Operativo dei Connettori Istituzionali
+          </h3>
+          <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+            Esecuzione automatica GitHub Actions: <strong>06:30 Europe/Rome</strong>
+          </span>
+        </div>
 
         <div className="table-container">
           <table className="data-table">
@@ -210,10 +228,11 @@ export const SourcesStatusView: React.FC = () => {
           Protocollo di Protezione Dati & Fail-Safe
         </h3>
         <ul style={{ fontSize: '13px', lineHeight: 1.8, color: 'var(--text)', paddingLeft: '20px', margin: 0 }}>
-          <li><strong>Preservazione del dataset storico:</strong> Tutti i record censiti all'avvio e l'intero storico consolidato non vengono mai sovrascritti o cancellati; ogni acquisizione agisce in modalità incrementale (merge sicuro).</li>
+          <li><strong>Preservazione del dataset storico:</strong> Tutti i 122 record censiti originariamente e l'intero storico consolidato non vengono mai sovrascritti o cancellati; ogni acquisizione agisce in modalità incrementale (merge sicuro con Quality Gate).</li>
+          <li><strong>Presidio esteso sulle Fondazioni Erogative:</strong> Copertura centralizzata delle Fondazioni di Origine Bancaria (FOB), Fondazioni di Comunità e Imprese Filantropiche Nazionali (Open Fundraising, Fondazione Unipolis, Manodori Reggio Emilia, Cariparma, Carpi).</li>
           <li><strong>Tracciamento reale delle verifiche:</strong> Se una fonte non risponde o va in timeout, i relativi bandi non vengono falsamente marcati come verificati e il loro stato precedente viene rigorosamente preservato.</li>
-          <li><strong>Deduplicazione tramite hash SHA-256:</strong> L'ID univoco calcolato su Ente + Programma + URL canonico previene doppioni e riconcilia modifiche e proroghe.</li>
-          <li><strong>Schedulazione controllata:</strong> GitHub Actions esegue la scansione ogni giorno alle <strong>06:30 Europe/Rome</strong>, garantendo l'emissione della newsletter e del feed RSS pronti prima delle 08:00 del lunedì.</li>
+          <li><strong>Deduplicazione deterministica tramite SHA-256:</strong> L'ID univoco calcolato su Ente + Programma + URL canonico previene doppioni e riconcilia modifiche, scadenze e proroghe.</li>
+          <li><strong>Schedulazione nativa Europe/Rome:</strong> GitHub Actions esegue la scansione ogni giorno alle <strong>06:30 Europe/Rome</strong> (gestione integrata IANA di ora solare CET e legale CEST), garantendo l'emissione della newsletter e del feed RSS pronti prima delle 08:00 del lunedì.</li>
         </ul>
       </section>
 
