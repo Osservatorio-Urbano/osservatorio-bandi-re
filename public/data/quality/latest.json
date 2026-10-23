@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-22T08:28:38.175Z",
+  "timestamp": "2026-10-23T09:39:46.628Z",
   "dataset_version": "2.0.0-canonical",
   "total_records": 146,
   "schema_valid": true,
@@ -26,17 +26,17 @@
     {
       "name": "Canonical URL Integrity",
       "passed": true,
-      "details": "Tutti i 122 URL sono formalmente validi con protocollo HTTP/HTTPS."
+      "details": "Tutti i 146 URL sono formalmente validi con protocollo HTTP/HTTPS."
     },
     {
       "name": "Dataset Freshness Policy",
       "passed": true,
-      "details": "Data metadati: 2026-10-22. Coerente con la finestra temporale di osservatorio."
+      "details": "Data metadati: 2026-10-23. Coerente con la finestra temporale di osservatorio."
     },
     {
       "name": "State & Score Consistency",
       "passed": false,
-      "details": "Trovati 1 bandi chiusi con score anomalo (>80)."
+      "details": "Trovati 2 bandi chiusi con score anomalo (>80)."
     }
   ]
 }

@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-10-22T08:28:37.588Z",
+  "timestamp": "2026-10-23T09:39:24.356Z",
   "total_sources_monitored": 7,
   "active_operative_sources": 4,
   "planned_sources": 3,
-  "last_scan_date": "2026-10-22",
+  "last_scan_date": "2026-10-23",
   "new_opportunities_found": 0,
   "updated_opportunities": 4,
-  "expired_opportunities": 0,
+  "expired_opportunities": 1,
   "sources": [
     {
       "id": "fesr_er",
       "name": "PR FESR ed Energia Emilia-Romagna",
       "method": "rss_2_0",
       "status": "operativa",
-      "last_scanned_at": "2026-10-22T08:28:30.282Z",
+      "last_scanned_at": "2026-10-23T09:39:17.963Z",
       "items_acquired": 14,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 2175,
+      "response_time_ms": 538,
       "endpoint_reachable": true
     },
     {
@@ -25,11 +25,11 @@
       "name": "PA Digitale 2026 (PNRR)",
       "method": "open_data_portal",
       "status": "operativa",
-      "last_scanned_at": "2026-10-22T08:28:31.056Z",
+      "last_scanned_at": "2026-10-23T09:39:18.288Z",
       "items_acquired": 5,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 774,
+      "response_time_ms": 324,
       "endpoint_reachable": true
     },
     {
@@ -37,11 +37,11 @@
       "name": "European Commission SEDIA API",
       "method": "api_rest",
       "status": "operativa",
-      "last_scanned_at": "2026-10-22T08:28:31.738Z",
+      "last_scanned_at": "2026-10-23T09:39:18.659Z",
       "items_acquired": 10,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 681,
+      "response_time_ms": 371,
       "endpoint_reachable": true
     },
     {
@@ -49,14 +49,12 @@
       "name": "Fondazioni Manodori e Cariparma",
       "method": "html_scrape",
       "status": "operativa",
-      "last_scanned_at": "2026-10-22T08:28:37.584Z",
-      "items_acquired": 2,
-      "errors_count": 1,
-      "errors": [
-        "HTTP 403 Forbidden"
-      ],
-      "response_time_ms": 5846,
-      "endpoint_reachable": false
+      "last_scanned_at": "2026-10-23T09:39:24.291Z",
+      "items_acquired": 3,
+      "errors_count": 0,
+      "errors": [],
+      "response_time_ms": 5630,
+      "endpoint_reachable": true
     },
     {
       "id": "mlps_lavoro",

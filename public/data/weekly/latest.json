@@ -1,6 +1,6 @@
 {
   "edition_id": "RE-FUNDING-2026-W44",
-  "generated_at": "2026-10-22T13:44:57.083Z",
+  "generated_at": "2026-10-23T09:39:34.481Z",
   "delivery_monday": "2026-10-26",
   "delivery_category": "DELIVERY_2026-10-26",
   "week_start": "2026-W44",
@@ -8,15 +8,85 @@
   "status": "READY",
   "quality_passed": true,
   "item_count": 146,
-  "active_count": 43,
-  "open_count": 20,
+  "active_count": 42,
+  "open_count": 19,
   "rolling_count": 23,
-  "closed_count": 97,
+  "closed_count": 98,
   "new_this_week_count": 24,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W44 con 10 opportunità prioritarie selezionate su 43 attive (146 censite).",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W44 con 10 opportunità prioritarie selezionate su 42 attive (146 censite).",
   "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W44.html",
   "selected_opportunities": [
+    {
+      "id": "re-bando-b1a0b6ef6b",
+      "titolo": "Bando Welfare 2026_11/16",
+      "ente": "Fondazione Cassa di Risparmio Pietro Manodori",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://www.fondazionemanodori.it/contributi/bandi/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio Pietro Manodori",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-e1cd9c0d1b",
+      "titolo": "Bando Welfare 2026_11/16 — progetti per preadolescenti e adolescenti (11-14 anni)",
+      "ente": "Fondazione Pietro Manodori (Reggio Emilia)",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Alleanze tra enti del terzo settore, istituzioni, realtà ecclesiastiche e famiglie operanti sul territorio reggiano. Il Comune di Reggio Emilia è ammissibile come partner istituzionale delle alleanze territoriali (già partner in progetti Manodori, es. «Sottosopra»).",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://www.fondazionemanodori.it/contributi/bando-welfare-2026/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Pietro Manodori (Reggio Emilia)",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-b48c017517",
+      "titolo": "Cammini e vie di pellegrinaggio",
+      "ente": "Regione Emilia-Romagna - Turismo",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti del Terzo settore ed enti pubblici",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://imprese.regione.emilia-romagna.it/leggi-atti-bandi/tutti-i-bandi/turismo/cammini-e-vie-di-pellegrinaggio",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Regione Emilia-Romagna - Turismo",
+      "score": 100,
+      "linee": [
+        "L2",
+        "L6"
+      ]
+    },
+    {
+      "id": "re-bando-aec350f8e0",
+      "titolo": "Contributi di Reale Foundation",
+      "ente": "Reale Foundation (Gruppo Reale Mutua)",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti non profit (secondo la scheda consultata); ruolo degli enti pubblici non specificato (n.d.).",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://www.cesvot.it/consulenza/bandi/contributi-di-reale-foundation",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Reale Foundation (Gruppo Reale Mutua)",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L3"
+      ]
+    },
     {
       "id": "re-bando-d3b1d4c900",
       "titolo": "FEAMPA - Riqualificazione marina e dei corsi d'acqua",
@@ -120,85 +190,15 @@
         "L1",
         "L2"
       ]
-    },
-    {
-      "id": "re-bando-9dd80a97c2",
-      "titolo": "Accordi di investimento e servizi per l'attrattività",
-      "ente": "Regione Emilia-Romagna - Imprese e attività produttive",
-      "scadenza": "2026-12-15",
-      "scadenza_label": "15/12/2026",
-      "beneficiari": "Enti pubblici, Università",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://imprese.regione.emilia-romagna.it/leggi-atti-bandi/tutti-i-bandi/internazionalizzazione/accordi-di-investimento-e-servizi",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Regione Emilia-Romagna - Imprese e attività produttive",
-      "score": 100,
-      "linee": [
-        "L2",
-        "L6"
-      ]
-    },
-    {
-      "id": "re-bando-b1a0b6ef6b",
-      "titolo": "Bando Welfare 2026_11/16",
-      "ente": "Fondazione Cassa di Risparmio Pietro Manodori",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://www.fondazionemanodori.it/contributi/bandi/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio Pietro Manodori",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L3",
-        "L4",
-        "L5"
-      ]
-    },
-    {
-      "id": "re-bando-e1cd9c0d1b",
-      "titolo": "Bando Welfare 2026_11/16 — progetti per preadolescenti e adolescenti (11-14 anni)",
-      "ente": "Fondazione Pietro Manodori (Reggio Emilia)",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Alleanze tra enti del terzo settore, istituzioni, realtà ecclesiastiche e famiglie operanti sul territorio reggiano. Il Comune di Reggio Emilia è ammissibile come partner istituzionale delle alleanze territoriali (già partner in progetti Manodori, es. «Sottosopra»).",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://www.fondazionemanodori.it/contributi/bando-welfare-2026/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Pietro Manodori (Reggio Emilia)",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L5"
-      ]
-    },
-    {
-      "id": "re-bando-b48c017517",
-      "titolo": "Cammini e vie di pellegrinaggio",
-      "ente": "Regione Emilia-Romagna - Turismo",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti del Terzo settore ed enti pubblici",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://imprese.regione.emilia-romagna.it/leggi-atti-bandi/tutti-i-bandi/turismo/cammini-e-vie-di-pellegrinaggio",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Regione Emilia-Romagna - Turismo",
-      "score": 100,
-      "linee": [
-        "L2",
-        "L6"
-      ]
     }
   ],
   "quality_report": {
     "total_records": 146,
     "valid_records": 146,
-    "active_opportunities": 43,
-    "open_bandi": 20,
+    "active_opportunities": 42,
+    "open_bandi": 19,
     "rolling_verified": 23,
-    "closed_bandi": 97,
+    "closed_bandi": 98,
     "new_this_week": 24,
     "selected_newsletter": 10,
     "unverified_excluded": 6
