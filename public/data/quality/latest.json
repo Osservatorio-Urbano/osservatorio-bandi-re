@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-23T09:39:46.628Z",
+  "timestamp": "2026-10-23T10:09:45.175Z",
   "dataset_version": "2.0.0-canonical",
-  "total_records": 146,
+  "total_records": 165,
   "schema_valid": true,
   "duplicates_found": 0,
   "invalid_urls": 0,
@@ -16,7 +16,7 @@
     {
       "name": "Volume & Completeness Check",
       "passed": true,
-      "details": "Trovati 146 record (soglia minima >= 100 rispettata)."
+      "details": "Trovati 165 record (soglia minima >= 100 rispettata)."
     },
     {
       "name": "ID Uniqueness & Deduplication",
@@ -26,7 +26,7 @@
     {
       "name": "Canonical URL Integrity",
       "passed": true,
-      "details": "Tutti i 146 URL sono formalmente validi con protocollo HTTP/HTTPS."
+      "details": "Tutti i 165 URL sono formalmente validi con protocollo HTTP/HTTPS."
     },
     {
       "name": "Dataset Freshness Policy",

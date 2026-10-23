@@ -6,6 +6,7 @@ import { fetchFesrEr } from './connectors/fesr-er.mjs';
 import { fetchPaDigitale } from './connectors/padigitale.mjs';
 import { fetchEuSedia } from './connectors/eu-sedia.mjs';
 import { fetchFondazioni } from './connectors/fondazioni.mjs';
+import { fetchOpenFundraising } from './connectors/openfundraising.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -177,7 +178,8 @@ const connectors = [
   { id: 'fesr_er', name: 'PR FESR ed Energia Emilia-Romagna', runner: fetchFesrEr, method: 'rss_2_0' },
   { id: 'pa_digitale_2026', name: 'PA Digitale 2026 (PNRR)', runner: fetchPaDigitale, method: 'open_data_portal' },
   { id: 'ec_funding_tenders', name: 'European Commission SEDIA API', runner: fetchEuSedia, method: 'api_rest' },
-  { id: 'fondazioni_territoriali', name: 'Fondazioni Manodori e Cariparma', runner: fetchFondazioni, method: 'html_scrape' }
+  { id: 'fondazioni_territoriali', name: 'Fondazioni Manodori e Cariparma', runner: fetchFondazioni, method: 'html_scrape' },
+  { id: 'openfundraising_fondazioni', name: 'Open Fundraising & Fondazioni Erogative (incl. Unipolis)', runner: fetchOpenFundraising, method: 'open_data_portal' }
 ];
 
 for (const conn of connectors) {

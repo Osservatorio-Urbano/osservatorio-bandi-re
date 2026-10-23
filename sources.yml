@@ -77,6 +77,30 @@ sources:
     cadence: "weekly"
     connector_module: "scripts/connectors/fondazioni.mjs"
 
+  - id: openfundraising_fondazioni
+    name: "Open Fundraising (Bandi Fondazioni Erogative Italiane)"
+    domain: "openfundraising.it"
+    type: "fondazioni"
+    status: "operativa"
+    reliability_tier: 1
+    method: "open_data_portal"
+    endpoint_url: "https://www.openfundraising.it/bandi"
+    landing_url: "https://www.openfundraising.it/bandi"
+    cadence: "daily"
+    connector_module: "scripts/connectors/openfundraising.mjs"
+
+  - id: fondazione_unipolis
+    name: "Fondazione Unipolis (Welfare, Mobilita & Disuguaglianze)"
+    domain: "fondazioneunipolis.org"
+    type: "fondazioni"
+    status: "operativa"
+    reliability_tier: 1
+    method: "html_scrape"
+    endpoint_url: "https://www.fondazioneunipolis.org/site/news/"
+    landing_url: "https://www.fondazioneunipolis.org/site/bandi/"
+    cadence: "weekly"
+    connector_module: "scripts/connectors/openfundraising.mjs"
+
   # ----------------------------------------------------------------------------
   # FONTI PREVISTE / IN CORSO DI INTEGRAZIONE (Monitorate a vista senza API pubbliche stabili)
   # ----------------------------------------------------------------------------

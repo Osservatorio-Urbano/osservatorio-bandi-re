@@ -1,32 +1,32 @@
 {
   "meta": {
     "aggiornato": "2026-10-23",
-    "totale": 146,
+    "totale": 165,
     "versione_schema": "2.0.0-canonical",
     "territorio": "Comune di Reggio Emilia",
     "fonte_linee_guida": "Nota aggiornamento DUP 2026-2028",
     "statistiche": {
-      "aperti": 19,
-      "sportello": 23,
+      "aperti": 26,
+      "sportello": 35,
       "chiusi": 98,
       "in_verifica": 6,
-      "entro_30_giorni": 12,
+      "entro_30_giorni": 16,
       "copertura_linee": {
-        "L1": 67,
-        "L2": 37,
-        "L3": 66,
-        "L4": 56,
-        "L5": 23,
-        "L6": 17
+        "L1": 75,
+        "L2": 41,
+        "L3": 67,
+        "L4": 59,
+        "L5": 42,
+        "L6": 18
       },
       "copertura_categorie": {
         "UE": 85,
         "Nazionale/PNRR": 11,
         "Regione ER": 36,
-        "Fondazioni": 14
+        "Fondazioni": 33
       }
     },
-    "ultima_acquisizione_automatica": "2026-10-23T09:39:24.292Z"
+    "ultima_acquisizione_automatica": "2026-10-23T10:09:29.690Z"
   },
   "bandi": [
     {
@@ -9645,6 +9645,22 @@
         {
           "date": "2026-10-23",
           "note": "Proroga/modifica scadenza da fonte ufficiale: da 2014-06-27 a 2013-06-04."
+        },
+        {
+          "date": "2026-10-23",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2013-06-04 a 2021-09-01."
+        },
+        {
+          "date": "2026-10-23",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2021-09-01 a 2013-06-04."
+        },
+        {
+          "date": "2026-10-23",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2013-06-04 a 2014-06-27."
+        },
+        {
+          "date": "2026-10-23",
+          "note": "Proroga/modifica scadenza da fonte ufficiale: da 2014-06-27 a 2013-06-04."
         }
       ],
       "validity": {
@@ -10130,6 +10146,1245 @@
       "validity": {
         "isOfficiallyVerified": true,
         "verificationSource": "Fondazione Cariparma",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-446d35e46e",
+      "original": {
+        "titolo": "Wellgranda Size 2",
+        "ente": "Fondazione Cassa di Risparmio di Cuneo",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (welfare)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito welfare. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: € 50.000.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "€ 50.000",
+        "contributo_max": "€ 50.000",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "2026-10-29",
+        "scadenza_tipo": "data",
+        "url": "https://fondazionecrc.it/en/cosafacciamo/wellgranda-misura-2/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/34) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://fondazionecrc.it/en/cosafacciamo/wellgranda-misura-2/",
+      "sourceDomain": "fondazionecrc.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/34) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": "2026-10-29",
+      "deadlineType": "data",
+      "state": "open",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito welfare. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: € 50.000.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Cuneo",
+          "url": "https://fondazionecrc.it/en/cosafacciamo/wellgranda-misura-2/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Cuneo",
+        "verifiedUntil": "2026-10-29"
+      }
+    },
+    {
+      "id": "re-bando-74ebbb4e15",
+      "original": {
+        "titolo": "BANDO “+ACOMUNITA’APERAPARCASANTACROCE 2026”",
+        "ente": "Fondazione Cassa di Risparmio di Carpi",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (sociale, ambientale, educativo, sportivo)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L3",
+          "L4",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Carpi in ambito sociale, ambientale, educativo, sportivo. Territorio di ammissibilità o priorità: Comuni di Carpi, Novi di Modena e Soliera. Contributo massimo erogabile: € 20.000.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "€ 20.000",
+        "contributo_max": "€ 20.000",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "2026-10-30",
+        "scadenza_tipo": "data",
+        "url": "https://www.fondazionecrcarpi.it/u7gfRmN/wp-content/uploads/bandocomunita-per-parco-santacroce-2026.pdf",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/27) per Fondazione Cassa di Risparmio di Carpi. Territorio: Comuni di Carpi, Novi di Modena e Soliera. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecrcarpi.it/u7gfRmN/wp-content/uploads/bandocomunita-per-parco-santacroce-2026.pdf",
+      "sourceDomain": "fondazionecrcarpi.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/27) per Fondazione Cassa di Risparmio di Carpi. Territorio: Comuni di Carpi, Novi di Modena e Soliera. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": "2026-10-30",
+      "deadlineType": "data",
+      "state": "open",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "thematicTags": [
+        "ambiente",
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 4 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Carpi in ambito sociale, ambientale, educativo, sportivo. Territorio di ammissibilità o priorità: Comuni di Carpi, Novi di Modena e Soliera. Contributo massimo erogabile: € 20.000.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Carpi",
+          "url": "https://www.fondazionecrcarpi.it/u7gfRmN/wp-content/uploads/bandocomunita-per-parco-santacroce-2026.pdf"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Carpi",
+        "verifiedUntil": "2026-10-30"
+      }
+    },
+    {
+      "id": "re-bando-cb29881539",
+      "original": {
+        "titolo": "Richieste di Contributo \"Libere\" 2026",
+        "ente": "Fondazione Cassa di Risparmio di Spoleto",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (vario)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Spoleto in ambito vario. Territorio di ammissibilità o priorità: —. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "2026-11-10",
+        "scadenza_tipo": "data",
+        "url": "https://www.openfundraising.it/bandi/68",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/68) per Fondazione Cassa di Risparmio di Spoleto. Territorio: —. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.openfundraising.it/bandi/68",
+      "sourceDomain": "openfundraising.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/68) per Fondazione Cassa di Risparmio di Spoleto. Territorio: —. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": "2026-11-10",
+      "deadlineType": "data",
+      "state": "open",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Spoleto in ambito vario. Territorio di ammissibilità o priorità: —. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Spoleto",
+          "url": "https://www.openfundraising.it/bandi/68"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Spoleto",
+        "verifiedUntil": "2026-11-10"
+      }
+    },
+    {
+      "id": "re-bando-45851ab2e5",
+      "original": {
+        "titolo": "Borse Formazione e Lavoro",
+        "ente": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (Formazione e Ricerca)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L2",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Pistoia e Pescia in ambito Formazione e Ricerca. Territorio di ammissibilità o priorità: —. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "2026-11-13",
+        "scadenza_tipo": "data",
+        "url": "https://bandi.fondazionecaript.it/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/65) per Fondazione Cassa di Risparmio di Pistoia e Pescia. Territorio: —. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://bandi.fondazionecaript.it/",
+      "sourceDomain": "bandi.fondazionecaript.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/65) per Fondazione Cassa di Risparmio di Pistoia e Pescia. Territorio: —. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": "2026-11-13",
+      "deadlineType": "data",
+      "state": "open",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L2",
+        "L5"
+      ],
+      "thematicTags": [
+        "innovazione"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Pistoia e Pescia in ambito Formazione e Ricerca. Territorio di ammissibilità o priorità: —. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Pistoia e Pescia",
+          "url": "https://bandi.fondazionecaript.it/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
+        "verifiedUntil": "2026-11-13"
+      }
+    },
+    {
+      "id": "re-bando-a2d437002f",
+      "original": {
+        "titolo": "Resource Attraction Call – Design Measure",
+        "ente": "Fondazione Cassa di Risparmio di Cuneo",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (sviluppo economico e culturale)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L2",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito sviluppo economico e culturale. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: € 8000.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "€ 8000",
+        "contributo_max": "€ 8000",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "2026-12-31",
+        "scadenza_tipo": "data",
+        "url": "https://fondazionecrc.it/en/cosafacciamo/bando-attrazione-risorse-misura-progettazione/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/40) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://fondazionecrc.it/en/cosafacciamo/bando-attrazione-risorse-misura-progettazione/",
+      "sourceDomain": "fondazionecrc.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/40) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": "2026-12-31",
+      "deadlineType": "data",
+      "state": "open",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L2",
+        "L5"
+      ],
+      "thematicTags": [
+        "innovazione"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito sviluppo economico e culturale. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: € 8000.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Cuneo",
+          "url": "https://fondazionecrc.it/en/cosafacciamo/bando-attrazione-risorse-misura-progettazione/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Cuneo",
+        "verifiedUntil": "2026-12-31"
+      }
+    },
+    {
+      "id": "re-bando-fe838cd312",
+      "original": {
+        "titolo": "Call for Resource Attraction – Co-financing Measure",
+        "ente": "Fondazione Cassa di Risparmio di Cuneo",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (sviluppo economico e culturale)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L2",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito sviluppo economico e culturale. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: € 50.000.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "€ 50.000",
+        "contributo_max": "€ 50.000",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "2026-12-31",
+        "scadenza_tipo": "data",
+        "url": "https://fondazionecrc.it/en/cosafacciamo/bando-attrazione-risorse-misura-cofinanziamento/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/41) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://fondazionecrc.it/en/cosafacciamo/bando-attrazione-risorse-misura-cofinanziamento/",
+      "sourceDomain": "fondazionecrc.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/41) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": "2026-12-31",
+      "deadlineType": "data",
+      "state": "open",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L2",
+        "L5"
+      ],
+      "thematicTags": [
+        "innovazione"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito sviluppo economico e culturale. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: € 50.000.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Cuneo",
+          "url": "https://fondazionecrc.it/en/cosafacciamo/bando-attrazione-risorse-misura-cofinanziamento/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Cuneo",
+        "verifiedUntil": "2026-12-31"
+      }
+    },
+    {
+      "id": "re-bando-9f98cdf1c6",
+      "original": {
+        "titolo": "Talents in Motion",
+        "ente": "Fondazione Cassa di Risparmio di Cuneo",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (educazione)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito educazione. Territorio di ammissibilità o priorità: Nazionale. Contributo massimo erogabile: € 2100.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "€ 2100",
+        "contributo_max": "€ 2100",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "2026-12-31",
+        "scadenza_tipo": "data",
+        "url": "https://fondazionecrc.it/en/cosafacciamo/talenti-in-movimento-3/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/44) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Nazionale. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://fondazionecrc.it/en/cosafacciamo/talenti-in-movimento-3/",
+      "sourceDomain": "fondazionecrc.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/44) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Nazionale. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": "2026-12-31",
+      "deadlineType": "data",
+      "state": "open",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito educazione. Territorio di ammissibilità o priorità: Nazionale. Contributo massimo erogabile: € 2100.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Cuneo",
+          "url": "https://fondazionecrc.it/en/cosafacciamo/talenti-in-movimento-3/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Cuneo",
+        "verifiedUntil": "2026-12-31"
+      }
+    },
+    {
+      "id": "re-bando-e834f38476",
+      "original": {
+        "titolo": "Call for startup!",
+        "ente": "Fondazione del Monte Faenza",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (innovazione)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L2",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione del Monte Faenza in ambito innovazione. Territorio di ammissibilità o priorità: Faenza, Romagna. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fondazionemontefaenza.it/bandoclab2025/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/7) per Fondazione del Monte Faenza. Territorio: Faenza, Romagna. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://fondazionemontefaenza.it/bandoclab2025/",
+      "sourceDomain": "fondazionemontefaenza.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/7) per Fondazione del Monte Faenza. Territorio: Faenza, Romagna. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L2",
+        "L5"
+      ],
+      "thematicTags": [
+        "innovazione"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione del Monte Faenza in ambito innovazione. Territorio di ammissibilità o priorità: Faenza, Romagna. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione del Monte Faenza",
+          "url": "https://fondazionemontefaenza.it/bandoclab2025/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione del Monte Faenza",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-d5e9ee54ce",
+      "original": {
+        "titolo": "Bando 1/2026 - Richieste generali di contributo",
+        "ente": "Fondazione CARIT",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (Multisettoriale)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione CARIT in ambito Multisettoriale. Territorio di ammissibilità o priorità: Locale/Regionale. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecarit.it/bando-12026-richieste-generali-di-contributo",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/10) per Fondazione CARIT. Territorio: Locale/Regionale. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecarit.it/bando-12026-richieste-generali-di-contributo",
+      "sourceDomain": "fondazionecarit.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/10) per Fondazione CARIT. Territorio: Locale/Regionale. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione CARIT in ambito Multisettoriale. Territorio di ammissibilità o priorità: Locale/Regionale. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione CARIT",
+          "url": "https://www.fondazionecarit.it/bando-12026-richieste-generali-di-contributo"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione CARIT",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-9bf6a04e3c",
+      "original": {
+        "titolo": "Richieste di contributo - Fondazione Carical",
+        "ente": "Fondazione Cassa di Risparmio di Calabria e di Lucania",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (vario)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Calabria e di Lucania in ambito vario. Territorio di ammissibilità o priorità: Calabria e Basilicata. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecarical.it/richieste-di-contributo/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/25) per Fondazione Cassa di Risparmio di Calabria e di Lucania. Territorio: Calabria e Basilicata. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecarical.it/richieste-di-contributo/",
+      "sourceDomain": "fondazionecarical.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/25) per Fondazione Cassa di Risparmio di Calabria e di Lucania. Territorio: Calabria e Basilicata. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Calabria e di Lucania in ambito vario. Territorio di ammissibilità o priorità: Calabria e Basilicata. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Calabria e di Lucania",
+          "url": "https://www.fondazionecarical.it/richieste-di-contributo/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Calabria e di Lucania",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-3b5660bf6f",
+      "original": {
+        "titolo": "Bando per la presentazione di progetti per la promozione dell’incontro tra i giovani e il mondo dell’associazionismo",
+        "ente": "Fondazione Cassa di Risparmio di Carrara",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (welfare)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Carrara in ambito welfare. Territorio di ammissibilità o priorità: Carrara e provincia. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "http://www.cesvot.it/siete-presente",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/28) per Fondazione Cassa di Risparmio di Carrara. Territorio: Carrara e provincia. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "http://www.cesvot.it/siete-presente",
+      "sourceDomain": "cesvot.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/28) per Fondazione Cassa di Risparmio di Carrara. Territorio: Carrara e provincia. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Carrara in ambito welfare. Territorio di ammissibilità o priorità: Carrara e provincia. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Carrara",
+          "url": "http://www.cesvot.it/siete-presente"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Carrara",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-3c9e596393",
+      "original": {
+        "titolo": "Spazi Liberi – Corsi e Attività al Rondò dei Talenti",
+        "ente": "Fondazione Cassa di Risparmio di Cuneo",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (educazione)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito educazione. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fondazionecrc.it/en/cosafacciamo/spazi-liberi-3/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/33) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://fondazionecrc.it/en/cosafacciamo/spazi-liberi-3/",
+      "sourceDomain": "fondazionecrc.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/33) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [
+        "rigenerazione"
+      ],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito educazione. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Cuneo",
+          "url": "https://fondazionecrc.it/en/cosafacciamo/spazi-liberi-3/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Cuneo",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-c676616cf3",
+      "original": {
+        "titolo": "Safe by Choice. Move. Intelligently",
+        "ente": "Fondazione Cassa di Risparmio di Cuneo",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (educazione)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito educazione. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://fondazionecrc.it/en/cosafacciamo/sicuri-per-scelta/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/42) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://fondazionecrc.it/en/cosafacciamo/sicuri-per-scelta/",
+      "sourceDomain": "fondazionecrc.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/42) per Fondazione Cassa di Risparmio di Cuneo. Territorio: Provincia di Cuneo. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Cuneo in ambito educazione. Territorio di ammissibilità o priorità: Provincia di Cuneo. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Cuneo",
+          "url": "https://fondazionecrc.it/en/cosafacciamo/sicuri-per-scelta/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Cuneo",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-fc59565744",
+      "original": {
+        "titolo": "Bando Volontariato Filantropia e Beneficenza",
+        "ente": "Fondazione Cassa di Risparmio di Fano",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (welfare)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L4",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Fano in ambito welfare. Territorio di ammissibilità o priorità: Comune di Fano e altri comuni del territorio della Fondazione. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecarifano.it/progetti/bando-volontariato-filantropia-e-beneficenza/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/46) per Fondazione Cassa di Risparmio di Fano. Territorio: Comune di Fano e altri comuni del territorio della Fondazione. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecarifano.it/progetti/bando-volontariato-filantropia-e-beneficenza/",
+      "sourceDomain": "fondazionecarifano.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/46) per Fondazione Cassa di Risparmio di Fano. Territorio: Comune di Fano e altri comuni del territorio della Fondazione. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L4",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 3 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Fano in ambito welfare. Territorio di ammissibilità o priorità: Comune di Fano e altri comuni del territorio della Fondazione. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Fano",
+          "url": "https://www.fondazionecarifano.it/progetti/bando-volontariato-filantropia-e-beneficenza/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Fano",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-279e702ea2",
+      "original": {
+        "titolo": "Bando Crowdfunding: una spinta per il Sociale",
+        "ente": "Fondazione Cassa di Risparmio di Fano",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (Volontariato, Filantropia e Beneficenza)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Fano in ambito Volontariato, Filantropia e Beneficenza. Territorio di ammissibilità o priorità: Territorio di Fano e dintorni. Contributo massimo erogabile: € 15.000.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "€ 15.000",
+        "contributo_max": "€ 15.000",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecarifano.it/progetti/bando-crowdfunding/",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/47) per Fondazione Cassa di Risparmio di Fano. Territorio: Territorio di Fano e dintorni. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecarifano.it/progetti/bando-crowdfunding/",
+      "sourceDomain": "fondazionecarifano.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/47) per Fondazione Cassa di Risparmio di Fano. Territorio: Territorio di Fano e dintorni. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Fano in ambito Volontariato, Filantropia e Beneficenza. Territorio di ammissibilità o priorità: Territorio di Fano e dintorni. Contributo massimo erogabile: € 15.000.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Fano",
+          "url": "https://www.fondazionecarifano.it/progetti/bando-crowdfunding/"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Fano",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-d67670818a",
+      "original": {
+        "titolo": "Territori di Comunità – IV edizione",
+        "ente": "Fondazione Cassa dei Risparmi di Forlì",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (welfare)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L4",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa dei Risparmi di Forlì in ambito welfare. Territorio di ammissibilità o priorità: Forlì e territorio limitrofo. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecariforli.it/downloads/files/AZIONE%201_Infografica-Territori%20di%20Comunit%C3%A0.pdf",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/86) per Fondazione Cassa dei Risparmi di Forlì. Territorio: Forlì e territorio limitrofo. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecariforli.it/downloads/files/AZIONE%201_Infografica-Territori%20di%20Comunit%C3%A0.pdf",
+      "sourceDomain": "fondazionecariforli.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/86) per Fondazione Cassa dei Risparmi di Forlì. Territorio: Forlì e territorio limitrofo. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L4",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 3 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa dei Risparmi di Forlì in ambito welfare. Territorio di ammissibilità o priorità: Forlì e territorio limitrofo. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa dei Risparmi di Forlì",
+          "url": "https://www.fondazionecariforli.it/downloads/files/AZIONE%201_Infografica-Territori%20di%20Comunit%C3%A0.pdf"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa dei Risparmi di Forlì",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-c0785bf7ec",
+      "original": {
+        "titolo": "Generazione Over",
+        "ente": "Fondazione Cassa dei Risparmi di Forlì",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (welfare)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa dei Risparmi di Forlì in ambito welfare. Territorio di ammissibilità o priorità: Forlì e territorio circostante. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecariforli.it/downloads/files/AZIONE%202_Infografica%20Generazione%20Over.pdf",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/87) per Fondazione Cassa dei Risparmi di Forlì. Territorio: Forlì e territorio circostante. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecariforli.it/downloads/files/AZIONE%202_Infografica%20Generazione%20Over.pdf",
+      "sourceDomain": "fondazionecariforli.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/87) per Fondazione Cassa dei Risparmi di Forlì. Territorio: Forlì e territorio circostante. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L5"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 2 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa dei Risparmi di Forlì in ambito welfare. Territorio di ammissibilità o priorità: Forlì e territorio circostante. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa dei Risparmi di Forlì",
+          "url": "https://www.fondazionecariforli.it/downloads/files/AZIONE%202_Infografica%20Generazione%20Over.pdf"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa dei Risparmi di Forlì",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-935620b464",
+      "original": {
+        "titolo": "Assegni di cura",
+        "ente": "Fondazione Cassa dei Risparmi di Forlì",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (welfare)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L1",
+          "L5",
+          "L6"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa dei Risparmi di Forlì in ambito welfare. Territorio di ammissibilità o priorità: Distretto socio-sanitario di Forlì. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecariforli.it/downloads/files/Valutazione%20impatto%20assegni%20di%20cura160522.pdf",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/88) per Fondazione Cassa dei Risparmi di Forlì. Territorio: Distretto socio-sanitario di Forlì. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecariforli.it/downloads/files/Valutazione%20impatto%20assegni%20di%20cura160522.pdf",
+      "sourceDomain": "fondazionecariforli.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/88) per Fondazione Cassa dei Risparmi di Forlì. Territorio: Distretto socio-sanitario di Forlì. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L1",
+        "L5",
+        "L6"
+      ],
+      "thematicTags": [
+        "sociale"
+      ],
+      "score0to100": 100,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Copre 3 linee strategiche di mandato DUP (+10)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa dei Risparmi di Forlì in ambito welfare. Territorio di ammissibilità o priorità: Distretto socio-sanitario di Forlì. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa dei Risparmi di Forlì",
+          "url": "https://www.fondazionecariforli.it/downloads/files/Valutazione%20impatto%20assegni%20di%20cura160522.pdf"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa dei Risparmi di Forlì",
+        "verifiedUntil": null
+      }
+    },
+    {
+      "id": "re-bando-9a353ba0ed",
+      "original": {
+        "titolo": "Premio \"LA PAGELLA D'ORO\" 52° edizione",
+        "ente": "Fondazione Cassa di Risparmio di Cento",
+        "programma": "Bandi Fondazioni ed Erogazioni Filantropiche (educazione)",
+        "categoria": "Fondazioni",
+        "linee": [
+          "L5"
+        ],
+        "descrizione": "Opportunità promossa da Fondazione Cassa di Risparmio di Cento in ambito educazione. Territorio di ammissibilità o priorità: Province di Bologna, Ferrara e Modena. Contributo massimo erogabile: Da regolamento di erogazione.",
+        "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+        "dotazione": "Da regolamento di erogazione",
+        "contributo_max": "Da regolamento di erogazione",
+        "cofinanziamento": "Contributo a fondo perduto / cofinanziamento secondo regolamento erogativo",
+        "scadenza": "",
+        "scadenza_tipo": "sportello",
+        "url": "https://www.fondazionecrcento.it/news_eventi.htm?v_lingua=ITA&amp;v_menu_lista=METOP-M0004-M0403&amp;v_anno_archivio=2024&amp;v_pagina_news=NEWS122",
+        "note": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/93) per Fondazione Cassa di Risparmio di Cento. Territorio: Province di Bologna, Ferrara e Modena. Rilevato il 2026-10-23."
+      },
+      "sourceCanonicalUrl": "https://www.fondazionecrcento.it/news_eventi.htm?v_lingua=ITA&amp;v_menu_lista=METOP-M0004-M0403&amp;v_anno_archivio=2024&amp;v_pagina_news=NEWS122",
+      "sourceDomain": "fondazionecrcento.it",
+      "sourceType": "fondazioni",
+      "sourceCheckedAt": "2026-10-23T08:00:00+02:00",
+      "sourceEvidence": "Monitorato tramite Open Fundraising (openfundraising.it/bandi/93) per Fondazione Cassa di Risparmio di Cento. Territorio: Province di Bologna, Ferrara e Modena. Rilevato il 2026-10-23.",
+      "discoveredAt": "2026-10-23T08:00:00+02:00",
+      "firstPublishedAt": null,
+      "lastChangedAt": "2026-10-23T08:00:00+02:00",
+      "deadline": null,
+      "deadlineType": "sportello",
+      "state": "rolling_verified",
+      "eligibility": "confirmed",
+      "strategicLines": [
+        "L5"
+      ],
+      "thematicTags": [],
+      "score0to100": 95,
+      "scoreReasons": [
+        "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+        "Opportunità attiva e verificata con fonte ufficiale (+15)",
+        "Allineato a una linea strategica di mandato DUP (+5)"
+      ],
+      "publicSummary": "Opportunità promossa da Fondazione Cassa di Risparmio di Cento in ambito educazione. Territorio di ammissibilità o priorità: Province di Bologna, Ferrara e Modena. Contributo massimo erogabile: Da regolamento di erogazione.",
+      "risks": [],
+      "evidenceLinks": [
+        {
+          "title": "Fonte ufficiale Fondazione Cassa di Risparmio di Cento",
+          "url": "https://www.fondazionecrcento.it/news_eventi.htm?v_lingua=ITA&amp;v_menu_lista=METOP-M0004-M0403&amp;v_anno_archivio=2024&amp;v_pagina_news=NEWS122"
+        }
+      ],
+      "changeLog": [
+        {
+          "date": "2026-10-23",
+          "note": "Nuova opportunità acquisita automaticamente tramite connettore Open Fundraising & Fondazioni Erogative (incl. Unipolis)."
+        }
+      ],
+      "validity": {
+        "isOfficiallyVerified": true,
+        "verificationSource": "Fondazione Cassa di Risparmio di Cento",
         "verifiedUntil": null
       }
     }

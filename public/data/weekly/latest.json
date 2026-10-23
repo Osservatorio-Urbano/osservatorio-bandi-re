@@ -1,22 +1,58 @@
 {
   "edition_id": "RE-FUNDING-2026-W44",
-  "generated_at": "2026-10-23T09:39:34.481Z",
+  "generated_at": "2026-10-23T10:09:37.120Z",
   "delivery_monday": "2026-10-26",
   "delivery_category": "DELIVERY_2026-10-26",
   "week_start": "2026-W44",
   "week_end": "2026-W44",
   "status": "READY",
   "quality_passed": true,
-  "item_count": 146,
-  "active_count": 42,
-  "open_count": 19,
-  "rolling_count": 23,
+  "item_count": 165,
+  "active_count": 61,
+  "open_count": 26,
+  "rolling_count": 35,
   "closed_count": 98,
-  "new_this_week_count": 24,
+  "new_this_week_count": 43,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W44 con 10 opportunità prioritarie selezionate su 42 attive (146 censite).",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W44 con 10 opportunità prioritarie selezionate su 61 attive (165 censite).",
   "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W44.html",
   "selected_opportunities": [
+    {
+      "id": "re-bando-74ebbb4e15",
+      "titolo": "BANDO “+ACOMUNITA’APERAPARCASANTACROCE 2026”",
+      "ente": "Fondazione Cassa di Risparmio di Carpi",
+      "scadenza": "2026-10-30",
+      "scadenza_label": "30/10/2026",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "€ 20.000",
+      "fonte_url": "https://www.fondazionecrcarpi.it/u7gfRmN/wp-content/uploads/bandocomunita-per-parco-santacroce-2026.pdf",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Carpi",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-279e702ea2",
+      "titolo": "Bando Crowdfunding: una spinta per il Sociale",
+      "ente": "Fondazione Cassa di Risparmio di Fano",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "€ 15.000",
+      "fonte_url": "https://www.fondazionecarifano.it/progetti/bando-crowdfunding/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Fano",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5"
+      ]
+    },
     {
       "id": "re-bando-b1a0b6ef6b",
       "titolo": "Bando Welfare 2026_11/16",
@@ -88,6 +124,23 @@
       ]
     },
     {
+      "id": "re-bando-446d35e46e",
+      "titolo": "Wellgranda Size 2",
+      "ente": "Fondazione Cassa di Risparmio di Cuneo",
+      "scadenza": "2026-10-29",
+      "scadenza_label": "29/10/2026",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "€ 50.000",
+      "fonte_url": "https://fondazionecrc.it/en/cosafacciamo/wellgranda-misura-2/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Cuneo",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5"
+      ]
+    },
+    {
       "id": "re-bando-d3b1d4c900",
       "titolo": "FEAMPA - Riqualificazione marina e dei corsi d'acqua",
       "ente": "Regione Emilia-Romagna - Agricoltura, caccia e pesca",
@@ -122,84 +175,31 @@
       ]
     },
     {
-      "id": "re-bando-f57fd310d1",
-      "titolo": "HORIZON-NEB-2026-01 (destinazione BUSINESS) - Marginalita abitativa, investimenti e riuso di spazi vacanti o sottoutilizzati",
-      "ente": "Commissione europea",
-      "scadenza": "2026-12-01",
-      "scadenza_label": "01/12/2026",
-      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
-      "intensita_aiuto": "BUSINESS-01 10.500.000 EUR (3 progetti); BUSINESS-02 7.000.000 EUR (2 progetti); BUSINESS-03 9.000.000 EUR (2 progetti)",
-      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-BUSINESS-01",
+      "id": "re-bando-45851ab2e5",
+      "titolo": "Borse Formazione e Lavoro",
+      "ente": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
+      "scadenza": "2026-11-13",
+      "scadenza_label": "13/11/2026",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "https://bandi.fondazionecaript.it/",
       "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Commissione europea",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
       "score": 100,
       "linee": [
-        "L1",
-        "L5",
-        "L2"
-      ]
-    },
-    {
-      "id": "re-bando-22f6ed865c",
-      "titolo": "HORIZON-NEB-2026-01 (destinazione PARTICIPATION) - Quartieri belli, inclusivi e sostenibili: senza dimora, design degli spazi e benessere degli abitanti",
-      "ente": "Commissione europea",
-      "scadenza": "2026-12-01",
-      "scadenza_label": "01/12/2026",
-      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
-      "intensita_aiuto": "PARTICIPATION-01 12.600.000 EUR (2 progetti); PARTICIPATION-02 10.000.000 EUR (2 progetti); PARTICIPATION-03 15.000.000 EUR (3 progetti)",
-      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-PARTICIPATION-01",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Commissione europea",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L5",
-        "L3"
-      ]
-    },
-    {
-      "id": "re-bando-3fd27fee60",
-      "titolo": "HORIZON-NEB-2026-01 (destinazione REGEN) - Rigenerazione dell'ambiente costruito: comfort termico, manutenzione degli edifici e uso dello spazio verticale",
-      "ente": "Commissione europea",
-      "scadenza": "2026-12-01",
-      "scadenza_label": "01/12/2026",
-      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
-      "intensita_aiuto": "REGEN-01 12.000.000 EUR (3 progetti); REGEN-02 10.000.000 EUR (2 progetti); REGEN-03 15.000.000 EUR (3 progetti)",
-      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-REGEN-01",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Commissione europea",
-      "score": 100,
-      "linee": [
-        "L3",
+        "L2",
         "L5"
-      ]
-    },
-    {
-      "id": "re-bando-0daf149e54",
-      "titolo": "Avviso pubblico per la selezione di eventi sportivi di rilevanza nazionale e internazionale 2026",
-      "ente": "Dipartimento per lo Sport - PCM",
-      "scadenza": "2026-12-01",
-      "scadenza_label": "01/12/2026",
-      "beneficiari": "ASD/SSD, comitati organizzatori, federazioni sportive, EPS, enti e società pubbliche o private con titolo di esclusività nell'organizzazione dell'evento (quindi anche Comuni titolari dell'evento)",
-      "intensita_aiuto": "7.500.000 euro",
-      "fonte_url": "https://www.sport.governo.it/it/bandi-e-avvisi/realizzazione-di-eventi-sportivi-di-rilevanza-nazionale-ed-internazionale/avviso-2026/pubblicato-il-nuovo-avviso-per-la-selezione-di-eventi-sportivi-di-rilevanza-nazionale-e-internazionale-2026/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Dipartimento per lo Sport - PCM",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L2"
       ]
     }
   ],
   "quality_report": {
-    "total_records": 146,
-    "valid_records": 146,
-    "active_opportunities": 42,
-    "open_bandi": 19,
-    "rolling_verified": 23,
+    "total_records": 165,
+    "valid_records": 165,
+    "active_opportunities": 61,
+    "open_bandi": 26,
+    "rolling_verified": 35,
     "closed_bandi": 98,
-    "new_this_week": 24,
+    "new_this_week": 43,
     "selected_newsletter": 10,
     "unverified_excluded": 6
   }
