@@ -1,6 +1,6 @@
 {
   "edition_id": "RE-FUNDING-2026-W45",
-  "generated_at": "2026-10-28T11:27:57.657Z",
+  "generated_at": "2026-10-29T11:38:00.638Z",
   "delivery_monday": "2026-11-02",
   "delivery_category": "DELIVERY_2026-11-02",
   "week_start": "2026-W45",
@@ -8,15 +8,33 @@
   "status": "READY",
   "quality_passed": true,
   "item_count": 165,
-  "active_count": 61,
-  "open_count": 26,
+  "active_count": 60,
+  "open_count": 25,
   "rolling_count": 35,
-  "closed_count": 98,
-  "new_this_week_count": 43,
+  "closed_count": 99,
+  "new_this_week_count": 19,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W45 con 10 opportunità prioritarie selezionate su 61 attive (165 censite).",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W45 con 10 opportunità prioritarie selezionate su 60 attive (165 censite).",
   "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W45.html",
   "selected_opportunities": [
+    {
+      "id": "re-bando-935620b464",
+      "titolo": "Assegni di cura",
+      "ente": "Fondazione Cassa dei Risparmi di Forlì",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "https://www.fondazionecariforli.it/downloads/files/Valutazione%20impatto%20assegni%20di%20cura160522.pdf",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa dei Risparmi di Forlì",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5",
+        "L6"
+      ]
+    },
     {
       "id": "re-bando-74ebbb4e15",
       "titolo": "BANDO “+ACOMUNITA’APERAPARCASANTACROCE 2026”",
@@ -54,20 +72,36 @@
       ]
     },
     {
-      "id": "re-bando-b1a0b6ef6b",
-      "titolo": "Bando Welfare 2026_11/16",
-      "ente": "Fondazione Cassa di Risparmio Pietro Manodori",
+      "id": "re-bando-3b5660bf6f",
+      "titolo": "Bando per la presentazione di progetti per la promozione dell’incontro tra i giovani e il mondo dell’associazionismo",
+      "ente": "Fondazione Cassa di Risparmio di Carrara",
       "scadenza": "sportello",
       "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://www.fondazionemanodori.it/contributi/bandi/",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "http://www.cesvot.it/siete-presente",
       "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio Pietro Manodori",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Carrara",
       "score": 100,
       "linee": [
         "L1",
-        "L3",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-fc59565744",
+      "titolo": "Bando Volontariato Filantropia e Beneficenza",
+      "ente": "Fondazione Cassa di Risparmio di Fano",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "https://www.fondazionecarifano.it/progetti/bando-volontariato-filantropia-e-beneficenza/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Fano",
+      "score": 100,
+      "linee": [
+        "L1",
         "L4",
         "L5"
       ]
@@ -124,23 +158,6 @@
       ]
     },
     {
-      "id": "re-bando-446d35e46e",
-      "titolo": "Wellgranda Size 2",
-      "ente": "Fondazione Cassa di Risparmio di Cuneo",
-      "scadenza": "2026-10-29",
-      "scadenza_label": "29/10/2026",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "€ 50.000",
-      "fonte_url": "https://fondazionecrc.it/en/cosafacciamo/wellgranda-misura-2/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio di Cuneo",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L5"
-      ]
-    },
-    {
       "id": "re-bando-d3b1d4c900",
       "titolo": "FEAMPA - Riqualificazione marina e dei corsi d'acqua",
       "ente": "Regione Emilia-Romagna - Agricoltura, caccia e pesca",
@@ -173,33 +190,16 @@
         "L3",
         "L6"
       ]
-    },
-    {
-      "id": "re-bando-45851ab2e5",
-      "titolo": "Borse Formazione e Lavoro",
-      "ente": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
-      "scadenza": "2026-11-13",
-      "scadenza_label": "13/11/2026",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "Da regolamento di erogazione",
-      "fonte_url": "https://bandi.fondazionecaript.it/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
-      "score": 100,
-      "linee": [
-        "L2",
-        "L5"
-      ]
     }
   ],
   "quality_report": {
     "total_records": 165,
     "valid_records": 165,
-    "active_opportunities": 61,
-    "open_bandi": 26,
+    "active_opportunities": 60,
+    "open_bandi": 25,
     "rolling_verified": 35,
-    "closed_bandi": 98,
-    "new_this_week": 43,
+    "closed_bandi": 99,
+    "new_this_week": 19,
     "selected_newsletter": 10,
     "unverified_excluded": 6
   }
