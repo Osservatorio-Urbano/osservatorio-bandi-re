@@ -1,6 +1,6 @@
 {
   "edition_id": "RE-FUNDING-2026-W45",
-  "generated_at": "2026-10-30T11:29:05.176Z",
+  "generated_at": "2026-10-31T11:00:14.878Z",
   "delivery_monday": "2026-11-02",
   "delivery_category": "DELIVERY_2026-11-02",
   "week_start": "2026-W45",
@@ -8,13 +8,13 @@
   "status": "READY",
   "quality_passed": true,
   "item_count": 165,
-  "active_count": 58,
-  "open_count": 23,
+  "active_count": 57,
+  "open_count": 22,
   "rolling_count": 35,
-  "closed_count": 101,
+  "closed_count": 102,
   "new_this_week_count": 0,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W45 con 10 opportunità prioritarie selezionate su 58 attive (165 censite).",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W45 con 10 opportunità prioritarie selezionate su 57 attive (165 censite).",
   "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W45.html",
   "selected_opportunities": [
     {
@@ -36,21 +36,19 @@
       ]
     },
     {
-      "id": "re-bando-74ebbb4e15",
-      "titolo": "BANDO “+ACOMUNITA’APERAPARCASANTACROCE 2026”",
-      "ente": "Fondazione Cassa di Risparmio di Carpi",
-      "scadenza": "2026-10-30",
-      "scadenza_label": "30/10/2026",
+      "id": "re-bando-279e702ea2",
+      "titolo": "Bando Crowdfunding: una spinta per il Sociale",
+      "ente": "Fondazione Cassa di Risparmio di Fano",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
       "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "€ 20.000",
-      "fonte_url": "https://www.fondazionecrcarpi.it/u7gfRmN/wp-content/uploads/bandocomunita-per-parco-santacroce-2026.pdf",
+      "intensita_aiuto": "€ 15.000",
+      "fonte_url": "https://www.fondazionecarifano.it/progetti/bando-crowdfunding/",
       "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio di Carpi",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Fano",
       "score": 100,
       "linee": [
         "L1",
-        "L3",
-        "L4",
         "L5"
       ]
     },
@@ -175,30 +173,31 @@
       ]
     },
     {
-      "id": "re-bando-45851ab2e5",
-      "titolo": "Borse Formazione e Lavoro",
-      "ente": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
-      "scadenza": "2026-11-13",
-      "scadenza_label": "13/11/2026",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "Da regolamento di erogazione",
-      "fonte_url": "https://bandi.fondazionecaript.it/",
+      "id": "re-bando-f57fd310d1",
+      "titolo": "HORIZON-NEB-2026-01 (destinazione BUSINESS) - Marginalita abitativa, investimenti e riuso di spazi vacanti o sottoutilizzati",
+      "ente": "Commissione europea",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
+      "intensita_aiuto": "BUSINESS-01 10.500.000 EUR (3 progetti); BUSINESS-02 7.000.000 EUR (2 progetti); BUSINESS-03 9.000.000 EUR (2 progetti)",
+      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-BUSINESS-01",
       "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
+      "stato_verifica": "Commissione europea",
       "score": 100,
       "linee": [
-        "L2",
-        "L5"
+        "L1",
+        "L5",
+        "L2"
       ]
     }
   ],
   "quality_report": {
     "total_records": 165,
     "valid_records": 165,
-    "active_opportunities": 58,
-    "open_bandi": 23,
+    "active_opportunities": 57,
+    "open_bandi": 22,
     "rolling_verified": 35,
-    "closed_bandi": 101,
+    "closed_bandi": 102,
     "new_this_week": 0,
     "selected_newsletter": 10,
     "unverified_excluded": 6
