@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-11-01T11:55:43.249Z",
+  "timestamp": "2026-11-02T13:41:16.783Z",
   "dataset_version": "2.0.0-canonical",
   "total_records": 165,
   "schema_valid": true,
   "duplicates_found": 0,
   "invalid_urls": 0,
-  "freshness_hours": 0,
+  "freshness_hours": 24,
   "status": "PASSED",
   "checks": [
     {
@@ -31,7 +31,7 @@
     {
       "name": "Dataset Freshness Policy",
       "passed": true,
-      "details": "Data metadati: 2026-11-01. Coerente con la finestra temporale di osservatorio."
+      "details": "Data metadati: 2026-11-02. Coerente con la finestra temporale di osservatorio."
     },
     {
       "name": "State & Score Consistency",
