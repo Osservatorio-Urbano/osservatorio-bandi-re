@@ -1,6 +1,18 @@
 {
   "editions": [
     {
+      "edition_id": "RE-FUNDING-2026-W46",
+      "iso_week": "2026-W46",
+      "delivery_monday": "2026-11-09",
+      "delivery_category": "DELIVERY_2026-11-09",
+      "generated_at": "2026-11-03T07:47:51.178Z",
+      "item_count": 10,
+      "active_pool": 57,
+      "total_pool": 165,
+      "status": "READY",
+      "url": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W46.html"
+    },
+    {
       "edition_id": "RE-FUNDING-2026-W45",
       "iso_week": "2026-W45",
       "delivery_monday": "2026-11-02",
