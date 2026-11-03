@@ -60,6 +60,12 @@ describe('Verifica Feed RSS 2.0 e Newsletter Email-Safe', () => {
       expect(item).toContain('<category>READY_LATEST</category>');
       expect(item).toContain('<category>DELIVERY_2026-10-26</category>');
     }
+
+    // Per l'edizione RE-FUNDING-2026-W45, la data deve essere rigorosamente 2026-11-02
+    if (item.includes('RE-FUNDING-2026-W45')) {
+      expect(item).toContain('<category>READY_LATEST</category>');
+      expect(item).toContain('<category>DELIVERY_2026-11-02</category>');
+    }
   });
 
   it('deve calcolare correttamente le date dei lunedì ISO anche a cavallo d\'anno', () => {
@@ -160,6 +166,13 @@ describe('Verifica Feed RSS 2.0 e Newsletter Email-Safe', () => {
     expect(Array.isArray(data.editions)).toBe(true);
     expect(data.editions.length).toBeGreaterThanOrEqual(1);
     expect(data.editions[0].delivery_monday).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+
+    // Verifica assenza di duplicati di edizione e preservazione edizioni storiche
+    const ids = data.editions.map((e: any) => e.edition_id);
+    const uniqueIds = new Set(ids);
+    expect(uniqueIds.size).toBe(ids.length);
+    expect(ids).toContain('RE-FUNDING-2026-W45');
+    expect(ids).toContain('RE-FUNDING-2026-W44');
   });
 
   it('deve verificare che la newsletter utilizzi contatori DINAMICI coerenti con il dataset e non contatori hardcoded', () => {

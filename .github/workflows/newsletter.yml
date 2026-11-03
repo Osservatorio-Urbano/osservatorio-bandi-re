@@ -2,13 +2,13 @@ name: Generazione Newsletter Settimanale & Feed RSS
 
 on:
   schedule:
-    # Pianificato ogni lunedì alle ore 06:15 Europe/Rome con gestione automatica CET/CEST
-    - cron: '15 6 * * 1'
+    # Pianificato ogni lunedì alle ore 06:30 Europe/Rome con gestione automatica CET/CEST
+    - cron: '30 6 * * 1'
       timezone: 'Europe/Rome'
   workflow_dispatch:
     inputs:
       week_override:
-        description: 'Settimana specifica (es. 2026-W44, facoltativo)'
+        description: 'Settimana specifica (es. 2026-W45, facoltativo)'
         type: string
         default: ''
 
@@ -58,6 +58,14 @@ jobs:
             node scripts/generate-newsletter.mjs
           fi
 
+      - name: Controllo Qualità e Integrità Artefatti Generati
+        run: |
+          if [ -n "${{ github.event.inputs.week_override }}" ]; then
+            node scripts/verify-newsletter-publication.mjs --phase local --week "${{ github.event.inputs.week_override }}"
+          else
+            node scripts/verify-newsletter-publication.mjs --phase local
+          fi
+
       - name: Test validazione Feed RSS generato
         run: npx vitest run tests/newsletter-rss.test.ts
 
@@ -69,7 +77,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "Nessun cambiamento nei file di newsletter da committare."
           else
-            git commit -m "chore(newsletter): emissione settimanale $(date +'%Y-W%V') [skip ci]"
+            git commit -m "chore(newsletter): emissione settimanale $(date +'%G-W%V') [skip ci]"
             for attempt in 1 2 3; do
               echo "Tentativo di push $attempt di 3..."
               git fetch origin main
@@ -104,3 +112,11 @@ jobs:
       - name: Deploy su GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verifica Pubblicazione e Integrità Live su GitHub Pages
+        run: |
+          if [ -n "${{ github.event.inputs.week_override }}" ]; then
+            node scripts/verify-newsletter-publication.mjs --phase remote --week "${{ github.event.inputs.week_override }}"
+          else
+            node scripts/verify-newsletter-publication.mjs --phase remote
+          fi
