@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-02T13:41:16.783Z",
+  "timestamp": "2026-11-03T12:54:43.187Z",
   "dataset_version": "2.0.0-canonical",
   "total_records": 165,
   "schema_valid": true,
@@ -31,12 +31,12 @@
     {
       "name": "Dataset Freshness Policy",
       "passed": true,
-      "details": "Data metadati: 2026-11-02. Coerente con la finestra temporale di osservatorio."
+      "details": "Data metadati: 2026-11-03. Coerente con la finestra temporale di osservatorio."
     },
     {
       "name": "State & Score Consistency",
       "passed": false,
-      "details": "Trovati 6 bandi chiusi con score anomalo (>80)."
+      "details": "Trovati 7 bandi chiusi con score anomalo (>80)."
     }
   ]
 }
