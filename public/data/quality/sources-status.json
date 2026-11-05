@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-11-04T13:07:56.524Z",
+  "timestamp": "2026-11-05T13:21:29.804Z",
   "total_sources_monitored": 9,
   "active_operative_sources": 6,
   "planned_sources": 3,
-  "last_scan_date": "2026-11-04",
+  "last_scan_date": "2026-11-05",
   "new_opportunities_found": 0,
   "updated_opportunities": 4,
   "expired_opportunities": 0,
@@ -13,11 +13,11 @@
       "name": "PR FESR ed Energia Emilia-Romagna",
       "method": "rss_2_0",
       "status": "operativa",
-      "last_scanned_at": "2026-11-04T13:07:44.518Z",
+      "last_scanned_at": "2026-11-05T13:21:18.032Z",
       "items_acquired": 14,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 2685,
+      "response_time_ms": 2471,
       "endpoint_reachable": true
     },
     {
@@ -25,11 +25,11 @@
       "name": "PA Digitale 2026 (PNRR)",
       "method": "open_data_portal",
       "status": "operativa",
-      "last_scanned_at": "2026-11-04T13:07:45.358Z",
+      "last_scanned_at": "2026-11-05T13:21:18.770Z",
       "items_acquired": 5,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 840,
+      "response_time_ms": 738,
       "endpoint_reachable": true
     },
     {
@@ -37,11 +37,11 @@
       "name": "European Commission SEDIA API",
       "method": "api_rest",
       "status": "operativa",
-      "last_scanned_at": "2026-11-04T13:07:46.249Z",
+      "last_scanned_at": "2026-11-05T13:21:19.672Z",
       "items_acquired": 10,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 891,
+      "response_time_ms": 902,
       "endpoint_reachable": true
     },
     {
@@ -49,13 +49,13 @@
       "name": "Fondazioni Manodori e Cariparma",
       "method": "html_scrape",
       "status": "operativa",
-      "last_scanned_at": "2026-11-04T13:07:53.966Z",
+      "last_scanned_at": "2026-11-05T13:21:27.048Z",
       "items_acquired": 2,
       "errors_count": 1,
       "errors": [
         "HTTP 403 Forbidden"
       ],
-      "response_time_ms": 7716,
+      "response_time_ms": 7376,
       "endpoint_reachable": false
     },
     {
@@ -63,11 +63,11 @@
       "name": "Open Fundraising (Bandi Fondazioni Erogative Italiane)",
       "method": "open_data_portal",
       "status": "operativa",
-      "last_scanned_at": "2026-11-04T13:07:55.399Z",
+      "last_scanned_at": "2026-11-05T13:21:28.632Z",
       "items_acquired": 17,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 1433,
+      "response_time_ms": 1584,
       "endpoint_reachable": true
     },
     {
@@ -75,11 +75,11 @@
       "name": "Fondazione Unipolis (Welfare, Mobilità & Disuguaglianze)",
       "method": "html_scrape",
       "status": "operativa",
-      "last_scanned_at": "2026-11-04T13:07:56.520Z",
+      "last_scanned_at": "2026-11-05T13:21:29.800Z",
       "items_acquired": 0,
       "errors_count": 0,
       "errors": [],
-      "response_time_ms": 1121,
+      "response_time_ms": 1168,
       "endpoint_reachable": true
     },
     {
