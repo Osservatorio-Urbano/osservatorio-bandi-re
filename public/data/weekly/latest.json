@@ -1,6 +1,6 @@
 {
   "edition_id": "RE-FUNDING-2026-W46",
-  "generated_at": "2026-11-05T13:21:29.879Z",
+  "generated_at": "2026-11-06T13:04:34.810Z",
   "delivery_monday": "2026-11-09",
   "delivery_category": "DELIVERY_2026-11-09",
   "week_start": "2026-W46",
@@ -8,13 +8,13 @@
   "status": "READY",
   "quality_passed": true,
   "item_count": 165,
-  "active_count": 56,
-  "open_count": 21,
+  "active_count": 50,
+  "open_count": 15,
   "rolling_count": 35,
-  "closed_count": 103,
+  "closed_count": 109,
   "new_this_week_count": 0,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W46 con 10 opportunità prioritarie selezionate su 56 attive (165 censite).",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W46 con 10 opportunità prioritarie selezionate su 50 attive (165 censite).",
   "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W46.html",
   "selected_opportunities": [
     {
@@ -88,54 +88,22 @@
       ]
     },
     {
-      "id": "re-bando-e1cd9c0d1b",
-      "titolo": "Bando Welfare 2026_11/16 — progetti per preadolescenti e adolescenti (11-14 anni)",
-      "ente": "Fondazione Pietro Manodori (Reggio Emilia)",
+      "id": "re-bando-b1a0b6ef6b",
+      "titolo": "Bando Welfare 2026_11/16",
+      "ente": "Fondazione Cassa di Risparmio Pietro Manodori",
       "scadenza": "sportello",
       "scadenza_label": "A sportello aperto",
-      "beneficiari": "Alleanze tra enti del terzo settore, istituzioni, realtà ecclesiastiche e famiglie operanti sul territorio reggiano. Il Comune di Reggio Emilia è ammissibile come partner istituzionale delle alleanze territoriali (già partner in progetti Manodori, es. «Sottosopra»).",
+      "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
       "intensita_aiuto": "n.d.",
-      "fonte_url": "https://www.fondazionemanodori.it/contributi/bando-welfare-2026/",
+      "fonte_url": "https://www.fondazionemanodori.it/contributi/bandi/",
       "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Pietro Manodori (Reggio Emilia)",
+      "stato_verifica": "Fondazione Cassa di Risparmio Pietro Manodori",
       "score": 100,
       "linee": [
         "L1",
+        "L3",
+        "L4",
         "L5"
-      ]
-    },
-    {
-      "id": "re-bando-b48c017517",
-      "titolo": "Cammini e vie di pellegrinaggio",
-      "ente": "Regione Emilia-Romagna - Turismo",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti del Terzo settore ed enti pubblici",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://imprese.regione.emilia-romagna.it/leggi-atti-bandi/tutti-i-bandi/turismo/cammini-e-vie-di-pellegrinaggio",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Regione Emilia-Romagna - Turismo",
-      "score": 100,
-      "linee": [
-        "L2",
-        "L6"
-      ]
-    },
-    {
-      "id": "re-bando-aec350f8e0",
-      "titolo": "Contributi di Reale Foundation",
-      "ente": "Reale Foundation (Gruppo Reale Mutua)",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti non profit (secondo la scheda consultata); ruolo degli enti pubblici non specificato (n.d.).",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://www.cesvot.it/consulenza/bandi/contributi-di-reale-foundation",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Reale Foundation (Gruppo Reale Mutua)",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L3"
       ]
     },
     {
@@ -189,15 +157,50 @@
         "L5",
         "L2"
       ]
+    },
+    {
+      "id": "re-bando-22f6ed865c",
+      "titolo": "HORIZON-NEB-2026-01 (destinazione PARTICIPATION) - Quartieri belli, inclusivi e sostenibili: senza dimora, design degli spazi e benessere degli abitanti",
+      "ente": "Commissione europea",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
+      "intensita_aiuto": "PARTICIPATION-01 12.600.000 EUR (2 progetti); PARTICIPATION-02 10.000.000 EUR (2 progetti); PARTICIPATION-03 15.000.000 EUR (3 progetti)",
+      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-PARTICIPATION-01",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Commissione europea",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5",
+        "L3"
+      ]
+    },
+    {
+      "id": "re-bando-3fd27fee60",
+      "titolo": "HORIZON-NEB-2026-01 (destinazione REGEN) - Rigenerazione dell'ambiente costruito: comfort termico, manutenzione degli edifici e uso dello spazio verticale",
+      "ente": "Commissione europea",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "Consorzio di almeno 3 soggetti giuridici indipendenti stabiliti in 3 diversi Stati membri/Paesi associati (condizioni generali Horizon Europe richiamate nella scheda topic): un comune e ammissibile come coordinatore o come partner.",
+      "intensita_aiuto": "REGEN-01 12.000.000 EUR (3 progetti); REGEN-02 10.000.000 EUR (2 progetti); REGEN-03 15.000.000 EUR (3 progetti)",
+      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-NEB-2026-01-REGEN-01",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Commissione europea",
+      "score": 100,
+      "linee": [
+        "L3",
+        "L5"
+      ]
     }
   ],
   "quality_report": {
     "total_records": 165,
     "valid_records": 165,
-    "active_opportunities": 56,
-    "open_bandi": 21,
+    "active_opportunities": 50,
+    "open_bandi": 15,
     "rolling_verified": 35,
-    "closed_bandi": 103,
+    "closed_bandi": 109,
     "new_this_week": 0,
     "selected_newsletter": 10,
     "unverified_excluded": 6
