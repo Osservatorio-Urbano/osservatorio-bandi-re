@@ -1,27 +1,21 @@
-[2026-11-06T13:04:23.997Z] Dataset consolidato caricato: 165 record attuali.
-[2026-11-06T13:04:23.998Z] Inizio interrogazione connettori ufficiali...
-[2026-11-06T13:04:23.998Z] Interrogazione: PR FESR ed Energia Emilia-Romagna...
-[2026-11-06T13:04:25.712Z] -> PR FESR ed Energia Emilia-Romagna: 14 bandi ricevuti in 1714ms, 0 errori.
-[2026-11-06T13:04:25.712Z] Interrogazione: PA Digitale 2026 (PNRR)...
-[2026-11-06T13:04:26.306Z] -> PA Digitale 2026 (PNRR): 5 bandi ricevuti in 594ms, 0 errori.
-[2026-11-06T13:04:26.306Z] Interrogazione: European Commission SEDIA API...
-[2026-11-06T13:04:26.867Z] -> European Commission SEDIA API: 10 bandi ricevuti in 561ms, 0 errori.
-[2026-11-06T13:04:26.868Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2021-09-01
-[2026-11-06T13:04:26.868Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
-[2026-11-06T13:04:26.868Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2014-06-27
-[2026-11-06T13:04:26.868Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
-[2026-11-06T13:04:26.868Z] Interrogazione: Fondazioni Manodori e Cariparma...
-[2026-11-06T13:04:33.082Z] -> Fondazioni Manodori e Cariparma: 2 bandi ricevuti in 6214ms, 1 errori.
-[2026-11-06T13:04:33.082Z] Interrogazione: Open Fundraising (Bandi Fondazioni Erogative Italiane)...
-[2026-11-06T13:04:33.994Z] -> Open Fundraising (Bandi Fondazioni Erogative Italiane): 17 bandi ricevuti in 912ms, 0 errori.
-[2026-11-06T13:04:33.994Z] Interrogazione: Fondazione Unipolis (Welfare, Mobilità & Disuguaglianze)...
-[2026-11-06T13:04:34.720Z] -> Fondazione Unipolis (Welfare, Mobilità & Disuguaglianze): 0 bandi ricevuti in 726ms, 0 errori.
-[2026-11-06T13:04:34.720Z] [SCADENZA AUTOMATICA] Archiviato bando CERV-2026-DAPHNE — Prevenire e combattere la violenza di genere e la violenza sui minori (scaduto il 2026-11-05)
-[2026-11-06T13:04:34.720Z] [SCADENZA AUTOMATICA] Archiviato bando HORIZON-CL3-2026-01-DRS-01 - Designing new ways of risk awareness and enhanced disaster preparedness (scaduto il 2026-11-05)
-[2026-11-06T13:04:34.720Z] [SCADENZA AUTOMATICA] Archiviato bando HORIZON-CL3-2026-01-FCT-04 - Crime prevention approaches, online and off-line, tackling the nexus between addictions and crime (scaduto il 2026-11-05)
-[2026-11-06T13:04:34.720Z] [SCADENZA AUTOMATICA] Archiviato bando HORIZON-CL3-2026-01-FCT-05 - Enhancing the security of citizens against terrorism and lone-actor violence in confined spaces (scaduto il 2026-11-05)
-[2026-11-06T13:04:34.720Z] [SCADENZA AUTOMATICA] Archiviato bando HORIZON-CL3-2026-01-INFRA-02 - Security challenges of the green transition in urban and peri urban areas (scaduto il 2026-11-05)
-[2026-11-06T13:04:34.720Z] [SCADENZA AUTOMATICA] Archiviato bando HORIZON-CL3-2026-01-SSRI-03 — Public procurement of innovation for security (scaduto il 2026-11-05)
-[2026-11-06T13:04:34.720Z] Riepilogo scansione: 0 nuove opportunità, 4 aggiornate/prorogate, 6 archiviate.
-[2026-11-06T13:04:34.724Z] Dataset canonico salvato con 165 record in: /home/runner/work/osservatorio-bandi-re/osservatorio-bandi-re/public/data/bandi.json
-[2026-11-06T13:04:34.724Z] Report stato fonti salvato in: /home/runner/work/osservatorio-bandi-re/osservatorio-bandi-re/public/data/quality/sources-status.json
+[2026-11-07T11:49:32.467Z] Dataset consolidato caricato: 165 record attuali.
+[2026-11-07T11:49:32.467Z] Inizio interrogazione connettori ufficiali...
+[2026-11-07T11:49:32.467Z] Interrogazione: PR FESR ed Energia Emilia-Romagna...
+[2026-11-07T11:49:35.477Z] -> PR FESR ed Energia Emilia-Romagna: 14 bandi ricevuti in 3010ms, 0 errori.
+[2026-11-07T11:49:35.478Z] Interrogazione: PA Digitale 2026 (PNRR)...
+[2026-11-07T11:49:36.235Z] -> PA Digitale 2026 (PNRR): 5 bandi ricevuti in 757ms, 0 errori.
+[2026-11-07T11:49:36.236Z] Interrogazione: European Commission SEDIA API...
+[2026-11-07T11:49:37.141Z] -> European Commission SEDIA API: 10 bandi ricevuti in 905ms, 0 errori.
+[2026-11-07T11:49:37.141Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2021-09-01
+[2026-11-07T11:49:37.141Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-11-07T11:49:37.141Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2014-06-27
+[2026-11-07T11:49:37.141Z] [PROROGA/MODIFICA] European Urban Mobility Observatory and Support including Web Portal Management, SUMP-Related Activities and Urban Mobility Scoreboard (SUMI — Sustainable Urban Mobility Indicators): nuova scadenza 2013-06-04
+[2026-11-07T11:49:37.141Z] Interrogazione: Fondazioni Manodori e Cariparma...
+[2026-11-07T11:49:45.146Z] -> Fondazioni Manodori e Cariparma: 2 bandi ricevuti in 8005ms, 1 errori.
+[2026-11-07T11:49:45.146Z] Interrogazione: Open Fundraising (Bandi Fondazioni Erogative Italiane)...
+[2026-11-07T11:49:46.552Z] -> Open Fundraising (Bandi Fondazioni Erogative Italiane): 17 bandi ricevuti in 1406ms, 0 errori.
+[2026-11-07T11:49:46.552Z] Interrogazione: Fondazione Unipolis (Welfare, Mobilità & Disuguaglianze)...
+[2026-11-07T11:49:47.854Z] -> Fondazione Unipolis (Welfare, Mobilità & Disuguaglianze): 0 bandi ricevuti in 1302ms, 0 errori.
+[2026-11-07T11:49:47.854Z] Riepilogo scansione: 0 nuove opportunità, 4 aggiornate/prorogate, 0 archiviate.
+[2026-11-07T11:49:47.857Z] Dataset canonico salvato con 165 record in: /home/runner/work/osservatorio-bandi-re/osservatorio-bandi-re/public/data/bandi.json
+[2026-11-07T11:49:47.857Z] Report stato fonti salvato in: /home/runner/work/osservatorio-bandi-re/osservatorio-bandi-re/public/data/quality/sources-status.json
