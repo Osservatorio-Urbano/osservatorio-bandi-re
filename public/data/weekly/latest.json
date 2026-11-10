@@ -1,40 +1,22 @@
 {
-  "edition_id": "RE-FUNDING-2026-W46",
-  "generated_at": "2026-11-09T14:10:49.664Z",
-  "delivery_monday": "2026-11-09",
-  "delivery_category": "DELIVERY_2026-11-09",
-  "week_start": "2026-W46",
-  "week_end": "2026-W46",
+  "edition_id": "RE-FUNDING-2026-W47",
+  "generated_at": "2026-11-10T13:38:37.416Z",
+  "delivery_monday": "2026-11-16",
+  "delivery_category": "DELIVERY_2026-11-16",
+  "week_start": "2026-W47",
+  "week_end": "2026-W47",
   "status": "READY",
   "quality_passed": true,
   "item_count": 165,
-  "active_count": 50,
-  "open_count": 15,
+  "active_count": 49,
+  "open_count": 14,
   "rolling_count": 35,
-  "closed_count": 109,
+  "closed_count": 110,
   "new_this_week_count": 0,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W46 con 10 opportunità prioritarie selezionate su 50 attive (165 censite).",
-  "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W46.html",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W47 con 10 opportunità prioritarie selezionate su 49 attive (165 censite).",
+  "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W47.html",
   "selected_opportunities": [
-    {
-      "id": "re-bando-935620b464",
-      "titolo": "Assegni di cura",
-      "ente": "Fondazione Cassa dei Risparmi di Forlì",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "Da regolamento di erogazione",
-      "fonte_url": "https://www.fondazionecariforli.it/downloads/files/Valutazione%20impatto%20assegni%20di%20cura160522.pdf",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa dei Risparmi di Forlì",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L5",
-        "L6"
-      ]
-    },
     {
       "id": "re-bando-279e702ea2",
       "titolo": "Bando Crowdfunding: una spinta per il Sociale",
@@ -107,22 +89,6 @@
       ]
     },
     {
-      "id": "re-bando-d3b1d4c900",
-      "titolo": "FEAMPA - Riqualificazione marina e dei corsi d'acqua",
-      "ente": "Regione Emilia-Romagna - Agricoltura, caccia e pesca",
-      "scadenza": "2026-11-09",
-      "scadenza_label": "09/11/2026",
-      "beneficiari": "Amministrazioni comunali",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://agricoltura.regione.emilia-romagna.it/feampa-2021-2027/bandi/2026/feampa-riqualificazione-marina-e-corsi-acqua",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Regione Emilia-Romagna - Agricoltura, caccia e pesca",
-      "score": 100,
-      "linee": [
-        "L3"
-      ]
-    },
-    {
       "id": "re-bando-25dc9bde2f",
       "titolo": "I3-2026-INV1 e I3-2026-INV2a - Interregional Innovation Investments (Strand 1 e Strand 2a)",
       "ente": "Commissione europea / EISMEA",
@@ -138,6 +104,40 @@
         "L2",
         "L3",
         "L6"
+      ]
+    },
+    {
+      "id": "re-bando-45851ab2e5",
+      "titolo": "Borse Formazione e Lavoro",
+      "ente": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
+      "scadenza": "2026-11-13",
+      "scadenza_label": "13/11/2026",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "https://bandi.fondazionecaript.it/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
+      "score": 100,
+      "linee": [
+        "L2",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-e834f38476",
+      "titolo": "Call for startup!",
+      "ente": "Fondazione del Monte Faenza",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "https://fondazionemontefaenza.it/bandoclab2025/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione del Monte Faenza",
+      "score": 100,
+      "linee": [
+        "L2",
+        "L5"
       ]
     },
     {
@@ -197,10 +197,10 @@
   "quality_report": {
     "total_records": 165,
     "valid_records": 165,
-    "active_opportunities": 50,
-    "open_bandi": 15,
+    "active_opportunities": 49,
+    "open_bandi": 14,
     "rolling_verified": 35,
-    "closed_bandi": 109,
+    "closed_bandi": 110,
     "new_this_week": 0,
     "selected_newsletter": 10,
     "unverified_excluded": 6
