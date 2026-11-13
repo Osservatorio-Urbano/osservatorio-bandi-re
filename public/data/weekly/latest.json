@@ -1,6 +1,6 @@
 {
   "edition_id": "RE-FUNDING-2026-W47",
-  "generated_at": "2026-11-12T13:53:37.603Z",
+  "generated_at": "2026-11-13T13:15:48.532Z",
   "delivery_monday": "2026-11-16",
   "delivery_category": "DELIVERY_2026-11-16",
   "week_start": "2026-W47",
@@ -8,105 +8,15 @@
   "status": "READY",
   "quality_passed": true,
   "item_count": 165,
-  "active_count": 48,
-  "open_count": 13,
+  "active_count": 46,
+  "open_count": 11,
   "rolling_count": 35,
-  "closed_count": 111,
+  "closed_count": 113,
   "new_this_week_count": 0,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W47 con 10 opportunità prioritarie selezionate su 48 attive (165 censite).",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W47 con 10 opportunità prioritarie selezionate su 46 attive (165 censite).",
   "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W47.html",
   "selected_opportunities": [
-    {
-      "id": "re-bando-935620b464",
-      "titolo": "Assegni di cura",
-      "ente": "Fondazione Cassa dei Risparmi di Forlì",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "Da regolamento di erogazione",
-      "fonte_url": "https://www.fondazionecariforli.it/downloads/files/Valutazione%20impatto%20assegni%20di%20cura160522.pdf",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa dei Risparmi di Forlì",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L5",
-        "L6"
-      ]
-    },
-    {
-      "id": "re-bando-3b5660bf6f",
-      "titolo": "Bando per la presentazione di progetti per la promozione dell’incontro tra i giovani e il mondo dell’associazionismo",
-      "ente": "Fondazione Cassa di Risparmio di Carrara",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "Da regolamento di erogazione",
-      "fonte_url": "http://www.cesvot.it/siete-presente",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio di Carrara",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L5"
-      ]
-    },
-    {
-      "id": "re-bando-fc59565744",
-      "titolo": "Bando Volontariato Filantropia e Beneficenza",
-      "ente": "Fondazione Cassa di Risparmio di Fano",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "Da regolamento di erogazione",
-      "fonte_url": "https://www.fondazionecarifano.it/progetti/bando-volontariato-filantropia-e-beneficenza/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio di Fano",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L4",
-        "L5"
-      ]
-    },
-    {
-      "id": "re-bando-b1a0b6ef6b",
-      "titolo": "Bando Welfare 2026_11/16",
-      "ente": "Fondazione Cassa di Risparmio Pietro Manodori",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti pubblici locali, Ambiti Territoriali Sociali, Enti del Terzo Settore e Fondazioni",
-      "intensita_aiuto": "n.d.",
-      "fonte_url": "https://www.fondazionemanodori.it/contributi/bandi/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione Cassa di Risparmio Pietro Manodori",
-      "score": 100,
-      "linee": [
-        "L1",
-        "L3",
-        "L4",
-        "L5"
-      ]
-    },
-    {
-      "id": "re-bando-25dc9bde2f",
-      "titolo": "I3-2026-INV1 e I3-2026-INV2a - Interregional Innovation Investments (Strand 1 e Strand 2a)",
-      "ente": "Commissione europea / EISMEA",
-      "scadenza": "2026-11-12",
-      "scadenza_label": "12/11/2026",
-      "beneficiari": "Consorzi interregionali di soggetti pubblici e privati (autorita locali e regionali, cluster, imprese, universita); condizioni dettagliate nel call document (n.d. sulla scheda topic).",
-      "intensita_aiuto": "I3-2026-INV1: 28.200.000 EUR; I3-2026-INV2a: 30.200.000 EUR",
-      "fonte_url": "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/I3-2026-INV1",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Commissione europea / EISMEA",
-      "score": 100,
-      "linee": [
-        "L2",
-        "L3",
-        "L6"
-      ]
-    },
     {
       "id": "re-bando-45851ab2e5",
       "titolo": "Borse Formazione e Lavoro",
@@ -118,23 +28,6 @@
       "fonte_url": "https://bandi.fondazionecaript.it/",
       "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
       "stato_verifica": "Fondazione Cassa di Risparmio di Pistoia e Pescia",
-      "score": 100,
-      "linee": [
-        "L2",
-        "L5"
-      ]
-    },
-    {
-      "id": "re-bando-e834f38476",
-      "titolo": "Call for startup!",
-      "ente": "Fondazione del Monte Faenza",
-      "scadenza": "sportello",
-      "scadenza_label": "A sportello aperto",
-      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
-      "intensita_aiuto": "Da regolamento di erogazione",
-      "fonte_url": "https://fondazionemontefaenza.it/bandoclab2025/",
-      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
-      "stato_verifica": "Fondazione del Monte Faenza",
       "score": 100,
       "linee": [
         "L2",
@@ -193,15 +86,119 @@
         "L3",
         "L5"
       ]
+    },
+    {
+      "id": "re-bando-0daf149e54",
+      "titolo": "Avviso pubblico per la selezione di eventi sportivi di rilevanza nazionale e internazionale 2026",
+      "ente": "Dipartimento per lo Sport - PCM",
+      "scadenza": "2026-12-01",
+      "scadenza_label": "01/12/2026",
+      "beneficiari": "ASD/SSD, comitati organizzatori, federazioni sportive, EPS, enti e società pubbliche o private con titolo di esclusività nell'organizzazione dell'evento (quindi anche Comuni titolari dell'evento)",
+      "intensita_aiuto": "7.500.000 euro",
+      "fonte_url": "https://www.sport.governo.it/it/bandi-e-avvisi/realizzazione-di-eventi-sportivi-di-rilevanza-nazionale-ed-internazionale/avviso-2026/pubblicato-il-nuovo-avviso-per-la-selezione-di-eventi-sportivi-di-rilevanza-nazionale-e-internazionale-2026/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Dipartimento per lo Sport - PCM",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L2"
+      ]
+    },
+    {
+      "id": "re-bando-9dd80a97c2",
+      "titolo": "Accordi di investimento e servizi per l'attrattività",
+      "ente": "Regione Emilia-Romagna - Imprese e attività produttive",
+      "scadenza": "2026-12-15",
+      "scadenza_label": "15/12/2026",
+      "beneficiari": "Enti pubblici, Università",
+      "intensita_aiuto": "n.d.",
+      "fonte_url": "https://imprese.regione.emilia-romagna.it/leggi-atti-bandi/tutti-i-bandi/internazionalizzazione/accordi-di-investimento-e-servizi",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Regione Emilia-Romagna - Imprese e attività produttive",
+      "score": 100,
+      "linee": [
+        "L2",
+        "L6"
+      ]
+    },
+    {
+      "id": "re-bando-935620b464",
+      "titolo": "Assegni di cura",
+      "ente": "Fondazione Cassa dei Risparmi di Forlì",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "https://www.fondazionecariforli.it/downloads/files/Valutazione%20impatto%20assegni%20di%20cura160522.pdf",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa dei Risparmi di Forlì",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5",
+        "L6"
+      ]
+    },
+    {
+      "id": "re-bando-279e702ea2",
+      "titolo": "Bando Crowdfunding: una spinta per il Sociale",
+      "ente": "Fondazione Cassa di Risparmio di Fano",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "€ 15.000",
+      "fonte_url": "https://www.fondazionecarifano.it/progetti/bando-crowdfunding/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Fano",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-3b5660bf6f",
+      "titolo": "Bando per la presentazione di progetti per la promozione dell’incontro tra i giovani e il mondo dell’associazionismo",
+      "ente": "Fondazione Cassa di Risparmio di Carrara",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "http://www.cesvot.it/siete-presente",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Carrara",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L5"
+      ]
+    },
+    {
+      "id": "re-bando-fc59565744",
+      "titolo": "Bando Volontariato Filantropia e Beneficenza",
+      "ente": "Fondazione Cassa di Risparmio di Fano",
+      "scadenza": "sportello",
+      "scadenza_label": "A sportello aperto",
+      "beneficiari": "Enti locali, Terzo Settore, Partenariati pubblico-privati, Istituti scolastici ed Enti non profit",
+      "intensita_aiuto": "Da regolamento di erogazione",
+      "fonte_url": "https://www.fondazionecarifano.it/progetti/bando-volontariato-filantropia-e-beneficenza/",
+      "ragione_strategica": "Ammissibilità confermata per il Comune o ATS capofila (+25)",
+      "stato_verifica": "Fondazione Cassa di Risparmio di Fano",
+      "score": 100,
+      "linee": [
+        "L1",
+        "L4",
+        "L5"
+      ]
     }
   ],
   "quality_report": {
     "total_records": 165,
     "valid_records": 165,
-    "active_opportunities": 48,
-    "open_bandi": 13,
+    "active_opportunities": 46,
+    "open_bandi": 11,
     "rolling_verified": 35,
-    "closed_bandi": 111,
+    "closed_bandi": 113,
     "new_this_week": 0,
     "selected_newsletter": 10,
     "unverified_excluded": 6
