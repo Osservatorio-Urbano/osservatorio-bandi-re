@@ -1,10 +1,10 @@
 {
-  "edition_id": "RE-FUNDING-2026-W47",
-  "generated_at": "2026-11-16T13:53:49.682Z",
-  "delivery_monday": "2026-11-16",
-  "delivery_category": "DELIVERY_2026-11-16",
-  "week_start": "2026-W47",
-  "week_end": "2026-W47",
+  "edition_id": "RE-FUNDING-2026-W48",
+  "generated_at": "2026-11-17T14:43:25.432Z",
+  "delivery_monday": "2026-11-23",
+  "delivery_category": "DELIVERY_2026-11-23",
+  "week_start": "2026-W48",
+  "week_end": "2026-W48",
   "status": "READY",
   "quality_passed": true,
   "item_count": 165,
@@ -14,8 +14,8 @@
   "closed_count": 114,
   "new_this_week_count": 0,
   "selected_count": 10,
-  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W47 con 10 opportunità prioritarie selezionate su 45 attive (165 censite).",
-  "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W47.html",
+  "summary": "Osservatorio Bandi Edizione settimanale RE-FUNDING-2026-W48 con 10 opportunità prioritarie selezionate su 45 attive (165 censite).",
+  "html_link": "https://Osservatorio-Urbano.github.io/osservatorio-bandi-re/newsletter/2026-W48.html",
   "selected_opportunities": [
     {
       "id": "re-bando-279e702ea2",
